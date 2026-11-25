@@ -1,29 +1,54 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh-Hant" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>豐喜塑膠股份有限公司｜台中大型塑膠射出成型・1600T–3000T 模具開發 OEM</title>
+  <title>豐喜塑膠股份有限公司｜台中 1600T–3000T 超大型精密塑膠射出與模具開發 OEM</title>
   <meta name="description" content="創立於1982年台中太平，豐喜塑膠專精汽車零組件與工業大型塑膠射出成型，具備1600噸及2026全新3000噸超大型射出機，結合鑫豐喜精密科技提供模具設計開發至量產一條龍OEM服務。" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Inter:wght@600;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
           fontFamily: {
-            sans: ['"Noto Sans TC"', 'Inter', 'sans-serif'],
+            sans: ['"Noto Sans TC"', '"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['"Plus Jakarta Sans"', '"Noto Sans TC"', 'sans-serif'],
           },
           colors: {
-            navy: { 900: '#0B132B', 800: '#1C2541', 700: '#2A3A63' },
-            amberbrand: '#F59E0B',
+            obsidian: '#060913',
+            slatepanel: '#0F172A',
+            gold: { 400: '#FBBF24', 500: '#F59E0B', 600: '#D97706' },
           },
         },
       },
     };
   </script>
+  <style>
+    .hero-mesh {
+      background-color: #060913;
+      background-image:
+        radial-gradient(at 85% 15%, rgba(245, 158, 11, 0.18) 0px, transparent 48%),
+        radial-gradient(at 10% 80%, rgba(56, 189, 248, 0.14) 0px, transparent 50%);
+    }
+    .glass-card {
+      background: rgba(15, 23, 42, 0.65);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .reveal {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -42,244 +67,315 @@
   }
   </script>
 </head>
-<body class="bg-slate-50 text-slate-900 font-sans antialiased pb-20 md:pb-0">
+<body class="bg-obsidian text-slate-100 font-sans antialiased selection:bg-amber-500 selection:text-obsidian pb-20 md:pb-0">
 
-  <!-- Demo Preview Notice Banner -->
-  <div class="bg-amber-500 text-navy-900 text-xs sm:text-sm font-bold text-center py-2 px-4 sticky top-0 z-50 shadow">
-    ✨ 專為「豐喜塑膠股份有限公司」客製之新版 RWD 官網概念預覽（已升級 HTTPS / 手機版 / AI 搜尋架構，並修正原站錯字）
+  <!-- Subtle Floating Preview Bar -->
+  <div class="bg-gradient-to-r from-amber-500 via-amber-400 to-yellow-400 text-obsidian text-xs sm:text-sm font-bold text-center py-2 px-4 sticky top-0 z-50 shadow-lg">
+    ✨ 專為「豐喜塑膠股份有限公司」客製之國際大廠級新版官網預覽（升級 HTTPS / RWD / AI 搜尋架構，並已修正原站錯字）
   </div>
 
-  <!-- Navbar -->
-  <header class="bg-navy-900/95 backdrop-blur border-b border-white/10 text-white">
-    <div class="max-w-6xl mx-auto px-5 py-4 flex items-center justify-between">
-      <div class="flex items-center gap-3">
-        <div class="w-10 h-10 rounded-lg bg-amber-500 text-navy-900 font-black flex items-center justify-center text-lg tracking-tight">豐喜</div>
-        <div>
-          <div class="font-bold text-base sm:text-lg leading-tight">豐喜塑膠股份有限公司</div>
-          <div class="text-[11px] text-slate-400 tracking-wider">FENGXI PLASTIC • EST. 1982</div>
+  <!-- Glass Navbar -->
+  <header class="sticky top-9 z-40 bg-obsidian/80 backdrop-blur-xl border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3.5 group">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-amber-400 to-amber-600 text-obsidian font-black flex items-center justify-center text-lg shadow-lg shadow-amber-500/20 group-hover:scale-105 transition">
+          豐喜
         </div>
-      </div>
-      <nav class="hidden md:flex items-center gap-7 text-sm text-slate-300">
-        <a href="#capabilities" class="hover:text-amber-400 transition">核心實力</a>
-        <a href="#products" class="hover:text-amber-400 transition">承製領域</a>
-        <a href="#onestop" class="hover:text-amber-400 transition">模具到量產</a>
-        <a href="#contact" class="px-4 py-2 rounded-lg bg-amber-500 text-navy-900 font-bold hover:bg-amber-400 transition">快速圖面估價</a>
+        <div>
+          <div class="font-bold text-base sm:text-lg tracking-wide text-white">豐喜塑膠股份有限公司</div>
+          <div class="text-[11px] font-display text-amber-400/90 tracking-[0.2em] uppercase">FENGXI PLASTIC • EST. 1982</div>
+        </div>
+      </a>
+      <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <a href="#bento" class="hover:text-white transition">製造實力</a>
+        <a href="#applications" class="hover:text-white transition">承製領域</a>
+        <a href="#workflow" class="hover:text-white transition">一條龍製程</a>
+        <a href="#contact" class="px-5 py-2.5 rounded-full bg-white text-obsidian font-bold hover:bg-amber-400 transition shadow-lg">
+          30 秒圖面估價
+        </a>
       </nav>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="relative bg-gradient-to-br from-navy-900 via-navy-800 to-slate-900 text-white overflow-hidden">
-    <div class="absolute inset-0 opacity-15" style="background-image: radial-gradient(#F59E0B 1px, transparent 1px); background-size: 28px 28px;"></div>
-    <div class="relative max-w-6xl mx-auto px-5 py-16 sm:py-24 grid md:grid-cols-12 gap-10 items-center">
-      <div class="md:col-span-7 space-y-6">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/15 border border-amber-400/30 text-amber-300 text-xs font-bold">
-          <span>2026 全新擴廠升級</span>
-          <span>•</span>
-          <span>導入 3,000 噸超大型射出機</span>
+  <!-- Luxury Editorial Hero -->
+  <section class="hero-mesh relative overflow-hidden pt-16 pb-24 sm:pt-24 sm:pb-32">
+    <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-12 items-center">
+      <div class="lg:col-span-7 space-y-7">
+        <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white/5 border border-amber-400/30 text-amber-300 text-xs font-bold tracking-wider">
+          <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+          <span>2026 重大產能升級 • 導入 3,000 噸超大型射出成型機</span>
         </div>
-        <h1 class="text-3xl sm:text-5xl font-black leading-tight tracking-tight">
-          44 年台中精密射出實績<br />
-          <span class="text-amber-400">1,600T – 3,000T</span> 大型成型專家
+
+        <h1 class="text-4xl sm:text-6xl font-black leading-[1.12] tracking-tight text-white">
+          44 年精密製造底蘊<br />
+          <span class="bg-gradient-to-r from-amber-300 via-amber-400 to-orange-400 bg-clip-text text-transparent">1,600T – 3,000T</span><br />
+          大型射出與模具專家
         </h1>
+
         <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl">
-          自 1982 年創立於台中太平，結合子公司「鑫豐喜精密科技」模具開發能量，專為汽車零組件與工業級大型塑膠製品提供 ISO 品質認證的一條龍 OEM 製造服務。
+          自 1982 年立足台中太平，結合旗下<strong class="text-white">「鑫豐喜精密科技」</strong>自有模具開發能量，專為車用安全件與大型工業塑膠製品提供 ISO 品質認證的 OEM / ODM 一條龍量產服務。
         </p>
-        <div class="flex flex-wrap gap-3 pt-2">
-          <a href="#contact" class="px-6 py-3.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-navy-900 font-extrabold text-sm sm:text-base shadow-lg shadow-amber-500/20 transition">
-            立即上傳圖面／3D 檔詢價 →
+
+        <div class="flex flex-wrap items-center gap-4 pt-2">
+          <a href="#contact" class="px-7 py-4 rounded-full bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-obsidian font-extrabold text-sm sm:text-base shadow-xl shadow-amber-500/25 transition transform hover:-translate-y-0.5">
+            立即上傳 2D/3D 圖面詢價 →
           </a>
-          <a href="#capabilities" class="px-6 py-3.5 rounded-xl bg-white/10 hover:bg-white/15 border border-white/20 text-white font-semibold text-sm sm:text-base transition">
-            查看機台與成型能量
+          <a href="#bento" class="px-7 py-4 rounded-full bg-white/5 hover:bg-white/10 border border-white/15 text-white font-semibold text-sm sm:text-base transition">
+            探索機台與產能規格
           </a>
+        </div>
+
+        <!-- Mini Certifications Strip -->
+        <div class="pt-6 border-t border-white/10 flex flex-wrap gap-x-8 gap-y-3 text-xs text-slate-400 font-medium">
+          <span class="flex items-center gap-2"><span class="text-amber-400">✓</span> ISO 國際品質管理系統認證</span>
+          <span class="flex items-center gap-2"><span class="text-amber-400">✓</span> 車用安全氣囊／方向盤級製程</span>
+          <span class="flex items-center gap-2"><span class="text-amber-400">✓</span> 支援中／英雙語外銷專案</span>
         </div>
       </div>
 
-      <!-- Trust Metrics Card -->
-      <div class="md:col-span-5 grid grid-cols-2 gap-4">
-        <div class="bg-white/5 backdrop-blur border border-white/10 rounded-2xl p-5">
-          <div class="text-3xl sm:text-4xl font-black text-amber-400">44<span class="text-lg">年</span></div>
-          <div class="text-xs sm:text-sm text-slate-300 mt-1">1982 創立深耕台灣製造</div>
-        </div>
-        <div class="bg-white/5 backdrop-blur border border-white/10 rounded-2xl p-5">
-          <div class="text-3xl sm:text-4xl font-black text-amber-400">3,000<span class="text-lg">T</span></div>
-          <div class="text-xs sm:text-sm text-slate-300 mt-1">2026 新增超大型射出機</div>
-        </div>
-        <div class="bg-white/5 backdrop-blur border border-white/10 rounded-2xl p-5">
-          <div class="text-3xl sm:text-4xl font-black text-white">ISO</div>
-          <div class="text-xs sm:text-sm text-slate-300 mt-1">嚴格製程與品質認證管理</div>
-        </div>
-        <div class="bg-white/5 backdrop-blur border border-white/10 rounded-2xl p-5">
-          <div class="text-3xl sm:text-4xl font-black text-white">100%</div>
-          <div class="text-xs sm:text-sm text-slate-300 mt-1">模具設計至量產一條龍</div>
+      <!-- Visual Hero Showcase Card -->
+      <div class="lg:col-span-5 relative">
+        <div class="relative rounded-3xl overflow-hidden border border-white/15 shadow-2xl shadow-black/60 group">
+          <img
+            src="https://images.unsplash.com/photo-1565043666747-69f6646db940?auto=format&fit=crop&w=1000&q=85"
+            alt="精密自動化射出與工業製造產線"
+            class="w-full h-[420px] object-cover object-center group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/40 to-transparent"></div>
+          <div class="absolute bottom-5 inset-x-5 grid grid-cols-2 gap-3">
+            <div class="glass-card rounded-2xl p-4">
+              <div class="font-display text-3xl font-extrabold text-amber-400">3,000<span class="text-base ml-0.5">T</span></div>
+              <div class="text-xs text-slate-300 mt-1">2026 新增超大型射出機</div>
+            </div>
+            <div class="glass-card rounded-2xl p-4">
+              <div class="font-display text-3xl font-extrabold text-white">44<span class="text-base ml-1 text-amber-400">YRS</span></div>
+              <div class="text-xs text-slate-300 mt-1">1982 創立穩定交付實績</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Capabilities -->
-  <section id="capabilities" class="max-w-6xl mx-auto px-5 py-16">
-    <div class="text-center max-w-2xl mx-auto mb-12">
-      <span class="text-amber-600 font-bold text-xs tracking-widest uppercase">CORE CAPABILITIES</span>
-      <h2 class="text-2xl sm:text-3xl font-black mt-2 text-navy-900">為什麼大廠與外銷品牌選擇豐喜？</h2>
+  <!-- Bento Grid: Core Capabilities -->
+  <section id="bento" class="max-w-7xl mx-auto px-6 py-20 reveal">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+      <div>
+        <div class="font-display text-amber-400 font-bold text-xs tracking-[0.2em] uppercase">PRECISION ENGINEERING</div>
+        <h2 class="text-3xl sm:text-4xl font-black mt-2 text-white">超越代工，成為您的旗艦製造夥伴</h2>
+      </div>
+      <p class="text-slate-400 text-sm max-w-md">從模具設計、試模驗證到 3,000 噸超大型件穩定供貨，全廠區垂直整合。</p>
     </div>
-    <div class="grid md:grid-cols-3 gap-6">
-      <div class="bg-white rounded-2xl p-7 border border-slate-200 shadow-sm hover:shadow-md transition">
-        <div class="w-12 h-12 rounded-xl bg-navy-900 text-amber-400 flex items-center justify-center text-xl font-black mb-4">01</div>
-        <h3 class="text-lg font-bold text-navy-900 mb-2">全噸數產線 × 3,000 噸大型射出</h3>
-        <p class="text-slate-600 text-sm leading-relaxed">
-          廠內配備多種噸數射出成型機，涵蓋中小型精密件至 1,600 噸大型件，並於 2026 年擴增 3,000 噸超大型機台，滿足高難度大型外殼與汽車件需求。
-        </p>
-      </div>
-      <div class="bg-white rounded-2xl p-7 border border-slate-200 shadow-sm hover:shadow-md transition">
-        <div class="w-12 h-12 rounded-xl bg-navy-900 text-amber-400 flex items-center justify-center text-xl font-black mb-4">02</div>
-        <h3 class="text-lg font-bold text-navy-900 mb-2">自有模具廠「鑫豐喜精密科技」</h3>
-        <p class="text-slate-600 text-sm leading-relaxed">
-          2015 年成立專責模具設計開發團隊，免去模具廠與射出廠互相推諉的溝通斷層，大幅縮短開模、試模修模到正式量產的交期。
-        </p>
-      </div>
-      <div class="bg-white rounded-2xl p-7 border border-slate-200 shadow-sm hover:shadow-md transition">
-        <div class="w-12 h-12 rounded-xl bg-navy-900 text-amber-400 flex items-center justify-center text-xl font-black mb-4">03</div>
-        <h3 class="text-lg font-bold text-navy-900 mb-2">車用級 ISO 品質管制標準</h3>
-        <p class="text-slate-600 text-sm leading-relaxed">
-          長期承製安全氣囊外殼、方向盤與後照鏡等高安全係數車用零件，從進料檢驗、首件量測到出貨全檢皆符合嚴格品質系統。
-        </p>
-      </div>
-    </div>
-  </section>
 
-  <!-- Products Grid -->
-  <section id="products" class="bg-slate-100 py-16">
-    <div class="max-w-6xl mx-auto px-5">
-      <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+    <div class="grid md:grid-cols-12 gap-5">
+      <!-- Big Bento Card 1 -->
+      <div class="md:col-span-7 glass-card rounded-3xl p-8 relative overflow-hidden group hover:border-amber-400/40 transition">
+        <div class="absolute -right-12 -top-12 w-56 h-56 rounded-full bg-amber-500/10 blur-3xl group-hover:bg-amber-500/20 transition"></div>
+        <span class="inline-block px-3 py-1 rounded-full bg-amber-500/15 text-amber-300 text-xs font-bold mb-5">01 / 超大型產能優勢</span>
+        <h3 class="text-2xl font-bold text-white mb-3">1,600 噸至 3,000 噸全噸數佈局</h3>
+        <p class="text-slate-300 text-sm leading-relaxed mb-6 max-w-xl">
+          中部少數同時具備中小型精密機台與 1,600T 超大型射出機的專業工廠，2026 年更重資擴充 3,000 噸機台，輕鬆承接高鎖模力、大面積、厚肉壁之車用與建築系統模板製品。
+        </p>
+        <div class="grid grid-cols-3 gap-3 pt-4 border-t border-white/10 text-center">
+          <div><div class="font-display font-extrabold text-xl text-white">1600T</div><div class="text-[11px] text-slate-400">現役主力大機</div></div>
+          <div><div class="font-display font-extrabold text-xl text-amber-400">3000T</div><div class="text-[11px] text-slate-400">2026 旗艦新機</div></div>
+          <div><div class="font-display font-extrabold text-xl text-white">OEM</div><div class="text-[11px] text-slate-400">客製彈性排產</div></div>
+        </div>
+      </div>
+
+      <!-- Bento Card 2 -->
+      <div class="md:col-span-5 glass-card rounded-3xl p-8 hover:border-amber-400/40 transition flex flex-col justify-between">
         <div>
-          <span class="text-amber-600 font-bold text-xs tracking-widest uppercase">APPLICATIONS</span>
-          <h2 class="text-2xl sm:text-3xl font-black mt-2 text-navy-900">主力承製產品與應用產業</h2>
+          <span class="inline-block px-3 py-1 rounded-full bg-sky-500/15 text-sky-300 text-xs font-bold mb-5">02 / 垂直整合</span>
+          <h3 class="text-2xl font-bold text-white mb-3">自有模具廠「鑫豐喜精密科技」</h3>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            2015 年成立專屬模具開發團隊，直接在內部完成開模設計、流道模擬與試模修整，徹底消除外包開模與射出廠之間的責任灰色地帶，加速產品上市時程。
+          </p>
         </div>
-        <p class="text-slate-600 text-sm max-w-md">支援各類工程塑膠與客製化 OEM/ODM 代工，歡迎提供 2D/3D 圖面評估。</p>
+        <div class="mt-6 pt-4 border-t border-white/10 text-xs text-amber-400 font-bold">
+          → 單一窗口對接，交期縮短 30% 以上
+        </div>
       </div>
 
+      <!-- Bento Card 3 -->
+      <div class="md:col-span-5 glass-card rounded-3xl overflow-hidden relative min-h-[260px] group">
+        <img
+          src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=900&q=80"
+          alt="ISO 精密品管量測"
+          class="absolute inset-0 w-full h-full object-cover opacity-55 group-hover:scale-105 transition duration-700"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/70 to-transparent"></div>
+        <div class="relative h-full p-8 flex flex-col justify-end">
+          <span class="text-amber-400 text-xs font-bold tracking-wider uppercase mb-2">QUALITY ASSURANCE</span>
+          <h3 class="text-xl font-bold text-white mb-2">車用安全級 ISO 品質管制</h3>
+          <p class="text-slate-300 text-xs leading-relaxed">
+            長期供應安全氣囊外殼、方向盤與後照鏡等高規格汽車零件，全製程落實首件量測與批次追溯。
+          </p>
+        </div>
+      </div>
+
+      <!-- Bento Card 4 -->
+      <div class="md:col-span-7 glass-card rounded-3xl p-8 hover:border-amber-400/40 transition flex flex-col justify-between">
+        <div>
+          <span class="inline-block px-3 py-1 rounded-full bg-emerald-500/15 text-emerald-300 text-xs font-bold mb-4">03 / 多元材料與應用</span>
+          <h3 class="text-2xl font-bold text-white mb-3">從精密齒輪到大型工業結構件皆可承製</h3>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            熟稔各類泛用與工程塑膠成型條件，精準控制大型件翹曲變形與縮水問題，無論外銷品牌或國內大廠皆可穩定配合。
+          </p>
+        </div>
+        <div class="flex flex-wrap gap-2 mt-6">
+          <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-xs text-slate-200">汽車安全氣囊與方向盤</span>
+          <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-xs text-slate-200">建築塑膠系統模板</span>
+          <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-xs text-slate-200">精密大小傳動齒輪</span>
+          <span class="px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-xs text-slate-200">自行車與運動練習器具</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Applications Showcase -->
+  <section id="applications" class="bg-slatepanel/60 border-y border-white/5 py-20 reveal">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <div class="font-display text-amber-400 font-bold text-xs tracking-[0.2em] uppercase">APPLICATIONS</div>
+        <h2 class="text-3xl sm:text-4xl font-black mt-2 text-white">四大主力承製領域</h2>
+      </div>
       <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-        <div class="bg-white rounded-2xl p-6 border border-slate-200">
-          <div class="text-2xl mb-3">🚗</div>
-          <h3 class="font-bold text-navy-900 mb-1.5">汽車關鍵零組件</h3>
-          <p class="text-xs text-slate-600 leading-relaxed">方向盤組件、安全氣囊外殼、精密承套、後照鏡外殼與車內飾件。</p>
+        <div class="glass-card rounded-2xl p-6 hover:-translate-y-1 transition">
+          <div class="w-11 h-11 rounded-xl bg-amber-500/15 text-amber-400 flex items-center justify-center text-xl mb-4">🚗</div>
+          <h3 class="font-bold text-lg text-white mb-2">汽車關鍵零組件</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">方向盤組件、安全氣囊外殼、高強度承套、車用後照鏡外殼與內裝機構件。</p>
         </div>
-        <div class="bg-white rounded-2xl p-6 border border-slate-200">
-          <div class="text-2xl mb-3">🏗️</div>
-          <h3 class="font-bold text-navy-900 mb-1.5">大型工業與系統模板</h3>
-          <p class="text-xs text-slate-600 leading-relaxed">建築用塑膠系統模板、大型工業結構外殼、高剛性大型射出件。</p>
+        <div class="glass-card rounded-2xl p-6 hover:-translate-y-1 transition">
+          <div class="w-11 h-11 rounded-xl bg-amber-500/15 text-amber-400 flex items-center justify-center text-xl mb-4">🏗️</div>
+          <h3 class="font-bold text-lg text-white mb-2">系統模板與大型外殼</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">1,600T–3,000T 專攻建築用塑膠系統模板、大型工業機台護罩與結構件。</p>
         </div>
-        <div class="bg-white rounded-2xl p-6 border border-slate-200">
-          <div class="text-2xl mb-3">⚙️</div>
-          <h3 class="font-bold text-navy-900 mb-1.5">精密機構與大小齒輪</h3>
-          <p class="text-xs text-slate-600 leading-relaxed">高尺寸穩定性傳動齒輪、耐磨工程塑膠零件與設備配件。</p>
+        <div class="glass-card rounded-2xl p-6 hover:-translate-y-1 transition">
+          <div class="w-11 h-11 rounded-xl bg-amber-500/15 text-amber-400 flex items-center justify-center text-xl mb-4">⚙️</div>
+          <h3 class="font-bold text-lg text-white mb-2">精密大小齒輪機構</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">高同心度與耐磨工程塑膠齒輪、自動化設備精密零件代工。</p>
         </div>
-        <div class="bg-white rounded-2xl p-6 border border-slate-200">
-          <div class="text-2xl mb-3">🚲</div>
-          <h3 class="font-bold text-navy-900 mb-1.5">自行車與運動練習器具</h3>
-          <p class="text-xs text-slate-600 leading-relaxed">外銷等級自行車塑膠配件、運動器材外殼與客製化民生用品。</p>
+        <div class="glass-card rounded-2xl p-6 hover:-translate-y-1 transition">
+          <div class="w-11 h-11 rounded-xl bg-amber-500/15 text-amber-400 flex items-center justify-center text-xl mb-4">🚲</div>
+          <h3 class="font-bold text-lg text-white mb-2">自行車與運動器具</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">外銷等級自行車塑膠配件、專業運動練習器具與客製 OEM 製品。</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- One-stop Process -->
-  <section id="onestop" class="max-w-6xl mx-auto px-5 py-16">
-    <div class="text-center max-w-2xl mx-auto mb-12">
-      <span class="text-amber-600 font-bold text-xs tracking-widest uppercase">WORKFLOW</span>
-      <h2 class="text-2xl sm:text-3xl font-black mt-2 text-navy-900">從開發到量產：一條龍無縫交期</h2>
+  <section id="workflow" class="max-w-7xl mx-auto px-6 py-20 reveal">
+    <div class="text-center max-w-2xl mx-auto mb-14">
+      <div class="font-display text-amber-400 font-bold text-xs tracking-[0.2em] uppercase">ONE-STOP PROCESS</div>
+      <h2 class="text-3xl sm:text-4xl font-black mt-2 text-white">四步驟完成開發到穩定量產</h2>
     </div>
-    <div class="grid sm:grid-cols-4 gap-4 text-center">
-      <div class="p-5 rounded-2xl bg-white border border-slate-200">
-        <div class="text-xs font-black text-amber-600 mb-1">STEP 1</div>
-        <div class="font-bold text-navy-900">圖面與材料評估</div>
-        <p class="text-xs text-slate-500 mt-1">DFM 可製造性分析與快速報價</p>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div class="glass-card rounded-2xl p-6 relative">
+        <div class="font-display text-4xl font-black text-white/10 absolute top-4 right-5">01</div>
+        <div class="text-amber-400 font-bold text-xs mb-2">STEP 01</div>
+        <h3 class="font-bold text-white text-lg mb-2">圖面與材料評估</h3>
+        <p class="text-xs text-slate-400 leading-relaxed">提供 2D/3D 圖檔，由工程團隊評估成型性（DFM）、噸數與報價。</p>
       </div>
-      <div class="p-5 rounded-2xl bg-white border border-slate-200">
-        <div class="text-xs font-black text-amber-600 mb-1">STEP 2</div>
-        <div class="font-bold text-navy-900">鑫豐喜精密開模</div>
-        <p class="text-xs text-slate-500 mt-1">內部自有模具團隊設計加工</p>
+      <div class="glass-card rounded-2xl p-6 relative">
+        <div class="font-display text-4xl font-black text-white/10 absolute top-4 right-5">02</div>
+        <div class="text-amber-400 font-bold text-xs mb-2">STEP 02</div>
+        <h3 class="font-bold text-white text-lg mb-2">鑫豐喜精密開模</h3>
+        <p class="text-xs text-slate-400 leading-relaxed">集團自有模具廠設計製造，精準掌控分模線、冷卻水路與鋼材壽命。</p>
       </div>
-      <div class="p-5 rounded-2xl bg-white border border-slate-200">
-        <div class="text-xs font-black text-amber-600 mb-1">STEP 3</div>
-        <div class="font-bold text-navy-900">試模與尺寸驗證</div>
-        <p class="text-xs text-slate-500 mt-1">T1 試模微調至完全達標</p>
+      <div class="glass-card rounded-2xl p-6 relative">
+        <div class="font-display text-4xl font-black text-white/10 absolute top-4 right-5">03</div>
+        <div class="text-amber-400 font-bold text-xs mb-2">STEP 03</div>
+        <h3 class="font-bold text-white text-lg mb-2">T1 試模與尺寸驗證</h3>
+        <p class="text-xs text-slate-400 leading-relaxed">快速打樣送檢並即時微調修模，確認外觀與公差 100% 達標。</p>
       </div>
-      <div class="p-5 rounded-2xl bg-white border border-slate-200">
-        <div class="text-xs font-black text-amber-600 mb-1">STEP 4</div>
-        <div class="font-bold text-navy-900">大型機台穩定 OEM</div>
-        <p class="text-xs text-slate-500 mt-1">ISO 品質抽檢與準時交貨</p>
+      <div class="glass-card rounded-2xl p-6 relative">
+        <div class="font-display text-4xl font-black text-white/10 absolute top-4 right-5">04</div>
+        <div class="text-amber-400 font-bold text-xs mb-2">STEP 04</div>
+        <h3 class="font-bold text-white text-lg mb-2">ISO 標準穩定 OEM</h3>
+        <p class="text-xs text-slate-400 leading-relaxed">排入專屬噸數機台量產，嚴格品管抽檢並準時交付國內外客戶。</p>
       </div>
     </div>
   </section>
 
-  <!-- Contact & Quick RFQ Section -->
-  <section id="contact" class="bg-navy-900 text-white py-16">
-    <div class="max-w-6xl mx-auto px-5 grid md:grid-cols-12 gap-10 items-start">
-      <div class="md:col-span-5 space-y-5">
-        <span class="text-amber-400 font-bold text-xs tracking-widest uppercase">CONTACT US</span>
-        <h2 class="text-2xl sm:text-3xl font-black">立即洽詢開模與射出代工</h2>
+  <!-- Contact & High-Conversion RFQ -->
+  <section id="contact" class="max-w-7xl mx-auto px-6 py-20 reveal">
+    <div class="rounded-3xl bg-gradient-to-br from-slate-900 via-slate-900 to-amber-950/30 border border-white/10 p-8 sm:p-12 grid lg:grid-cols-12 gap-12 items-center shadow-2xl">
+      <div class="lg:col-span-5 space-y-6">
+        <div class="font-display text-amber-400 font-bold text-xs tracking-[0.2em] uppercase">REQUEST A QUOTE</div>
+        <h2 class="text-3xl sm:text-4xl font-black text-white leading-tight">啟動您的下一個<br />大型射出專案</h2>
         <p class="text-slate-300 text-sm leading-relaxed">
-          無論是 3,000 噸超大型件開模評估、既有模具移轉代工，或汽車零件量產報價，皆歡迎直接與台中太平廠聯繫。
+          無論是 3,000 噸超大型件開模評估、既有模具移轉代工，或車用零組件長期量產配合，歡迎直接與台中太平廠聯繫。
         </p>
-        <div class="space-y-3 text-sm pt-2">
+        <div class="space-y-4 pt-2 text-sm text-slate-200">
           <div class="flex items-start gap-3">
-            <span class="text-amber-400">📍</span>
-            <span>台中市太平區新仁路一段22巷39號</span>
+            <span class="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center text-amber-400 shrink-0">📍</span>
+            <div>
+              <div class="text-xs text-slate-400">台中太平製造基地</div>
+              <div class="font-medium">台中市太平區新仁路一段22巷39號</div>
+            </div>
           </div>
           <div class="flex items-start gap-3">
-            <span class="text-amber-400">🏭</span>
-            <span>母公司：豐喜塑膠股份有限公司｜模具廠：鑫豐喜精密科技</span>
-          </div>
-          <div class="flex items-start gap-3">
-            <span class="text-amber-400">🌐</span>
-            <span>支援中文 / English 外銷商務洽談</span>
+            <span class="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center text-amber-400 shrink-0">🏭</span>
+            <div>
+              <div class="text-xs text-slate-400">一條龍集團架構</div>
+              <div class="font-medium">豐喜塑膠股份有限公司 × 鑫豐喜精密科技</div>
+            </div>
           </div>
         </div>
       </div>
 
-      <form onsubmit="event.preventDefault(); alert('【預覽模式】正式上線後，客戶填完此表單將直接即時推播通知老闆 LINE 與 Email！');" class="md:col-span-7 bg-white text-slate-900 rounded-2xl p-6 sm:p-8 shadow-xl space-y-4">
-        <div class="font-black text-lg text-navy-900">30 秒線上快速詢價（表單直通業務通知）</div>
+      <form onsubmit="event.preventDefault(); alert('【概念預覽】正式上線後，客戶送出此表單將立即推播至老闆 / 業務的 LINE 與 Email！');" class="lg:col-span-7 bg-white text-slate-900 rounded-2xl p-6 sm:p-8 shadow-2xl space-y-4">
+        <div class="flex items-center justify-between">
+          <div class="font-black text-lg text-obsidian">30 秒線上快速估價</div>
+          <span class="text-xs font-bold text-emerald-700 bg-emerald-100 px-2.5 py-1 rounded-full">24h 內專人回覆</span>
+        </div>
         <div class="grid sm:grid-cols-2 gap-4">
           <div>
-            <label class="block text-xs font-bold text-slate-600 mb-1">聯絡人 / 公司名稱 *</label>
-            <input type="text" required placeholder="例如：陳經理 / XX精密" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500" />
+            <label class="block text-xs font-bold text-slate-600 mb-1.5">聯絡人 / 公司名稱 *</label>
+            <input type="text" required placeholder="例如：王經理 / XX精密工業" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500" />
           </div>
           <div>
-            <label class="block text-xs font-bold text-slate-600 mb-1">聯絡電話或 LINE ID *</label>
-            <input type="text" required placeholder="09xx-xxx-xxx" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500" />
+            <label class="block text-xs font-bold text-slate-600 mb-1.5">聯絡電話或 LINE ID *</label>
+            <input type="text" required placeholder="09xx-xxx-xxx" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500" />
           </div>
         </div>
         <div>
-          <label class="block text-xs font-bold text-slate-600 mb-1">需求項目</label>
-          <select class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm bg-white">
-            <option>大型塑膠射出代工（1,600T–3,000T）</option>
-            <option>新產品模具設計開發＋射出一條龍</option>
-            <option>汽車零組件 OEM 專案評估</option>
-            <option>既有模具移轉量產</option>
+          <label class="block text-xs font-bold text-slate-600 mb-1.5">需求類別</label>
+          <select class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-amber-500">
+            <option>超大型塑膠射出代工（1,600T – 3,000T）</option>
+            <option>新產品模具開發 ＋ 射出量產一條龍</option>
+            <option>汽車零組件 ISO 專案 OEM</option>
+            <option>既有模具移轉代工生產</option>
           </select>
         </div>
         <div>
-          <label class="block text-xs font-bold text-slate-600 mb-1">產品簡述 / 預估年量 / 材質</label>
-          <textarea rows="3" placeholder="可簡述尺寸、材質（ABS/PP/PA66...）或預計交期" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500"></textarea>
+          <label class="block text-xs font-bold text-slate-600 mb-1.5">產品規格 / 材質 / 預估年量</label>
+          <textarea rows="3" placeholder="可簡述產品尺寸、使用塑料（ABS/PP/PA66...）或預計交期" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500"></textarea>
         </div>
-        <button type="submit" class="w-full py-3.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-navy-900 font-black text-sm sm:text-base transition shadow">
-          送出詢價需求（24 小時內專人回覆）
+        <button type="submit" class="w-full py-4 rounded-xl bg-obsidian hover:bg-slate-800 text-amber-400 font-black text-sm sm:text-base transition shadow-lg">
+          送出詢價需求 →
         </button>
       </form>
     </div>
   </section>
 
-  <footer class="bg-slate-950 text-slate-500 text-xs text-center py-6 px-4">
-    © 1982–2026 豐喜塑膠股份有限公司 Fengxi Plastic Co., Ltd. All Rights Reserved.
+  <footer class="border-t border-white/10 text-slate-500 text-xs text-center py-8 px-4">
+    © 1982–2026 豐喜塑膠股份有限公司 Fengxi Plastic Co., Ltd. • 台中市太平區新仁路一段22巷39號
   </footer>
 
-  <!-- Mobile Sticky Bottom CTA Bar -->
-  <div class="md:hidden fixed bottom-0 inset-x-0 bg-white border-t border-slate-200 p-3 grid grid-cols-2 gap-3 z-50 shadow-2xl">
-    <a href="#contact" class="py-2.5 rounded-xl bg-navy-900 text-white font-bold text-center text-sm">📞 預約來電洽詢</a>
-    <a href="#contact" class="py-2.5 rounded-xl bg-green-600 text-white font-bold text-center text-sm">💬 LINE 快速估價</a>
+  <!-- Mobile Sticky CTA Bar -->
+  <div class="md:hidden fixed bottom-0 inset-x-0 bg-obsidian/95 backdrop-blur-lg border-t border-white/10 p-3 grid grid-cols-2 gap-3 z-50">
+    <a href="#contact" class="py-3 rounded-xl bg-white text-obsidian font-extrabold text-center text-sm">📞 預約來電</a>
+    <a href="#contact" class="py-3 rounded-xl bg-gradient-to-r from-emerald-500 to-green-500 text-white font-extrabold text-center text-sm">💬 LINE 估價</a>
   </div>
 
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) e.target.classList.add('active'); });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+  </script>
 </body>
 </html>
