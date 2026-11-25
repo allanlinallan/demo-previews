@@ -70,8 +70,11 @@
 <body class="bg-obsidian text-slate-100 font-sans antialiased selection:bg-amber-500 selection:text-obsidian pb-20 md:pb-0">
 
   <!-- Subtle Floating Preview Bar -->
-  <div class="bg-gradient-to-r from-amber-500 via-amber-400 to-yellow-400 text-obsidian text-xs sm:text-sm font-bold text-center py-2 px-4 sticky top-0 z-50 shadow-lg">
-    ✨ 專為「豐喜塑膠股份有限公司」客製之國際大廠級新版官網預覽（升級 HTTPS / RWD / AI 搜尋架構，並已修正原站錯字）
+  <div class="bg-gradient-to-r from-amber-500 via-amber-400 to-yellow-400 text-obsidian text-xs sm:text-sm font-bold py-2 px-4 sticky top-0 z-50 shadow-lg flex flex-wrap items-center justify-center gap-3">
+    <span>✨ 專為「豐喜塑膠股份有限公司」客製之新版官網預覽（升級 HTTPS / RWD / AI 搜尋架構）</span>
+    <a href="#hire-designer" class="px-3 py-1 rounded-full bg-obsidian text-amber-400 text-xs font-extrabold hover:bg-slate-800 transition whitespace-nowrap">
+      ✉️ 喜歡此版型？點此聯絡製作
+    </a>
   </div>
 
   <!-- Glass Navbar -->
@@ -361,14 +364,57 @@
     </div>
   </section>
 
+  <!-- Designer Direct Contact / Lead Capture Section -->
+  <section id="hire-designer" class="max-w-4xl mx-auto px-6 py-16 reveal">
+    <div class="rounded-3xl bg-gradient-to-br from-amber-500/15 via-slate-900 to-slate-900 border border-amber-400/30 p-7 sm:p-10 shadow-2xl">
+      <div class="flex flex-wrap items-center justify-between gap-3 mb-6">
+        <div>
+          <span class="inline-block px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 text-xs font-bold mb-2">專為貴公司製作之概念預覽</span>
+          <h2 class="text-2xl sm:text-3xl font-black text-white">喜歡這個新版官網風格嗎？直接回信聯絡我們</h2>
+          <p class="text-slate-300 text-sm mt-1">填寫以下資訊，一鍵帶入信件寄至 <a href="mailto:allanlinallan@gmail.com" class="text-amber-400 underline font-bold">allanlinallan@gmail.com</a>（標題自動帶入：我有興趣請貴公司幫我做網站）</p>
+        </div>
+      </div>
+
+      <form id="designerReplyForm" class="space-y-4">
+        <div class="grid sm:grid-cols-3 gap-4">
+          <div>
+            <label class="block text-xs font-bold text-slate-300 mb-1.5">公司名稱 *</label>
+            <input id="replyCompany" type="text" required value="豐喜塑膠股份有限公司" class="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/15 text-white placeholder-slate-400 text-sm focus:outline-none focus:ring-2 focus:ring-amber-400" />
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-300 mb-1.5">聯絡人 *</label>
+            <input id="replyName" type="text" required placeholder="請輸入您的姓名／職稱" class="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/15 text-white placeholder-slate-400 text-sm focus:outline-none focus:ring-2 focus:ring-amber-400" />
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-300 mb-1.5">聯絡電話（建議填寫）</label>
+            <input id="replyPhone" type="tel" placeholder="市話或手機皆可" class="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/15 text-white placeholder-slate-400 text-sm focus:outline-none focus:ring-2 focus:ring-amber-400" />
+          </div>
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-slate-300 mb-1.5">您的需求說明 *</label>
+          <textarea id="replyNeed" rows="3" required placeholder="例如：想將此預覽版套用到原網域上線、需要中英文版、或想加裝 LINE 詢價通知..." class="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/15 text-white placeholder-slate-400 text-sm focus:outline-none focus:ring-2 focus:ring-amber-400"></textarea>
+        </div>
+        <div class="flex flex-wrap gap-3 pt-2">
+          <button type="button" onclick="sendDesignerMail('gmail')" class="flex-1 min-w-[200px] py-3.5 px-6 rounded-xl bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-obsidian font-black text-sm sm:text-base transition shadow-lg">
+            ✉️ 用 Gmail 網頁版一鍵回信
+          </button>
+          <button type="button" onclick="sendDesignerMail('mailto')" class="py-3.5 px-6 rounded-xl bg-white/10 hover:bg-white/15 border border-white/20 text-white font-bold text-sm transition">
+            使用電腦/手機預設信箱寄出
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
   <footer class="border-t border-white/10 text-slate-500 text-xs text-center py-8 px-4">
-    © 1982–2026 豐喜塑膠股份有限公司 Fengxi Plastic Co., Ltd. • 台中市太平區新仁路一段22巷39號
+    © 1982–2026 豐喜塑膠股份有限公司 Fengxi Plastic Co., Ltd. • 台中市太平區新仁路一段22巷39號<br />
+    <span class="text-slate-600">新版概念預覽製作洽詢：allanlinallan@gmail.com</span>
   </footer>
 
   <!-- Mobile Sticky CTA Bar -->
   <div class="md:hidden fixed bottom-0 inset-x-0 bg-obsidian/95 backdrop-blur-lg border-t border-white/10 p-3 grid grid-cols-2 gap-3 z-50">
     <a href="#contact" class="py-3 rounded-xl bg-white text-obsidian font-extrabold text-center text-sm">📞 預約來電</a>
-    <a href="#contact" class="py-3 rounded-xl bg-gradient-to-r from-emerald-500 to-green-500 text-white font-extrabold text-center text-sm">💬 LINE 估價</a>
+    <a href="#hire-designer" class="py-3 rounded-xl bg-gradient-to-r from-amber-400 to-amber-500 text-obsidian font-extrabold text-center text-sm">✉️ 洽詢新版上線</a>
   </div>
 
   <script>
@@ -376,6 +422,32 @@
       entries.forEach((e) => { if (e.isIntersecting) e.target.classList.add('active'); });
     }, { threshold: 0.12 });
     document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+
+    function sendDesignerMail(mode) {
+      const company = document.getElementById('replyCompany').value.trim();
+      const name = document.getElementById('replyName').value.trim();
+      const phone = document.getElementById('replyPhone').value.trim();
+      const need = document.getElementById('replyNeed').value.trim();
+      if (!company || !name || !need) {
+        alert('請先填寫「公司名稱」、「聯絡人」與「需求說明」喔！');
+        return;
+      }
+      const to = 'allanlinallan@gmail.com';
+      const subject = '我有興趣請貴公司幫我做網站';
+      const body =
+        `您好，我對新版官網預覽有興趣，以下為聯繫資訊：\n\n` +
+        `【公司名稱】：${company}\n` +
+        `【聯絡人】：${name}\n` +
+        `【聯絡電話】：${phone || '（未填寫）'}\n` +
+        `【需求說明】：\n${need}\n\n` +
+        `參考預覽頁：${window.location.href}`;
+      if (mode === 'gmail') {
+        const url = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(to)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        window.open(url, '_blank');
+      } else {
+        window.location.href = `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      }
+    }
   </script>
 </body>
 </html>
