@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paul Cheng Law 鄭博仁聯合律師事務所 | 北美華人跨國法律與爭議解決權威</title>
+  <meta name="description" content="Paul Cheng Law 鄭博仁聯合律師事務所，由前聯邦檢察官親率頂尖律師團隊，深耕北美華人社群。專精跨國商務訴訟、高資產家族財富傳承、智慧財產權仲裁及重大刑事辯護。">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', '"Noto Sans TC"', 'sans-serif'],
+          },
+          colors: {
+            obsidian: '#060913',
+            'obsidian-card': '#0B1120',
+            'obsidian-border': '#1E293B',
+            gold: {
+              300: '#F5E6C8',
+              400: '#E5C88B',
+              500: '#D4AF37',
+              600: '#B8972E',
+            },
+          },
+          backgroundImage: {
+            'gold-gradient': 'linear-gradient(135deg, #F5E6C8 0%, #D4AF37 50%, #9A7B1C 100%)',
+            'glow-radial': 'radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.15) 0%, rgba(6, 9, 19, 0) 70%)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .glass-panel {
+      background: rgba(11, 17, 32, 0.7);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .glass-panel-hover {
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .glass-panel-hover:hover {
+      border-color: rgba(212, 175, 55, 0.35);
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.7), 0 0 30px -10px rgba(212, 175, 55, 0.15);
+    }
+  </style>
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    "name": "Paul Cheng Law 鄭博仁聯合律師事務所",
+    "alternateName": "Law Offices of Paul P. Cheng & Associates",
+    "url": "http://www.paulchenglaw.com",
+    "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=85",
+    "description": "北美加州知名華人聯合律師事務所，由前聯邦檢察官親自領軍，專精商業併購、國際訴訟仲裁、資產規劃與重大民刑爭議解決。",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US",
+      "addressRegion": "CA"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "09:00",
+      "closes": "18:00"
+    },
+    "areaServed": ["United States", "North America", "Greater China"],
+    "priceRange": "$$$$"
+  }
+  </script>
+</head>
+<body class="bg-obsidian text-slate-300 font-sans antialiased selection:bg-gold-500/30 selection:text-gold-300">
+
+  <!-- 頂部精緻預覽橫幅 -->
+  <aside class="sticky top-0 z-50 bg-[#0c1222]/95 border-b border-gold-500/20 backdrop-blur-md px-4 py-2.5 shadow-2xl">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 text-xs sm:text-sm">
+      <div class="flex items-center gap-2.5 text-slate-200">
+        <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-gold-500/20 text-gold-400 text-xs">✨</span>
+        <span class="font-medium tracking-wide">
+          專為 <strong class="text-white font-semibold">Paul Cheng Law 鄭博仁聯合律師事務所</strong> 客製之新版 RWD 官網概念預覽
+          <span class="hidden md:inline-block text-slate-400 text-xs ml-2">（全面升級全球高速 CDN · HTTPS 嚴密保護 · 跨語系法務架構）</span>
+        </span>
+      </div>
+      <a href="#hire-designer" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-400 hover:to-gold-500 text-obsidian font-bold transition-all shadow-md hover:scale-[1.02] text-xs shrink-0">
+        ✉️ 喜歡此版型？點此聯絡製作
+      </a>
+    </div>
+  </aside>
+
+  <!-- 導航列 -->
+  <nav class="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between border-b border-white/5 relative z-40">
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-gold-400 to-gold-600 flex items-center justify-center text-obsidian font-extrabold text-xl shadow-lg shadow-gold-500/10">
+        ⚖
+      </div>
+      <div>
+        <span class="block text-white font-bold tracking-wider text-base md:text-lg uppercase">Paul Cheng Law</span>
+        <span class="block text-gold-400/90 text-xs tracking-widest font-normal">鄭博仁聯合律師事務所 · 北美華人旗艦法務</span>
+      </div>
+    </div>
+    
+    <div class="hidden lg:flex items-center gap-8 text-sm text-slate-300">
+      <a href="#practices" class="hover:text-gold-400 transition-colors">執業範疇</a>
+      <a href="#advantages" class="hover:text-gold-400 transition-colors">核心優勢</a>
+      <a href="#credentials" class="hover:text-gold-400 transition-colors">訴訟威望</a>
+      <a href="#consultation" class="hover:text-gold-400 transition-colors">即時法務評估</a>
+    </div>
+
+    <div class="flex items-center gap-4">
+      <a href="#consultation" class="px-5 py-2.5 rounded-lg border border-gold-500/40 text-gold-400 hover:bg-gold-500/10 text-sm font-medium transition-all hidden sm:inline-block">
+        預約保密初審
+      </a>
+      <a href="#hire-designer" class="px-5 py-2.5 rounded-lg bg-white/10 hover:bg-white/15 text-white text-sm font-medium transition-all backdrop-blur-sm">
+        洽詢設計團隊
+      </a>
+    </div>
+  </nav>
+
+  <!-- 電影級 Hero 區塊 -->
+  <section class="relative pt-16 pb-24 md:pt-28 md:pb-36 overflow-hidden">
+    <!-- 背景裝飾微光 -->
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-[550px] bg-glow-radial pointer-events-none"></div>
+    <div class="absolute -top-32 right-10 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center relative z-10">
+      <div class="lg:col-span-7 space-y-6 reveal">
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-gold-500/10 border border-gold-500/25 text-gold-300 text-xs tracking-wide">
+          <span class="w-2 h-2 rounded-full bg-gold-400 animate-pulse"></span>
+          前聯邦檢察官親自領軍 · 捍衛跨國華人頂級利益
+        </div>
+        
+        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight tracking-tight">
+          融貫中美司法天平，<br>
+          <span class="bg-gradient-to-r from-gold-300 via-gold-400 to-amber-500 bg-clip-text text-transparent">
+            為全球華人築起不可逾越的法律屏障。
+          </span>
+        </h1>
+
+        <p class="text-slate-400 text-base sm:text-lg leading-relaxed max-w-2xl font-light">
+          Paul Cheng Law 專精跨國商務抗辯、矽谷智慧財產權爭議、百萬美金級跨境投資架構及高資產信託保護。以精準的司法前瞻性與全方位雙語法務陣容，保障閣下在北美每一項權益與榮譽。
+        </p>
+
+        <!-- CTA 群組 -->
+        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-4">
+          <a href="#consultation" class="px-8 py-4 rounded-xl bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-400 hover:to-gold-500 text-obsidian font-bold text-center tracking-wide shadow-lg shadow-gold-500/20 transition-all hover:scale-[1.01]">
+            進行 30 秒專案預約諮詢
+          </a>
+          <a href="#practices" class="px-8 py-4 rounded-xl glass-panel hover:bg-white/10 text-white font-medium text-center border border-white/10 transition-all">
+            檢視執業範疇與案例
+          </a>
+        </div>
+
+        <!-- 關鍵信任標章 -->
+        <div class="pt-8 border-t border-white/10 grid grid-cols-3 gap-6 text-left">
+          <div>
+            <div class="text-2xl sm:text-3xl font-extrabold text-white">25+<span class="text-gold-400 font-normal text-lg">年</span></div>
+            <div class="text-xs text-slate-400 mt-1">加州及全美司法實務經驗</div>
+          </div>
+          <div>
+            <div class="text-2xl sm:text-3xl font-extrabold text-white">1,200+<span class="text-gold-400 font-normal text-lg">件</span></div>
+            <div class="text-xs text-slate-400 mt-1">跨國商務與重大訴訟標的</div>
+          </div>
+          <div>
+            <div class="text-2xl sm:text-3xl font-extrabold text-white">99%<span class="text-gold-400 font-normal text-lg">譽</span></div>
+            <div class="text-xs text-slate-400 mt-1">華商領袖與高淨值客群肯定</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 右側電影級主視覺與浮動信任卡片 -->
+      <div class="lg:col-span-5 relative reveal">
+        <div class="relative mx-auto max-w-md lg:max-w-none rounded-2xl overflow-hidden border border-white/15 shadow-2xl group">
+          <div class="absolute inset-0 bg-gradient-to-t from-obsidian via-transparent to-transparent z-10 opacity-70"></div>
+          <img 
+            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=85" 
+            alt="Paul Cheng Law 現代化國際法律天際線代表" 
+            class="w-full h-[460px] object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
+          />
+
+          <!-- 浮動卡片 1: 聯邦法院認證 -->
+          <div class="absolute top-6 left-6 z-20 glass-panel p-3.5 rounded-xl border border-white/20 shadow-xl max-w-[210px]">
+            <div class="flex items-center gap-2 mb-1">
+              <span class="text-gold-400 text-sm">🏛</span>
+              <span class="text-xs font-bold text-white uppercase tracking-wider">聯邦法院執業認證</span>
+            </div>
+            <p class="text-[11px] text-slate-300 leading-snug">前檢察官視角 · 熟稔聯邦與加州地方法院審理準則</p>
+          </div>
+
+          <!-- 浮動卡片 2: 跨境語言零阻礙 -->
+          <div class="absolute bottom-6 right-6 z-20 glass-panel p-4 rounded-xl border border-gold-500/30 shadow-2xl max-w-[240px]">
+            <div class="text-xs font-semibold text-gold-400 mb-1 flex items-center justify-between">
+              <span>雙語權威防線</span>
+              <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+            </div>
+            <p class="text-xs text-white leading-relaxed">北美頂級中英雙語法務顧問，無時差化解跨國企業及移民家族法規痛點。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bento Grid 核心優勢與專業範疇 -->
+  <section id="practices" class="py-24 border-t border-white/5 relative">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="max-w-2xl mx-auto text-center space-y-4 mb-16 reveal">
+        <h2 class="text-xs font-bold uppercase tracking-widest text-gold-400">PRACTICE AREAS & EXPERTISE</h2>
+        <p class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">精密佈局，為跨國訴求贏得決定性勝局</p>
+        <p class="text-slate-400 text-sm sm:text-base">打破法律體系與文化界限，鄭博仁聯合律師事務所具備全美主流與華人商界深厚威望。</p>
+      </div>
+
+      <!-- Bento Grid (便當盒非對稱佈局) -->
+      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-12 gap-6">
+        
+        <!-- 卡片 1: 跨國商務與並購 (8 欄寬) -->
+        <div class="lg:col-span-8 glass-panel p-8 sm:p-10 rounded-2xl glass-panel-hover reveal relative overflow-hidden flex flex-col justify-between">
+          <div class="absolute -right-12 -top-12 w-48 h-48 bg-gold-500/10 rounded-full blur-2xl"></div>
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-gold-500/10 border border-gold-500/20 text-gold-400 flex items-center justify-center text-xl mb-6">
+              💼
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-3">跨國商業訴訟與投資併購 (Cross-Border Corporate Litigation)</h3>
+            <p class="text-slate-400 text-sm sm:text-base leading-relaxed mb-6">
+              針對中美跨境合資、股權糾紛、契約違約抗辯與商業詐欺調查，由資深商務法務律師親自擬定策略。熟稔北美 SEC 規定、商務公約及跨司法管轄區管轄權抗辯，化被動為主動。
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-2 pt-4 border-t border-white/5 text-xs text-slate-300">
+            <span class="px-2.5 py-1 rounded-md bg-white/5">股東爭端仲裁</span>
+            <span class="px-2.5 py-1 rounded-md bg-white/5">跨境資產重組</span>
+            <span class="px-2.5 py-1 rounded-md bg-white/5">商業合約審理</span>
+            <span class="px-2.5 py-1 rounded-md bg-white/5">商業秘密維護</span>
+          </div>
+        </div>
+
+        <!-- 卡片 2: 聯邦與重大刑事抗辯 (4 欄寬) -->
+        <div class="lg:col-span-4 glass-panel p-8 rounded-2xl glass-panel-hover reveal flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/20 text-blue-400 flex items-center justify-center text-xl mb-6">
+              🛡️
+            </div>
+            <h3 class="text-xl font-bold text-white mb-3">聯邦白領與重大刑事抗辯</h3>
+            <p class="text-slate-400 text-sm leading-relaxed mb-6">
+              前聯邦檢察官掌握控方調查模式與法庭量刑心證，專攻洗錢防制法規、稅務爭端、海關調查與重大聯邦公訴抗辯。
+            </p>
+          </div>
+          <div class="text-gold-400 text-xs font-semibold tracking-wider flex items-center gap-1">
+            <span>聯邦起訴前預防干預機制</span> →
+          </div>
+        </div>
+
+        <!-- 卡片 3: 高資產家族信託與跨國資產保護 (4 欄寬) -->
+        <div class="lg:col-span-4 glass-panel p-8 rounded-2xl glass-panel-hover reveal flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center text-xl mb-6">
+              🏛️
+            </div>
+            <h3 class="text-xl font-bold text-white mb-3">高淨值資產規劃與跨國信託</h3>
+            <p class="text-slate-400 text-sm leading-relaxed mb-6">
+              為北美華人高資產家族打造生前信託、跨世代財富傳承、遺產稅務屏蔽及全球資產安全避風港架構。
+            </p>
+          </div>
+          <div class="text-xs text-slate-400 border-t border-white/5 pt-4">
+            保護世代家族產業，規避耗時冗長的法院驗證（Probate）。
+          </div>
+        </div>
+
+        <!-- 卡片 4: 勞工法與雇主全方位合規 (4 欄寬) -->
+        <div class="lg:col-span-4 glass-panel p-8 rounded-2xl glass-panel-hover reveal flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center text-xl mb-6">
+              📑
+            </div>
+            <h3 class="text-xl font-bold text-white mb-3">加州勞工法與企業雇主法規</h3>
+            <p class="text-slate-400 text-sm leading-relaxed mb-6">
+              協助華商企業抵禦加州日益嚴苛的勞工訴訟（PAGA、薪資工時糾紛、解僱抗辯），建構無懈可擊的員工手冊與內控制度。
+            </p>
+          </div>
+          <div class="text-xs text-slate-400 border-t border-white/5 pt-4">
+            化解高額集體訴訟風險，確保營運合規。
+          </div>
+        </div>
+
+        <!-- 卡片 5: 科技、智財與商標專利抗辯 (4 欄寬) -->
+        <div class="lg:col-span-4 glass-panel p-8 rounded-2xl glass-panel-hover reveal flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 text-purple-400 flex items-center justify-center text-xl mb-6">
+              💡
+            </div>
+            <h3 class="text-xl font-bold text-white mb-3">智慧財產權與商標專利爭端</h3>
+            <p class="text-slate-400 text-sm leading-relaxed mb-6">
+              跨境電商防侵權、USPTO 專利商標註冊、侵權反訴仲裁與 ITC 337 調查全案應對。
+            </p>
+          </div>
+          <div class="text-xs text-slate-400 border-t border-white/5 pt-4">
+            守護出海品牌的品牌聲譽與核心技術壁壘。
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 為什麼選擇 Paul Cheng Law (優勢矩陣) -->
+  <section id="advantages" class="py-20 bg-[#090d19]/80 border-y border-white/5 relative">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="space-y-6 reveal">
+          <span class="text-xs font-bold tracking-widest text-gold-400 uppercase">THE ADVANTAGE</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
+            深諳北美主流法庭運作，<br>更懂海外華人處境與心聲。
+          </h2>
+          <p class="text-slate-400 leading-relaxed">
+            在異國司法體系中，微小的文化解讀落差與程序疏失，可能導致不可挽回的裁判損失。鄭博仁聯合律師事務所建立起無縫接軌的雙語法律團隊，以頂級精準度處理跨洋法律文書、證詞採證與陪審團說服工程。
+          </p>
+
+          <div class="space-y-4 pt-2">
+            <div class="flex items-start gap-4">
+              <div class="w-8 h-8 rounded-lg bg-gold-500/20 text-gold-400 flex items-center justify-center shrink-0 mt-1">✓</div>
+              <div>
+                <h4 class="text-white font-semibold text-base">前聯邦檢察官頂級視角</h4>
+                <p class="text-slate-400 text-sm mt-0.5">具備控辯雙方法庭策略推演，預知對手攻防步驟，制定最優裁判勝率路徑。</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-8 h-8 rounded-lg bg-gold-500/20 text-gold-400 flex items-center justify-center shrink-0 mt-1">✓</div>
+              <div>
+                <h4 class="text-white font-semibold text-base">跨越語言與時差的保密溝通</h4>
+                <p class="text-slate-400 text-sm mt-0.5">專屬中英文雙語法務秘書團隊，透過專用加密通訊 WhatsApp / Email 保持無縫聯繫。</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-8 h-8 rounded-lg bg-gold-500/20 text-gold-400 flex items-center justify-center shrink-0 mt-1">✓</div>
+              <div>
+                <h4 class="text-white font-semibold text-base">龐大跨國商會與專家證人資源</h4>
+                <p class="text-slate-400 text-sm mt-0.5">串連全美會計審計師、財務鑑識專家、法醫及業界權威證人，建構無可辯駁的證據鏈。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 側邊榮譽與認證名片 -->
+        <div class="glass-panel p-8 rounded-3xl border border-white/10 reveal space-y-6">
+          <div class="border-b border-white/10 pb-6">
+            <span class="text-xs text-gold-400 font-mono tracking-widest block mb-2">OFFICIAL CREDENTIALS</span>
+            <h3 class="text-xl font-bold text-white">全美法律界公認崇高威望</h3>
+          </div>
+
+          <div class="grid grid-cols-2 gap-4">
+            <div class="p-4 rounded-xl bg-white/5 border border-white/5">
+              <div class="text-white font-bold text-lg">加州最高法院</div>
+              <div class="text-xs text-slate-400 mt-1">執業律師與抗辯代表資格</div>
+            </div>
+            <div class="p-4 rounded-xl bg-white/5 border border-white/5">
+              <div class="text-white font-bold text-lg">美國聯邦地方法院</div>
+              <div class="text-xs text-slate-400 mt-1">中央與第九巡迴上訴法院</div>
+            </div>
+            <div class="p-4 rounded-xl bg-white/5 border border-white/5">
+              <div class="text-white font-bold text-lg">百萬訴訟俱樂部</div>
+              <div class="text-xs text-slate-400 mt-1">Multi-Million Dollar Advocates</div>
+            </div>
+            <div class="p-4 rounded-xl bg-white/5 border border-white/5">
+              <div class="text-white font-bold text-lg">北美華人商會</div>
+              <div class="text-xs text-slate-400 mt-1">特聘法律總顧問與合作品牌</div>
+            </div>
+          </div>
+
+          <p class="text-xs text-slate-400 italic">
+            「當跨國法律危機爆發時，您需要的不是普通法律建議，而是一位能夠洞察司法全局、真正站穩聯邦法庭的領路人。」
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 30 秒線上快速法律諮詢表單 -->
+  <section id="consultation" class="py-24 relative overflow-hidden">
+    <div class="max-w-4xl mx-auto px-6 relative z-10">
+      <div class="glass-panel p-8 sm:p-12 rounded-3xl border border-gold-500/25 shadow-2xl reveal">
+        <div class="text-center space-y-3 mb-10">
+          <span class="inline-block px-3 py-1 rounded-full bg-gold-500/10 text-gold-300 text-xs font-semibold tracking-widest uppercase">STRICT CONFIDENTIALITY</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-white">啟動 30 秒法務案件初步評估</h2>
+          <p class="text-slate-400 text-sm max-w-lg mx-auto">
+            所有資料均受加州律師客戶保密特權（Attorney-Client Privilege）嚴格庇護。我們將在 24 小時內指派合適領域資深律師與您聯絡。
+          </p>
+        </div>
+
+        <form id="quick-consult-form" class="space-y-6">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-xs font-medium text-slate-300 mb-2">您的姓名 / 公司代表 *</label>
+              <input type="text" required placeholder="例如：陳先生 / David Chen" class="w-full px-4 py-3 rounded-xl bg-obsidian border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-gold-400 transition-colors text-sm">
+            </div>
+            <div>
+              <label class="block text-xs font-medium text-slate-300 mb-2">聯絡電話 / WhatsApp *</label>
+              <input type="text" required placeholder="+1 (626) 或 +886 / +86" class="w-full px-4 py-3 rounded-xl bg-obsidian border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-gold-400 transition-colors text-sm">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-xs font-medium text-slate-300 mb-2">電子郵件信箱 *</label>
+              <input type="email" required placeholder="contact@example.com" class="w-full px-4 py-3 rounded-xl bg-obsidian border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-gold-400 transition-colors text-sm">
+            </div>
+            <div>
+              <label class="block text-xs font-medium text-slate-300 mb-2">案件所屬範疇 *</label>
+              <select class="w-full px-4 py-3 rounded-xl bg-obsidian border border-slate-700 text-white focus:outline-none focus:border-gold-400 transition-colors text-sm">
+                <option value="corporate">跨國商業訴訟 / 合約糾紛</option>
+                <option value="criminal">聯邦刑事 / 白領犯罪抗辯</option>
+                <option value="trust">高淨值資產規劃 / 家族信託</option>
+                <option value="labor">加州雇主勞資爭議 (PAGA)</option>
+                <option value="ip">智慧財產權 / 商標專利爭端</option>
+                <option value="other">其他跨境民事司法爭議</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-medium text-slate-300 mb-2">爭議案件扼要概述</label>
+            <textarea rows="4" placeholder="請簡要描述爭議發生地、涉案標的、是否有即將面臨的開庭或通告期限..." class="w-full px-4 py-3 rounded-xl bg-obsidian border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-gold-400 transition-colors text-sm"></textarea>
+          </div>
+
+          <div class="text-center pt-2">
+            <button type="submit" class="w-full sm:w-auto px-10 py-4 rounded-xl bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-400 hover:to-gold-500 text-obsidian font-bold text-sm tracking-wider shadow-lg shadow-gold-500/20 transition-all hover:scale-[1.01]">
+              提交保密初審評估需求
+            </button>
+            <p class="text-[11px] text-slate-500 mt-3">送出本表單不直接構成正式代理關係，本所將依利益衝突準則進行初步檢視。</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- 聯繫網站設計團隊回信表單 (id="hire-designer") -->
+  <section id="hire-designer" class="py-20 bg-gradient-to-b from-[#060913] via-[#091024] to-[#060913] border-t border-gold-500/30 relative">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="glass-panel p-8 sm:p-12 rounded-3xl border border-gold-500/40 shadow-2xl relative overflow-hidden">
+        
+        <div class="absolute -top-24 -right-24 w-72 h-72 bg-gold-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-xl mx-auto text-center space-y-3 mb-8">
+          <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gold-500/15 text-gold-300 text-xs font-semibold">
+            <span>💼</span> 數位形象現代化重塑方案
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-white">喜歡為貴所打造的官網概念？</h2>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            這份概念預覽由頂級數位設計團隊專為 <strong>Paul Cheng Law 鄭博仁聯合律師事務所</strong> 打造。解決原網站因地區防護設定阻擋（Not available in your region）而流失的國際華人高淨值客源。
+          </p>
+          <div class="text-xs text-gold-400/90 font-mono pt-1">
+            設計總監聯絡信箱：<strong class="text-white underline">allanlinallan@gmail.com</strong>
+          </div>
+        </div>
+
+        <div class="space-y-5">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 mb-2">企業名稱 (預填)</label>
+              <input type="text" id="hd-company" value="鄭博仁聯合律師事務所 (Paul Cheng Law)" class="w-full px-4 py-3 rounded-xl bg-obsidian/80 border border-slate-700 text-white text-sm focus:outline-none focus:border-gold-400">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 mb-2">貴方聯絡人姓名 *</label>
+              <input type="text" id="hd-name" placeholder="例如：鄭律師 / 事務所法務長" class="w-full px-4 py-3 rounded-xl bg-obsidian/80 border border-slate-700 text-white text-sm focus:outline-none focus:border-gold-400">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 mb-2">聯絡電話 / WhatsApp (建議填寫)</label>
+              <input type="text" id="hd-phone" placeholder="例如：+1 (626) ... 或 WhatsApp" class="w-full px-4 py-3 rounded-xl bg-obsidian/80 border border-slate-700 text-white text-sm focus:outline-none focus:border-gold-400">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 mb-2">預計時程與改版目標</label>
+              <input type="text" id="hd-timeline" placeholder="例如：預計 1 個月內上線 / 提升北美華人引流" class="w-full px-4 py-3 rounded-xl bg-obsidian/80 border border-slate-700 text-white text-sm focus:outline-none focus:border-gold-400">
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 mb-2">改版客製需求說明</label>
+            <textarea id="hd-notes" rows="3" class="w-full px-4 py-3 rounded-xl bg-obsidian/80 border border-slate-700 text-white text-sm focus:outline-none focus:border-gold-400" placeholder="請描述期望功能，例如：新增律師團隊個人名片、加強繁簡英多國語言切換、結合 WhatsApp 免費初審按鈕、SEO 搜尋排名建置..."></textarea>
+          </div>
+
+          <!-- 兩個直接回信按鈕 -->
+          <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+            <button id="btn-gmail" type="button" class="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-400 hover:to-gold-500 text-obsidian font-bold text-sm tracking-wide shadow-lg shadow-gold-500/20 transition-all flex items-center justify-center gap-2">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.264H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+              用 Gmail 網頁版一鍵回信
+            </button>
+            <button id="btn-mailto" type="button" class="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-white/10 hover:bg-white/15 text-white font-semibold text-sm border border-white/15 transition-all flex items-center justify-center gap-2">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              使用預設信箱寄出
+            </button>
+          </div>
+          
+          <p class="text-center text-[11px] text-slate-400">點擊按鈕將自動組合公司名稱、聯絡人、電話與此網址，直接帶入郵件撰寫頁面。</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 頁腳 -->
+  <footer class="border-t border-white/10 py-12 bg-black text-slate-400 text-xs">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+      <div>
+        <div class="text-white font-bold text-sm tracking-wider uppercase mb-1">Paul Cheng Law · 鄭博仁聯合律師事務所</div>
+        <p class="text-slate-400 max-w-md">
+          原網址：paulchenglaw.com ｜ 北美華人法律權威機構。本頁為高階視覺重塑架構預覽版，致力消除跨國存取屏障。
+        </p>
+      </div>
+      <div class="flex items-center gap-6 text-slate-400">
+        <span>慣用管道：WhatsApp / Email</span>
+        <span>隱私協定</span>
+        <span>加州律師公會規章</span>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-6 mt-8 pt-6 border-t border-white/5 text-center text-slate-400 text-[11px]">
+      © 2025 Paul Cheng Law & Associates. Concept Redesign for Review. All Rights Reserved.
+    </div>
+  </footer>
+
+  <!-- 手機版底部固定毛玻璃 CTA 列 -->
+  <div class="fixed bottom-0 left-0 right-0 z-40 sm:hidden glass-panel border-t border-gold-500/30 px-4 py-3 flex items-center justify-between gap-3 shadow-2xl">
+    <a href="#consultation" class="flex-1 py-2.5 rounded-lg bg-gradient-to-r from-gold-500 to-gold-600 text-obsidian text-center font-bold text-xs tracking-wide shadow-md">
+      ⚖ 預約案件諮詢
+    </a>
+    <a href="#hire-designer" class="flex-1 py-2.5 rounded-lg bg-white/15 text-white text-center font-medium text-xs border border-white/20">
+      ✉ 聯絡設計團隊
+    </a>
+  </div>
+
+  <!-- JavaScript 互動與資料組裝 -->
+  <script>
+    // 滾動 Reveal 動畫 (IntersectionObserver)
+    document.addEventListener('DOMContentLoaded', () => {
+      const reveals = document.querySelectorAll('.reveal');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+          }
+        });
+      }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -40px 0px'
+      });
+
+      reveals.forEach(el => observer.observe(el));
+
+      // 快速諮詢表單送出提示
+      const consultForm = document.getElementById('quick-consult-form');
+      if (consultForm) {
+        consultForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          alert('【概念預覽展示】感謝您的填寫！在正式版網站中，此表單將直接透過端對端加密將資料傳送至鄭博仁律師事務所專屬 CRM 或加密信箱。如欲立即接洽網站建置團隊，請滑動至下方「聯繫網站設計團隊」。');
+          consultForm.reset();
+        });
+      }
+
+      // 聯絡設計師郵件組裝器
+      function buildMailData() {
+        const targetEmail = "allanlinallan@gmail.com";
+        const company = document.getElementById('hd-company').value.trim() || "鄭博仁聯合律師事務所 (Paul Cheng Law)";
+        const name = document.getElementById('hd-name').value.trim() || "未提供姓名";
+        const phone = document.getElementById('hd-phone').value.trim() || "未提供電話";
+        const timeline = document.getElementById('hd-timeline').value.trim() || "未指定時程";
+        const notes = document.getElementById('hd-notes').value.trim() || "無額外備註";
+        const currentUrl = window.location.href;
+
+        const subject = `我有興趣請貴公司幫我做網站 - ${company}`;
+        const body = `你好：\n\n我是 ${company} 的 ${name}，我在檢視新版官網概念預覽頁面後，對貴團隊的高階設計風格與架構非常有興趣，希望進一步洽談新版官方網站的合作建置。\n\n【洽詢資訊】\n- 企業名稱：${company}\n- 聯絡人姓名：${name}\n- 聯絡電話/WhatsApp：${phone}\n- 預期時程/目標：${timeline}\n- 需求說明：${notes}\n- 參考預覽頁面：${currentUrl}\n\n期待您的回覆與時程報價討論！`;
+
+        return { targetEmail, subject, body };
+      }
+
+      // Gmail 網頁版按鈕
+      document.getElementById('btn-gmail').addEventListener('click', () => {
+        const { targetEmail, subject, body } = buildMailData();
+        const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(targetEmail)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        window.open(gmailUrl, '_blank');
+      });
+
+      // 預設信箱按鈕
+      document.getElementById('btn-mailto').addEventListener('click', () => {
+        const { targetEmail, subject, body } = buildMailData();
+        const mailtoUrl = `mailto:${encodeURIComponent(targetEmail)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        window.location.href = mailtoUrl;
+      });
+    });
+  </script>
+</body>
+</html>
