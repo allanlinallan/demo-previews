@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>臺經聯合會計師事務所 FEC CPA | 台北工商登記・財務稅務簽證・上市櫃諮詢輔導</title>
+  <meta name="description" content="臺經聯合會計師事務所由9位資深會計師及數十位專業審計顧問團隊組成，深耕台北敦南金融商圈與桃園中壢，提供台北工商登記、公司設立、財務稅務簽證、上市櫃輔導與跨國投資租稅規劃。">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              obsidian: '#05070D',
+              navy: '#0B1120',
+              card: 'rgba(15, 23, 42, 0.65)',
+              gold: '#D4AF37',
+              goldLight: '#F3E5AB',
+              cyan: '#00F0FF',
+              lineGreen: '#06C755'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', '"Noto Sans TC"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  
+  <style>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #05070D;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1e293b;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #334155;
+    }
+    
+    /* Mesh Gradient Animation */
+    .bg-mesh-glow {
+      background-image: 
+        radial-gradient(circle at 15% 20%, rgba(212, 175, 55, 0.12) 0%, transparent 45%),
+        radial-gradient(circle at 85% 30%, rgba(0, 240, 255, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 50% 80%, rgba(30, 58, 138, 0.25) 0%, transparent 60%);
+    }
+
+    /* Reveal animations */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: opacity, transform;
+    }
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #FFF6D6 0%, #D4AF37 50%, #AA820A 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .border-gradient {
+      border-image: linear-gradient(to bottom right, rgba(212, 175, 55, 0.3), rgba(255,255,255,0.05), rgba(0, 240, 255, 0.2)) 1;
+    }
+  </style>
+
+  <!-- Structured Data JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AccountingService",
+    "name": "臺經聯合會計師事務所 FEC CPA",
+    "url": "https://www.feccpa.com.tw/",
+    "logo": "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=400&q=80",
+    "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1000&q=85",
+    "description": "專業會計師團隊，提供台北工商登記、公司設立、財務及稅務簽證、公開發行上市上櫃輔導、外商來台投資諮詢。",
+    "telephone": "+886-2-25780657",
+    "email": "FEC@feccpa.com.tw",
+    "taxID": "48834163",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "敦化南路一段57號3樓之8",
+      "addressLocality": "松山區",
+      "addressRegion": "台北市",
+      "postalCode": "105",
+      "addressCountry": "TW"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "09:00",
+      "closes": "18:00"
+    },
+    "priceRange": "$$"
+  }
+  </script>
+</head>
+<body class="bg-brand-obsidian text-slate-300 font-sans antialiased selection:bg-brand-gold selection:text-black">
+
+  <!-- 頂部概念預覽宣告列 (Designer Signature Banner) -->
+  <aside class="sticky top-0 z-50 bg-gradient-to-r from-slate-900 via-slate-950 to-slate-900 text-xs py-2.5 px-4 border-b border-brand-gold/30 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2.5">
+      <div class="flex items-center space-x-2 text-slate-200 text-center sm:text-left">
+        <span class="inline-flex items-center justify-center px-2 py-0.5 rounded-full text-[10px] font-semibold bg-brand-gold/20 text-brand-gold border border-brand-gold/40">
+          PROPOSAL PREVIEW
+        </span>
+        <span class="font-medium text-slate-300">
+          ✨ 專為 <strong class="text-white">臺經聯合會計師事務所</strong> 客製之新版 RWD 官網概念預覽（支援行動裝置、極速安全架構、專業商務視覺）
+        </span>
+      </div>
+      <div class="flex items-center space-x-3 shrink-0">
+        <a href="#hire-designer" class="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-gradient-to-r from-brand-gold to-amber-500 text-slate-950 font-bold hover:brightness-110 transition shadow-sm hover:shadow-brand-gold/20">
+          <span>✉️ 喜歡此旗艦版型？點此聯絡製作團隊</span>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- 頂部導覽列 (Navigation) -->
+  <header class="relative z-40 bg-brand-obsidian/85 backdrop-blur-xl border-b border-slate-800/80 sticky top-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center space-x-3 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-gold via-amber-600 to-amber-800 flex items-center justify-center font-bold text-slate-950 text-xl shadow-lg shadow-brand-gold/10 group-hover:scale-105 transition duration-300">
+          FEC
+        </div>
+        <div>
+          <span class="text-lg sm:text-xl font-bold tracking-tight text-white block">臺經聯合會計師事務所</span>
+          <span class="text-[10px] tracking-widest text-slate-400 block uppercase font-mono">Fair Economic CPA & Associates</span>
+        </div>
+      </a>
+
+      <!-- 桌面選單項目 -->
+      <nav class="hidden lg:flex items-center space-x-7 text-sm font-medium text-slate-300">
+        <a href="#about" class="hover:text-brand-gold transition">關於臺經</a>
+        <a href="#services" class="hover:text-brand-gold transition">核心審計與登記</a>
+        <a href="#advantages" class="hover:text-brand-gold transition">團隊優勢</a>
+        <a href="#insights" class="hover:text-brand-gold transition">法規稅務即時通</a>
+        <a href="#contact-quote" class="hover:text-brand-gold transition">線上詢價</a>
+      </nav>
+
+      <!-- 快捷聯絡管道 -->
+      <div class="hidden sm:flex items-center space-x-3">
+        <a href="https://line.me" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-1.5 px-3 py-2 rounded-lg bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 hover:bg-emerald-500 hover:text-white transition text-xs font-semibold">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M24 10.304c0-5.369-5.383-9.738-12-9.738-6.616 0-12 4.369-12 9.738 0 4.814 4.269 8.846 10.019 9.579.39.084.922.258 1.057.592.12.301.079.772.038 1.077l-.164 1.018c-.05.305-.241 1.194 1.047.652 1.289-.544 6.957-4.156 9.492-7.114 1.706-1.921 2.511-3.882 2.511-5.804"/></svg>
+          <span>LINE 諮詢</span>
+        </a>
+        <a href="tel:0225780657" class="px-4 py-2 rounded-lg bg-white/5 text-slate-200 border border-slate-700 hover:border-brand-gold/60 hover:text-brand-gold transition text-xs font-semibold">
+          02-2578-0657
+        </a>
+        <a href="#contact-quote" class="px-4 py-2 rounded-lg bg-gradient-to-r from-brand-gold to-amber-500 text-slate-950 text-xs font-bold hover:brightness-110 transition shadow-md shadow-brand-gold/15">
+          預約會計師
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 電影級 HERO 旗艦視覺區塊 (Hero Section) -->
+  <section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-mesh-glow pt-12 pb-24">
+    <!-- 背景裝飾格線 -->
+    <div class="absolute inset-0 bg-[linear-gradient(to_right,#1e293b0f_1px,transparent_1px),linear-gradient(to_bottom,#1e293b0f_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_40%,#000_70%,transparent_100%)] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <!-- 左側主標題與文案 -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left reveal">
+          <div class="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-slate-900/90 border border-slate-700/80 text-xs text-slate-300">
+            <span class="w-2 h-2 rounded-full bg-brand-gold animate-ping"></span>
+            <span>台北敦南商圈・桃園中壢・全台友好聯網事務所</span>
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.15] text-white">
+            卓越審計，誠信護航。<br>
+            您創立擴展的 <span class="gold-gradient-text">法稅堅實後盾</span>。
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-400 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
+            臺經聯合會計師事務所由 <span class="text-white font-medium">9位具備深厚經歷的資深會計師</span> 及數十位專業審計顧問組成。以合理透明收費，專注提供公司設立工商登記、財稅雙簽、公開發行輔導及外商跨境投資架構規劃。
+          </p>
+
+          <!-- 動作按鈕群 -->
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+            <a href="#contact-quote" class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-gradient-to-r from-brand-gold via-amber-400 to-amber-500 text-slate-950 font-extrabold text-sm hover:brightness-110 shadow-lg shadow-brand-gold/20 transition text-center flex items-center justify-center space-x-2">
+              <span>立即諮詢工商登記與簽證</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </a>
+            <a href="https://line.me" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-slate-900 border border-slate-700 hover:border-emerald-500/60 text-white font-medium text-sm transition flex items-center justify-center space-x-2">
+              <svg class="w-4 h-4 text-emerald-400 fill-current" viewBox="0 0 24 24"><path d="M24 10.304c0-5.369-5.383-9.738-12-9.738-6.616 0-12 4.369-12 9.738 0 4.814 4.269 8.846 10.019 9.579.39.084.922.258 1.057.592.12.301.079.772.038 1.077l-.164 1.018c-.05.305-.241 1.194 1.047.652 1.289-.544 6.957-4.156 9.492-7.114 1.706-1.921 2.511-3.882 2.511-5.804"/></svg>
+              <span>加 LINE 專人快速答覆</span>
+            </a>
+          </div>
+
+          <!-- 關鍵實力數據 -->
+          <div class="grid grid-cols-3 gap-4 pt-6 border-t border-slate-800/80">
+            <div>
+              <div class="text-2xl sm:text-3xl font-black text-white font-mono tracking-tight">9<span class="text-brand-gold text-lg">+</span></div>
+              <div class="text-xs text-slate-400 mt-1">執業會計師團隊</div>
+            </div>
+            <div>
+              <div class="text-2xl sm:text-3xl font-black text-white font-mono tracking-tight">數十位</div>
+              <div class="text-xs text-slate-400 mt-1">資深審計顧問群</div>
+            </div>
+            <div>
+              <div class="text-2xl sm:text-3xl font-black text-white font-mono tracking-tight">5<span class="text-brand-gold text-lg">大</span></div>
+              <div class="text-xs text-slate-400 mt-1">北中南友好服務據點</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 右側精品意象與浮動卡片 (視覺核心配圖) -->
+        <div class="lg:col-span-5 relative reveal">
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            <!-- 裝飾光暈 -->
+            <div class="absolute -inset-1 bg-gradient-to-r from-brand-gold/30 to-sky-500/20 rounded-3xl blur-2xl opacity-60"></div>
+            
+            <div class="relative rounded-2xl overflow-hidden border border-slate-700/80 bg-slate-900 shadow-2xl">
+              <img 
+                src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1000&q=85" 
+                alt="臺經聯合會計師事務所專業現代化商務辦公空間" 
+                class="w-full h-80 sm:h-96 object-cover object-center transform hover:scale-105 transition duration-700"
+                loading="eager"
+              >
+              <div class="absolute inset-0 bg-gradient-to-t from-brand-obsidian via-brand-obsidian/30 to-transparent"></div>
+              
+              <!-- 辦公室即時認證標章 -->
+              <div class="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-slate-900/90 backdrop-blur-md border border-slate-700/60 flex items-center justify-between">
+                <div>
+                  <div class="text-xs text-brand-gold font-bold uppercase tracking-wider">Taipei Headquarter</div>
+                  <div class="text-sm font-semibold text-white">松山區敦化南路一段57號3樓之8</div>
+                  <div class="text-[11px] text-slate-400">捷運忠孝敦化 / 小巨蛋金融商圈雙核心</div>
+                </div>
+                <div class="w-10 h-10 rounded-full bg-brand-gold/10 border border-brand-gold/30 flex items-center justify-center shrink-0">
+                  <svg class="w-5 h-5 text-brand-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                </div>
+              </div>
+            </div>
+
+            <!-- 浮動卡片 1: 專辦工商登記 -->
+            <div class="absolute -top-6 -left-6 bg-slate-900/95 backdrop-blur-md border border-slate-700 px-4 py-3 rounded-xl shadow-xl hidden sm:flex items-center space-x-3">
+              <div class="w-3 h-3 rounded-full bg-emerald-400"></div>
+              <span class="text-xs font-semibold text-slate-200">台北公司設立・特許審查最速件輔導</span>
+            </div>
+
+            <!-- 浮動卡片 2: 合理收費透明化 -->
+            <div class="absolute -bottom-5 -right-5 bg-slate-900/95 backdrop-blur-md border border-brand-gold/40 px-4 py-2.5 rounded-xl shadow-xl hidden sm:flex items-center space-x-2">
+              <span class="text-brand-gold text-xs font-bold">★ 嚴謹品質</span>
+              <span class="text-[11px] text-slate-300">公開透明收費標竿</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 關於臺經聯合 (About FEC CPA) -->
+  <section id="about" class="py-20 bg-slate-950/80 border-t border-slate-850 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto text-center space-y-4 reveal">
+        <span class="text-brand-gold text-xs font-bold tracking-widest uppercase">ABOUT FAIR ECONOMIC CPA</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white">
+          深厚專業學經歷，以信實為根基的事業夥伴
+        </h2>
+        <div class="w-16 h-1 bg-gradient-to-r from-brand-gold to-transparent mx-auto"></div>
+        <p class="text-slate-400 text-sm sm:text-base leading-relaxed pt-2">
+          本事務所特色為全體會計師均具有紮實專業學經歷背景，以合理的收費標準提供客戶優良品質服務。目前共有 <strong class="text-slate-200">台北及桃園中壢</strong> 等自營核心服務地點，並在 <strong class="text-slate-200">宜蘭、台中及高雄</strong> 設有緊密合作之友好事務所網絡，由九位專業會計師暨數十位審計顧問，無縫對接全台企業各階段營運需求。
+        </p>
+      </div>
+
+      <!-- 核心承諾三柱石 -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-14 reveal">
+        <div class="p-8 rounded-2xl bg-slate-900/70 border border-slate-800 hover:border-brand-gold/40 transition duration-300">
+          <div class="w-12 h-12 rounded-xl bg-brand-gold/10 flex items-center justify-center text-brand-gold mb-5">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">9 位專業執業會計師親自主持</h3>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            絕非外包助理獨立處理，每一項簽證、財稅架構與股權合規諮詢，皆由豐富實務經驗之會計師嚴格把關。
+          </p>
+        </div>
+
+        <div class="p-8 rounded-2xl bg-slate-900/70 border border-slate-800 hover:border-brand-gold/40 transition duration-300">
+          <div class="w-12 h-12 rounded-xl bg-cyan-400/10 flex items-center justify-center text-cyan-400 mb-5">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">合理明確收費・絕無隱藏成本</h3>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            創業初期成本分分計較。我們秉持合理公正標準計價，事前提供完整報價評估，讓創辦人精確掌握經營成本。
+          </p>
+        </div>
+
+        <div class="p-8 rounded-2xl bg-slate-900/70 border border-slate-800 hover:border-brand-gold/40 transition duration-300">
+          <div class="w-12 h-12 rounded-xl bg-emerald-400/10 flex items-center justify-center text-emerald-400 mb-5">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">全台五大都會聯網協作體系</h3>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            台北敦南、桃園中壢雙主所，串聯宜蘭、台中、高雄友邦事務所，跨區會勘、異地稅籍核定皆可即時響應。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 現代 BENTO GRID 便當盒非對稱網格 (7大核心服務項目) -->
+  <section id="services" class="py-24 bg-brand-obsidian relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 reveal">
+        <div>
+          <span class="text-brand-gold text-xs font-bold tracking-widest uppercase">OUR EXPERTISE</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">
+            七大專業審計與工商登記服務
+          </h2>
+          <p class="text-slate-400 text-sm mt-3 max-w-xl">
+            從初創期的台北工商登記設立、會計記帳，到成熟期的公開發行、租稅專題與薪資費用管理，提供一站式陪伴。
+          </p>
+        </div>
+        <div class="mt-4 md:mt-0">
+          <a href="#contact-quote" class="text-xs font-semibold text-brand-gold hover:text-white flex items-center space-x-1 group">
+            <span>索取詳細服務規格書</span>
+            <svg class="w-4 h-4 transform group-hover:translate-x-1 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Bento Grid Layout -->
+      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 reveal">
+        
+        <!-- 卡片 1 (大卡: 工商登記相關服務 - 核心亮點) -->
+        <div class="md:col-span-2 lg:col-span-2 p-8 rounded-3xl bg-slate-900/60 border border-slate-800 hover:border-brand-gold/60 transition duration-300 relative group overflow-hidden">
+          <div class="absolute top-0 right-0 w-64 h-64 bg-brand-gold/5 rounded-full blur-3xl group-hover:bg-brand-gold/10 transition"></div>
+          <div class="relative z-10 flex flex-col h-full justify-between">
+            <div>
+              <div class="inline-flex px-3 py-1 rounded-full text-xs font-semibold bg-brand-gold/20 text-brand-gold border border-brand-gold/30 mb-6">
+                台北創業首選專案
+              </div>
+              <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-brand-gold transition">
+                工商登記相關服務
+              </h3>
+              <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                我們是您在台北設立公司、行號與辦事處的最佳夥伴。專辦有限公司、股份有限公司、分公司登記、外商投資許可審查（投審會）、董監事變更、資本額查核簽證及各項特許業務執照申請，流程精準迅速。
+              </p>
+            </div>
+            <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs text-slate-400">
+              <span>包含：資本額查核 / 營業項目預查 / 國稅局購票證</span>
+              <span class="text-brand-gold font-semibold">快速辦結 →</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 卡片 2: 財務簽證（一般審計） -->
+        <div class="p-8 rounded-3xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 transition duration-300 flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center mb-6">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">財務簽證相關服務</h3>
+            <p class="text-slate-400 text-xs leading-relaxed">
+              公司法融資簽、銀行借款簽證、資本額簽證。會計師嚴格依照一般公認審計準則查核，確保報表公允客觀。
+            </p>
+          </div>
+          <div class="mt-6 text-xs text-slate-500">
+            依法規資本額3,000萬或貸款逾3,000萬必辦
+          </div>
+        </div>
+
+        <!-- 卡片 3: 稅務簽證相關服務 -->
+        <div class="p-8 rounded-3xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 transition duration-300 flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center mb-6">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 14l6-6m-5.5.5h.01m4.99 5h.01M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16l4-2 4 2 4-2 4 2z"/></svg>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">稅務簽證相關服務</h3>
+            <p class="text-slate-400 text-xs leading-relaxed">
+              所得稅結算申報查核簽證。享受盈虧互抵十年扣除、提高交際費限額，並大幅降低國稅局調帳查核風險。
+            </p>
+          </div>
+          <div class="mt-6 text-xs text-slate-500">
+            精準調減非必要稅負支出
+          </div>
+        </div>
+
+        <!-- 卡片 4: 公開發行與申請上市上櫃諮詢輔導 (長卡) -->
+        <div class="p-8 rounded-3xl bg-slate-900/60 border border-slate-800 hover:border-brand-cyan/40 transition duration-300 md:col-span-2 lg:col-span-2 flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-xl bg-cyan-400/10 text-cyan-400 flex items-center justify-center mb-6">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-3">公開發行與申請上市上櫃諮詢輔導</h3>
+            <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+              協助成長型企業健全內部控制制度、內稽內控制度設計、IFRS轉換與輔導、重組股權架構及對接券商輔導，為邁入台灣證交所（TWSE）或櫃買中心（TPEx）奠定無懈可擊的法規基石。
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between text-xs text-slate-400">
+            <span>IPO 輔導 / 內稽內控制度輔導</span>
+            <span class="text-cyan-400 font-medium">企業價值躍升</span>
+          </div>
+        </div>
+
+        <!-- 卡片 5: 會計帳務相關服務 -->
+        <div class="p-8 rounded-3xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 transition duration-300 flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-6">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">會計帳務記帳服務</h3>
+            <p class="text-slate-400 text-xs leading-relaxed">
+              定期營業稅申報、各類扣繳申報、帳冊憑證審核、財務報表編製，讓經營者隨時洞悉企業真實收支健康度。
+            </p>
+          </div>
+          <div class="mt-6 text-xs text-slate-500">
+            雲端憑證管理・按期申報零遺漏
+          </div>
+        </div>
+
+        <!-- 卡片 6: 人事薪資費用管理 + 特殊專業顧問 -->
+        <div class="p-8 rounded-3xl bg-slate-900/60 border border-slate-800 hover:border-slate-700 transition duration-300 flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center mb-6">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">人事薪資與特聘顧問</h3>
+            <p class="text-slate-400 text-xs leading-relaxed">
+              薪資機密代算、勞健保退休金規劃、家族傳承股權安排、外商來台投資法規遵循及跨國常年稅務諮詢。
+            </p>
+          </div>
+          <div class="mt-6 text-xs text-slate-500">
+            高機密薪酬控管・企業專案顧問
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 原站真實最新消息與法規洞察 (Insights & Tax Regulations) -->
+  <section id="insights" class="py-20 bg-slate-950 border-t border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 reveal">
+        <div>
+          <span class="text-brand-gold text-xs font-bold tracking-widest uppercase">LATEST REGULATORY UPDATES</span>
+          <h2 class="text-3xl font-extrabold text-white mt-2">
+            稅法函令與公司法令動態
+          </h2>
+          <p class="text-slate-400 text-sm mt-2">
+            即時掌握主管機關最新查核規章，確保企業在法遵軌道上穩健前行。
+          </p>
+        </div>
+        <div class="mt-4 md:mt-0 text-xs text-slate-400">
+          資料來源：財政部賦稅署 / 經濟部商業發展署 / 金管會
+        </div>
+      </div>
+
+      <!-- 訊息列表卡片 -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 reveal">
+        
+        <!-- 消息 1 -->
+        <article class="p-6 rounded-2xl bg-slate-900/50 border border-slate-800 hover:border-brand-gold/40 transition">
+          <div class="flex items-center justify-between text-xs mb-3">
+            <span class="px-2.5 py-0.5 rounded-full bg-amber-500/10 text-amber-400 font-medium">公司法規</span>
+            <time class="text-slate-500 font-mono">2026.11.18</time>
+          </div>
+          <h3 class="text-base font-bold text-white mb-2 hover:text-brand-gold transition line-clamp-2">
+            一年一次別忘記！各公司應於3月底前完成公司負責人及主要股東資訊年度申報
+          </h3>
+          <p class="text-xs text-slate-400 line-clamp-3 leading-relaxed">
+            依公司法第22條之1規定，為洗錢防制透明度，企業應按期至平台申報董事、監察人、經理人及持有股份超過10%之股東最新資料，逾期最高得處50萬元罰鍰。
+          </p>
+        </article>
+
+        <!-- 消息 2 -->
+        <article class="p-6 rounded-2xl bg-slate-900/50 border border-slate-800 hover:border-brand-gold/40 transition">
+          <div class="flex items-center justify-between text-xs mb-3">
+            <span class="px-2.5 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 font-medium">勞動稅務</span>
+            <time class="text-slate-500 font-mono">2026.11.13</time>
+          </div>
+          <h3 class="text-base font-bold text-white mb-2 hover:text-brand-gold transition line-clamp-2">
+            立法院三讀通過《性別平等工作法》與《就業保險法》友善職場『五大突破』
+          </h3>
+          <p class="text-xs text-slate-400 line-clamp-3 leading-relaxed">
+            產假陪產假延長、育兒照顧放寬至8歲、升級育兒假60日、育兒津貼6+3，並祭出企業托育實施之相關租稅優惠抵減方案。
+          </p>
+        </article>
+
+        <!-- 消息 3 -->
+        <article class="p-6 rounded-2xl bg-slate-900/50 border border-slate-800 hover:border-brand-gold/40 transition">
+          <div class="flex items-center justify-between text-xs mb-3">
+            <span class="px-2.5 py-0.5 rounded-full bg-rose-500/10 text-rose-400 font-medium">資安防詐</span>
+            <time class="text-slate-500 font-mono">2026.11.12</time>
+          </div>
+          <h3 class="text-base font-bold text-white mb-2 hover:text-brand-gold transition line-clamp-2">
+            小心詐騙信！假冒財政部電子發票整合服務平台寄發惡意郵件通知
+          </h3>
+          <p class="text-xs text-slate-400 line-clamp-3 leading-relaxed">
+            近來有不法分子偽冒電子發票平台名義散播含有釣魚連結之通知信，提醒各公司財會人員切勿點擊不明附檔或輸入發票帳密。
+          </p>
+        </article>
+
+        <!-- 消息 4 -->
+        <article class="p-6 rounded-2xl bg-slate-900/50 border border-slate-800 hover:border-brand-gold/40 transition">
+          <div class="flex items-center justify-between text-xs mb-3">
+            <span class="px-2.5 py-0.5 rounded-full bg-blue-500/10 text-blue-400 font-medium">營所稅申報</span>
+            <time class="text-slate-500 font-mono">2026.09.30</time>
+          </div>
+          <h3 class="text-base font-bold text-white mb-2 hover:text-brand-gold transition line-clamp-2">
+            營利事業列報國外投資損失，應以實質營運發生損失為限
+          </h3>
+          <p class="text-xs text-slate-400 line-clamp-3 leading-relaxed">
+            列報海外投資損失時，需注意被投資事業或其轉投資事業因實質營業發生虧損為法定要件，相關證明文件須經合法認證以免遭剔除。
+          </p>
+        </article>
+
+        <!-- 消息 5 -->
+        <article class="p-6 rounded-2xl bg-slate-900/50 border border-slate-800 hover:border-brand-gold/40 transition">
+          <div class="flex items-center justify-between text-xs mb-3">
+            <span class="px-2.5 py-0.5 rounded-full bg-purple-500/10 text-purple-400 font-medium">證券法規</span>
+            <time class="text-slate-500 font-mono">2026.09.29</time>
+          </div>
+          <h3 class="text-base font-bold text-white mb-2 hover:text-brand-gold transition line-clamp-2">
+            有關「證券交易法」第22條之2之相關規定即日生效
+          </h3>
+          <p class="text-xs text-slate-400 line-clamp-3 leading-relaxed">
+            董事、監察人、經理人及持有公司股份超過10%股東轉讓持股申報規定修正，規範內部人轉讓持股之合法管道與事前申報程序。
+          </p>
+        </article>
+
+        <!-- 消息 6 -->
+        <article class="p-6 rounded-2xl bg-slate-900/50 border border-slate-800 hover:border-brand-gold/40 transition">
+          <div class="flex items-center justify-between text-xs mb-3">
+            <span class="px-2.5 py-0.5 rounded-full bg-cyan-500/10 text-cyan-400 font-medium">跨境租稅</span>
+            <time class="text-slate-500 font-mono">2026.09.24</time>
+          </div>
+          <h3 class="text-base font-bold text-white mb-2 hover:text-brand-gold transition line-clamp-2">
+            營利事業取自所得稅協定國境外所得，溢繳之國外稅額不得扣抵
+          </h3>
+          <p class="text-xs text-slate-400 line-clamp-3 leading-relaxed">
+            因未依法適用租稅協定優惠稅率而溢繳之國外稅款，在台辦理營所稅申報時不得列報扣抵，提醒跨國企業事前備妥居住者證明。
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 30秒線上快速詢價與諮詢表單 (30-Sec Quote & Inquiry) -->
+  <section id="contact-quote" class="py-24 bg-gradient-to-b from-brand-obsidian via-slate-950 to-brand-obsidian relative">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="rounded-3xl border border-slate-700/80 bg-slate-900/80 backdrop-blur-xl p-8 sm:p-12 shadow-2xl relative overflow-hidden reveal">
+        <!-- 裝飾微光 -->
+        <div class="absolute -right-20 -top-20 w-80 h-80 bg-brand-gold/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-2xl mx-auto text-center mb-10">
+          <span class="text-brand-gold text-xs font-bold tracking-widest uppercase">FAST CONSULTATION</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1">
+            預約會計師：30 秒線上快速諮詢與報價評估
+          </h2>
+          <p class="text-slate-400 text-xs sm:text-sm mt-2">
+            填寫您的企業基本需求，專屬會計師將於 24 小時內與您聯繫並提供專業解析。
+          </p>
+        </div>
+
+        <form id="quote-form" onsubmit="handleQuoteSubmit(event)" class="space-y-6">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-xs font-medium text-slate-300 mb-2">貴公司名稱 / 預計設立名稱 *</label>
+              <input type="text" required placeholder="例如：新創科技股份有限公司" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-700 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-brand-gold transition">
+            </div>
+            <div>
+              <label class="block text-xs font-medium text-slate-300 mb-2">聯絡人姓名與稱謂 *</label>
+              <input type="text" required placeholder="例如：林經理 / 陳執行長" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-700 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-brand-gold transition">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-xs font-medium text-slate-300 mb-2">聯絡電話 / 手機 *</label>
+              <input type="tel" required placeholder="例如：0900-152-052 或 02-2578-0657" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-700 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-brand-gold transition">
+            </div>
+            <div>
+              <label class="block text-xs font-medium text-slate-300 mb-2">電子郵件信箱 *</label>
+              <input type="email" required placeholder="例如：service@yourcompany.com" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-700 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-brand-gold transition">
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-medium text-slate-300 mb-2">需要協助的核心項目（可複選）</label>
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+              <label class="flex items-center space-x-2 text-xs text-slate-300 bg-slate-950/50 p-2.5 rounded-lg border border-slate-800 cursor-pointer hover:border-slate-700">
+                <input type="checkbox" checked class="rounded text-brand-gold focus:ring-0 bg-slate-900 border-slate-700">
+                <span>台北公司設立/工商登記</span>
+              </label>
+              <label class="flex items-center space-x-2 text-xs text-slate-300 bg-slate-950/50 p-2.5 rounded-lg border border-slate-800 cursor-pointer hover:border-slate-700">
+                <input type="checkbox" class="rounded text-brand-gold focus:ring-0 bg-slate-900 border-slate-700">
+                <span>財務簽證 / 資本額簽證</span>
+              </label>
+              <label class="flex items-center space-x-2 text-xs text-slate-300 bg-slate-950/50 p-2.5 rounded-lg border border-slate-800 cursor-pointer hover:border-slate-700">
+                <input type="checkbox" class="rounded text-brand-gold focus:ring-0 bg-slate-900 border-slate-700">
+                <span>稅務簽證 / 營所稅申報</span>
+              </label>
+              <label class="flex items-center space-x-2 text-xs text-slate-300 bg-slate-950/50 p-2.5 rounded-lg border border-slate-800 cursor-pointer hover:border-slate-700">
+                <input type="checkbox" class="rounded text-brand-gold focus:ring-0 bg-slate-900 border-slate-700">
+                <span>平日會計帳務代處理</span>
+              </label>
+              <label class="flex items-center space-x-2 text-xs text-slate-300 bg-slate-950/50 p-2.5 rounded-lg border border-slate-800 cursor-pointer hover:border-slate-700">
+                <input type="checkbox" class="rounded text-brand-gold focus:ring-0 bg-slate-900 border-slate-700">
+                <span>上市上櫃內控輔導</span>
+              </label>
+              <label class="flex items-center space-x-2 text-xs text-slate-300 bg-slate-950/50 p-2.5 rounded-lg border border-slate-800 cursor-pointer hover:border-slate-700">
+                <input type="checkbox" class="rounded text-brand-gold focus:ring-0 bg-slate-900 border-slate-700">
+                <span>外商來台/特殊專案</span>
+              </label>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-medium text-slate-300 mb-2">補充說明 / 預算考量 / 目前遇到問題</label>
+            <textarea rows="3" placeholder="請簡述您的需求，例如：預計資本額 500 萬元，預計下個月完成公司登記並需要後續記帳服務..." class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-700 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-brand-gold transition"></textarea>
+          </div>
+
+          <div class="text-center pt-2">
+            <button type="submit" class="w-full sm:w-auto px-10 py-3.5 rounded-xl bg-gradient-to-r from-brand-gold via-amber-400 to-amber-500 text-slate-950 font-extrabold text-sm hover:brightness-110 shadow-lg shadow-brand-gold/25 transition">
+              送出評估需求（預覽模式）
+            </button>
+            <p class="text-[11px] text-slate-500 mt-3">
+              🔒 我們嚴格遵守會計師職業道德規範與個人資料保護法，資訊將受到最高規格保密。
+            </p>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 聯繫網站設計團隊回信表單 (網頁最下方，footer 之前必須包含 id="hire-designer") -->
+  <section id="hire-designer" class="py-20 bg-slate-950 border-t-2 border-brand-gold/50 relative">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="rounded-3xl bg-gradient-to-b from-slate-900 to-slate-950 border border-brand-gold/30 p-8 sm:p-12 shadow-2xl relative">
+        <div class="flex items-center justify-between mb-8">
+          <div>
+            <span class="px-3 py-1 rounded-full text-xs font-bold bg-brand-gold text-slate-950">WEBSITE REDESIGN PROPOSAL</span>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-3">
+              喜歡為「臺經聯合會計師事務所」打造的全新官網設計嗎？
+            </h2>
+            <p class="text-slate-400 text-xs sm:text-sm mt-2">
+              本頁面由頂級數位設計團隊專屬操刀，大幅改善原站手機版支援度、SEO 結構與現代信任感。歡迎直接透過下方表單一鍵寄信給設計團隊！
+            </p>
+          </div>
+        </div>
+
+        <div class="p-4 rounded-xl bg-slate-950/80 border border-slate-800 mb-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div class="flex items-center space-x-3">
+            <div class="w-10 h-10 rounded-full bg-brand-gold/10 flex items-center justify-center text-brand-gold shrink-0">
+              ✉️
+            </div>
+            <div>
+              <div class="text-xs text-slate-400">設計團隊官方聯絡信箱</div>
+              <a href="mailto:allanlinallan@gmail.com" class="text-sm font-mono font-bold text-white hover:text-brand-gold transition">
+                allanlinallan@gmail.com
+              </a>
+            </div>
+          </div>
+          <div class="text-xs text-emerald-400 bg-emerald-500/10 px-3 py-1.5 rounded-lg border border-emerald-500/20 self-start sm:self-auto">
+            ● 支援一鍵帶入 Gmail 寄信
+          </div>
+        </div>
+
+        <!-- 設計師聯繫欄位表單 -->
+        <div class="space-y-5">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 mb-2">公司名稱</label>
+              <input id="hd-company" type="text" value="臺經聯合會計師事務所" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white text-sm focus:border-brand-gold focus:outline-none">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 mb-2">聯絡人姓名</label>
+              <input id="hd-contact" type="text" placeholder="例如：李所長 / 辦公室主任" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white text-sm focus:border-brand-gold focus:outline-none">
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 mb-2">聯絡電話（建議填寫）</label>
+            <input id="hd-phone" type="text" placeholder="例如：02-2578-0657 或 0900-152-052" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white text-sm focus:border-brand-gold focus:outline-none">
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 mb-2">改版或製作需求說明</label>
+            <textarea id="hd-details" rows="3" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white text-sm focus:border-brand-gold focus:outline-none" placeholder="我想詢問新版官網製作上線時程、費用方案，以及如何遷移現有資訊內容..."></textarea>
+          </div>
+
+          <!-- 兩個一鍵回信按鈕 -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-3">
+            <button onclick="sendViaGmail()" type="button" class="w-full py-3.5 px-6 rounded-xl bg-gradient-to-r from-red-600 via-rose-600 to-red-700 text-white font-bold text-sm hover:brightness-110 shadow-lg shadow-rose-900/30 transition flex items-center justify-center space-x-2">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+              <span>用 Gmail 網頁版一鍵回信</span>
+            </button>
+
+            <button onclick="sendViaDefaultMail()" type="button" class="w-full py-3.5 px-6 rounded-xl bg-slate-800 hover:bg-slate-750 text-white font-bold text-sm border border-slate-600 hover:border-brand-gold transition flex items-center justify-center space-x-2">
+              <svg class="w-5 h-5 text-brand-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              <span>使用預設信箱寄出 (Mailto)</span>
+            </button>
+          </div>
+
+          <p class="text-[11px] text-slate-500 text-center">
+            點擊將自動將您填寫的公司名稱、聯絡人、電話、需求與目前預覽網址組合成信件內文，直接送出即可。
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 頁尾宣告與真實機構資訊 (Footer) -->
+  <footer class="bg-black text-slate-400 py-16 border-t border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        
+        <!-- 品牌區塊 -->
+        <div class="space-y-4">
+          <div class="flex items-center space-x-3">
+            <div class="w-8 h-8 rounded-lg bg-brand-gold text-slate-950 font-black flex items-center justify-center text-sm">FEC</div>
+            <span class="text-white font-bold text-base">臺經聯合會計師事務所</span>
+          </div>
+          <p class="text-xs leading-relaxed text-slate-500">
+            以專業學經歷背景、誠信操守與合理收費，全方位為台灣企業提供工商設立登記、審計簽證、上市櫃輔導與跨國租稅諮詢。
+          </p>
+          <div class="text-xs text-slate-400">
+            統一編號：<span class="font-mono text-slate-200">48834163</span>
+          </div>
+        </div>
+
+        <!-- 聯絡電話與即時通訊 -->
+        <div class="space-y-2 text-xs">
+          <h4 class="text-white font-bold uppercase tracking-wider mb-3">服務專線與通訊</h4>
+          <p class="flex items-center space-x-2">
+            <span class="text-brand-gold font-mono">市話：</span>
+            <a href="tel:0225780657" class="hover:text-white font-mono">02-2578-0657</a>
+          </p>
+          <p class="flex items-center space-x-2">
+            <span class="text-brand-gold font-mono">傳真：</span>
+            <span class="font-mono">02-2578-0234</span>
+          </p>
+          <p class="flex items-center space-x-2">
+            <span class="text-brand-gold font-mono">手機專案：</span>
+            <a href="tel:0900152052" class="hover:text-white font-mono">0900-152-052</a> / <a href="tel:0900152946" class="hover:text-white font-mono">0900-152-946</a>
+          </p>
+          <p class="flex items-center space-x-2 pt-1">
+            <span class="text-brand-gold font-mono">官方信箱：</span>
+            <a href="mailto:FEC@feccpa.com.tw" class="hover:text-white font-mono">FEC@feccpa.com.tw</a>
+          </p>
+        </div>
+
+        <!-- 據點地址 -->
+        <div class="space-y-2 text-xs">
+          <h4 class="text-white font-bold uppercase tracking-wider mb-3">事務所據點</h4>
+          <p class="text-slate-300 font-semibold">台北總所：</p>
+          <p class="text-slate-400">台北市松山區敦化南路一段57號3樓之8</p>
+          <p class="text-slate-300 font-semibold pt-2">桃園服務處：</p>
+          <p class="text-slate-400">桃園市中壢區服務中心</p>
+          <p class="text-slate-500 pt-1">（宜蘭、台中、高雄友好會計師事務所聯網支援）</p>
+        </div>
+
+        <!-- 服務項目清單 -->
+        <div class="space-y-1.5 text-xs">
+          <h4 class="text-white font-bold uppercase tracking-wider mb-3">業務項目索引</h4>
+          <div><a href="#services" class="hover:text-brand-gold">財務簽證（一般審計）</a></div>
+          <div><a href="#services" class="hover:text-brand-gold">稅務簽證相關服務</a></div>
+          <div><a href="#services" class="hover:text-brand-gold">台北工商登記與公司設立</a></div>
+          <div><a href="#services" class="hover:text-brand-gold">公開發行與上市上櫃諮詢輔導</a></div>
+          <div><a href="#services" class="hover:text-brand-gold">會計帳務代理及薪資管理</a></div>
+          <div><a href="#services" class="hover:text-brand-gold">外商來台投資特殊專案顧問</a></div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+        <div>
+          © 2026 臺經聯合會計師事務所 FEC CPA & Associates. All Rights Reserved.
+        </div>
+        <div class="text-[11px] text-slate-500">
+          數位旗艦版型概念提案 Designed with Modern Standards
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 手機版底部固定毛玻璃快捷行動列 (Mobile Sticky Action Bar) -->
+  <div class="fixed bottom-0 left-0 right-0 z-40 lg:hidden bg-slate-950/90 backdrop-blur-lg border-t border-slate-800 p-2.5 px-4 flex items-center justify-between space-x-2 shadow-2xl">
+    <a href="tel:0225780657" class="flex-1 py-2.5 px-3 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs font-semibold flex items-center justify-center space-x-1.5">
+      <svg class="w-4 h-4 text-brand-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+      <span>撥打電話</span>
+    </a>
+    <a href="https://line.me" target="_blank" rel="noopener noreferrer" class="flex-1 py-2.5 px-3 rounded-xl bg-emerald-600/90 text-white text-xs font-semibold flex items-center justify-center space-x-1.5 shadow-sm">
+      <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M24 10.304c0-5.369-5.383-9.738-12-9.738-6.616 0-12 4.369-12 9.738 0 4.814 4.269 8.846 10.019 9.579.39.084.922.258 1.057.592.12.301.079.772.038 1.077l-.164 1.018c-.05.305-.241 1.194 1.047.652 1.289-.544 6.957-4.156 9.492-7.114 1.706-1.921 2.511-3.882 2.511-5.804"/></svg>
+      <span>LINE 諮詢</span>
+    </a>
+    <a href="#contact-quote" class="flex-1 py-2.5 px-3 rounded-xl bg-gradient-to-r from-brand-gold to-amber-500 text-slate-950 text-xs font-extrabold flex items-center justify-center shadow-md">
+      <span>線上估價</span>
+    </a>
+  </div>
+
+  <!-- JavaScript 交互腳本 -->
+  <script>
+    // 滾動漸顯觀察器 (IntersectionObserver Reveal)
+    document.addEventListener('DOMContentLoaded', () => {
+      const reveals = document.querySelectorAll('.reveal');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+          }
+        });
+      }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -40px 0px'
+      });
+
+      reveals.forEach(el => observer.observe(el));
+    });
+
+    // 詢價表單模擬處理
+    function handleQuoteSubmit(e) {
+      e.preventDefault();
+      alert('【概念展示模式】感謝您的填寫！在正式上線版中，此表單將即時透過加密 API 發送簡訊與 Email 通知執業會計師團隊。\n\n若您是該事務所決策者並喜歡此版型設計，歡迎點選下方的「聯繫網站設計團隊」一鍵回信！');
+    }
+
+    // 整合回信功能 (Gmail 網頁版)
+    function sendViaGmail() {
+      const company = encodeURIComponent(document.getElementById('hd-company').value || '臺經聯合會計師事務所');
+      const contact = encodeURIComponent(document.getElementById('hd-contact').value || '未填寫');
+      const phone = encodeURIComponent(document.getElementById('hd-phone').value || '未填寫');
+      const details = encodeURIComponent(document.getElementById('hd-details').value || '我想了解新版官網製作方案與費用細節');
+      const currentUrl = encodeURIComponent(window.location.href);
+
+      const subject = encodeURIComponent('我有興趣請貴公司幫我做網站 - ' + decodeURIComponent(company));
+      const body = encodeURIComponent(
+        '您好！我是 ' + decodeURIComponent(company) + ' 的聯絡人：' + decodeURIComponent(contact) + '\n' +
+        '聯絡電話：' + decodeURIComponent(phone) + '\n\n' +
+        '我們看過了您為我們設計的全新官網概念頁面（' + decodeURIComponent(currentUrl) + '），對改版製作非常感興趣。\n\n' +
+        '我們的具體需求說明：\n' + decodeURIComponent(details) + '\n\n' +
+        '請盡快與我聯繫洽談後續製作上線細節，謝謝！'
+      );
+
+      const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=allanlinallan@gmail.com&su=${subject}&body=${body}`;
+      window.open(gmailUrl, '_blank');
+    }
+
+    // 整合回信功能 (Mailto 預設客戶端)
+    function sendViaDefaultMail() {
+      const company = encodeURIComponent(document.getElementById('hd-company').value || '臺經聯合會計師事務所');
+      const contact = encodeURIComponent(document.getElementById('hd-contact').value || '未填寫');
+      const phone = encodeURIComponent(document.getElementById('hd-phone').value || '未填寫');
+      const details = encodeURIComponent(document.getElementById('hd-details').value || '我想了解新版官網製作方案與費用細節');
+      const currentUrl = encodeURIComponent(window.location.href);
+
+      const subject = encodeURIComponent('我有興趣請貴公司幫我做網站 - ' + decodeURIComponent(company));
+      const body = encodeURIComponent(
+        '您好！我是 ' + decodeURIComponent(company) + ' 的聯絡人：' + decodeURIComponent(contact) + '\n' +
+        '聯絡電話：' + decodeURIComponent(phone) + '\n\n' +
+        '我們看過了您為我們設計的全新官網概念頁面（' + decodeURIComponent(currentUrl) + '），對改版製作非常感興趣。\n\n' +
+        '我們的具體需求說明：\n' + decodeURIComponent(details) + '\n\n' +
+        '請盡快與我聯繫洽談後續製作上線細節，謝謝！'
+      );
+
+      window.location.href = `mailto:allanlinallan@gmail.com?subject=${subject}&body=${body}`;
+    }
+  </script>
+</body>
+</html>

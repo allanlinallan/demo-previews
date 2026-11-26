@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>嵩慶欣業有限公司｜食品級・醫療級精密矽膠加工廠・模塑專家 SCHT</title>
+  <meta name="description" content="嵩慶欣業（嵩創科技）擁有十餘年精密矽膠與模具加工經驗，專精食品級與醫療級液態矽膠（LSR）、模壓矽膠、矽膠管件及電子科技工業製品，提供從設計、打樣到量產的一站式解決方案。">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#05070E',
+              card: 'rgba(15, 23, 42, 0.65)',
+              accent: '#00F0FF',
+              cyan: '#38BDF8',
+              gold: '#F59E0B',
+              platinum: '#94A3B8'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', '"Noto Sans TC"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Structured Data JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "嵩慶欣業有限公司 (嵩創科技)",
+    "alternateName": "SCHT Silicone Precision Manufacturing",
+    "image": "https://images.unsplash.com/photo-1565043666747-69f6646db940?auto=format&fit=crop&w=1000&q=85",
+    "telephone": "+886-2-8522-1177",
+    "email": "support@scht.com.tw",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "化成路660巷12號",
+      "addressLocality": "新莊區",
+      "addressRegion": "新北市",
+      "postalCode": "24253",
+      "addressCountry": "TW"
+    },
+    "taxID": "90460052",
+    "url": "https://www.scht.com.tw/",
+    "description": "專業醫療級、食品級、科技精密矽膠加工製造廠，提供一站式模塑研發、試產與量產服務。",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "矽膠工藝製造服務",
+      "itemListElement": [
+        {"@type": "Offer", "name": "醫療與母嬰級矽膠製品"},
+        {"@type": "Offer", "name": "科技與電子機構矽膠鍵盤及護套"},
+        {"@type": "Offer", "name": "工業防水密封圈與管件 (夾紗/定型/裸管)"}
+      ]
+    }
+  }
+  </script>
+
+  <style>
+    /* Custom Scrollbar & Animations */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #05070E;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1e293b;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #334155;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .glass-panel {
+      background: rgba(13, 20, 36, 0.72);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .glass-card {
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.01) 100%);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      transition: all 0.4s ease;
+    }
+    .glass-card:hover {
+      border-color: rgba(0, 240, 255, 0.4);
+      transform: translateY(-4px);
+      box-shadow: 0 16px 36px -12px rgba(0, 240, 255, 0.15);
+    }
+
+    .mesh-glow {
+      background: radial-gradient(circle at 50% 20%, rgba(0, 240, 255, 0.14) 0%, rgba(14, 165, 233, 0.06) 40%, transparent 70%);
+    }
+
+    .text-gradient {
+      background: linear-gradient(135deg, #FFFFFF 30%, #94A3B8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .text-gradient-cyan {
+      background: linear-gradient(135deg, #00F0FF 0%, #38BDF8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+</head>
+<body class="bg-[#05070E] text-slate-100 font-sans selection:bg-brand-accent selection:text-black antialiased overflow-x-hidden">
+
+  <!-- ==============================================
+       TOP CONCEPT PREVIEW BANNER
+  =============================================== -->
+  <aside class="sticky top-0 z-50 bg-gradient-to-r from-blue-950 via-slate-900 to-cyan-950 border-b border-cyan-500/20 px-4 py-2 text-xs md:text-sm text-cyan-200">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
+      <div class="flex items-center gap-2 text-center sm:text-left">
+        <span class="inline-flex items-center justify-center w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+        <span class="font-medium">✨ 專為<strong>「嵩慶欣業有限公司」</strong>客製之新版 RWD 官網概念預覽（全站升級 HTTPS・極致手機體驗・AI 語義搜尋規格）</span>
+      </div>
+      <a href="#hire-designer" class="shrink-0 bg-cyan-400 hover:bg-cyan-300 text-slate-950 font-bold px-3 py-1 rounded-full text-xs transition duration-200 flex items-center gap-1 shadow-md shadow-cyan-500/20">
+        <i data-lucide="mail" class="w-3.5 h-3.5"></i>
+        <span>喜歡此版型？點此聯絡製作</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- ==============================================
+       NAVIGATION
+  =============================================== -->
+  <header class="relative border-b border-white/5 backdrop-blur-md bg-[#05070E]/80 sticky top-9 z-40">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-blue-600 flex items-center justify-center shadow-lg shadow-cyan-500/25 group-hover:scale-105 transition">
+          <span class="font-black text-black text-xl tracking-tighter">S</span>
+        </div>
+        <div class="flex flex-col">
+          <span class="text-base font-bold tracking-tight text-white flex items-center gap-1.5">
+            嵩慶欣業 <span class="text-[10px] uppercase px-1.5 py-0.5 rounded bg-cyan-950 text-cyan-400 border border-cyan-800/60 font-semibold tracking-wider">嵩創科技</span>
+          </span>
+          <span class="text-[11px] text-slate-400 font-mono tracking-widest">SCHT PRECISION SILICONE</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <a href="#about" class="hover:text-cyan-400 transition">關於嵩慶</a>
+        <a href="#products" class="hover:text-cyan-400 transition">矽膠製品群</a>
+        <a href="#process" class="hover:text-cyan-400 transition">7大製程工藝</a>
+        <a href="#advantages" class="hover:text-cyan-400 transition">技術實力</a>
+        <a href="#rfq" class="hover:text-cyan-400 transition">即時工程詢價</a>
+      </nav>
+
+      <!-- Action Button -->
+      <div class="hidden sm:flex items-center gap-4">
+        <a href="tel:0285221177" class="text-xs text-slate-400 flex items-center gap-1.5 hover:text-white transition">
+          <i data-lucide="phone-call" class="w-4 h-4 text-cyan-400"></i>
+          <span>(02) 8522-1177</span>
+        </a>
+        <a href="#rfq" class="bg-gradient-to-r from-cyan-400 to-sky-500 hover:from-cyan-300 hover:to-sky-400 text-slate-950 font-semibold text-xs tracking-wide px-4 py-2.5 rounded-lg shadow-lg shadow-cyan-500/20 transition hover:shadow-cyan-400/30">
+          線上打樣評估
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==============================================
+       HERO SECTION (Apple/Linear 精密工業風格)
+  =============================================== -->
+  <section class="relative min-h-[92vh] flex items-center justify-center overflow-hidden mesh-glow py-16 px-6">
+    <!-- Grid Overlay -->
+    <div class="absolute inset-0 bg-[linear-gradient(to_right,#1f29370f_1px,transparent_1px),linear-gradient(to_bottom,#1f29370f_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+      
+      <!-- Text Col -->
+      <div class="lg:col-span-7 space-y-6 reveal">
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-cyan-500/30 bg-cyan-950/40 text-cyan-300 text-xs font-medium backdrop-blur">
+          <span class="w-2 h-2 rounded-full bg-cyan-400"></span>
+          <span>十餘年矽膠模具與精密注塑一站式工廠</span>
+        </div>
+
+        <h1 class="text-4xl sm:text-5xl xl:text-6xl font-black tracking-tight leading-[1.15]">
+          品質卓越，<span class="text-gradient">矽至名歸</span><br>
+          <span class="text-gradient-cyan">食品級與醫療級</span> 精密矽膠製品
+        </h1>
+
+        <p class="text-slate-400 text-base sm:text-lg max-w-2xl leading-relaxed">
+          專精模壓矽膠、液態矽膠（LSR）、混煉膠研發及五金模具整合。從工業級防水密封件、高潔淨母嬰親膚用具，到智慧穿戴與微米級鍵盤按鍵，以科學製程大幅縮短客戶量產風險與管控成本。
+        </p>
+
+        <!-- CTA Action Buttons -->
+        <div class="pt-2 flex flex-wrap items-center gap-4">
+          <a href="#rfq" class="px-7 py-3.5 rounded-xl bg-cyan-400 text-slate-950 font-bold hover:bg-cyan-300 transition shadow-xl shadow-cyan-500/20 flex items-center gap-2 text-sm">
+            <span>開始您的專案諮詢</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+          <a href="#products" class="px-6 py-3.5 rounded-xl border border-slate-700 bg-slate-900/60 text-slate-200 font-medium hover:border-slate-500 hover:bg-slate-800 transition text-sm flex items-center gap-2">
+            <i data-lucide="layers" class="w-4 h-4 text-cyan-400"></i>
+            <span>瀏覽 6 大製品工藝</span>
+          </a>
+        </div>
+
+        <!-- Trust Badges -->
+        <div class="pt-6 border-t border-slate-800/80 grid grid-cols-3 gap-6 max-w-lg">
+          <div>
+            <div class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">10+ <span class="text-cyan-400 text-lg">年</span></div>
+            <div class="text-xs text-slate-400 mt-1">深厚模塑加工經驗</div>
+          </div>
+          <div>
+            <div class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">100<span class="text-cyan-400 text-lg">%</span></div>
+            <div class="text-xs text-slate-400 mt-1">食品級/無毒物檢測</div>
+          </div>
+          <div>
+            <div class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">7 <span class="text-cyan-400 text-lg">步</span></div>
+            <div class="text-xs text-slate-400 mt-1">從打樣到量產極速閉環</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual Col -->
+      <div class="lg:col-span-5 reveal">
+        <div class="relative group">
+          <!-- Ambient Glow Behind Image -->
+          <div class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-cyan-500 to-blue-600 opacity-20 blur-2xl group-hover:opacity-30 transition duration-700"></div>
+          
+          <div class="relative rounded-3xl overflow-hidden border border-white/10 bg-slate-900 shadow-2xl">
+            <img 
+              src="https://images.unsplash.com/photo-1565043666747-69f6646db940?auto=format&fit=crop&w=1000&q=85" 
+              alt="嵩慶欣業精密矽膠模具與注塑成型工藝" 
+              class="w-full h-[460px] object-cover object-center transform group-hover:scale-105 transition duration-700 brightness-90 group-hover:brightness-100"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+
+            <!-- Floating Data Card -->
+            <div class="absolute bottom-6 left-6 right-6 p-4 rounded-2xl glass-panel border border-white/10 shadow-xl flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-cyan-400/20 border border-cyan-400/40 flex items-center justify-center text-cyan-300">
+                  <i data-lucide="shield-check" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h4 class="text-xs font-bold text-white uppercase tracking-wider">Medical & Food Grade</h4>
+                  <p class="text-[11px] text-slate-400">高潔淨無毒・耐溫 -40°C ~ 250°C</p>
+                </div>
+              </div>
+              <span class="text-[11px] font-mono text-cyan-400 bg-cyan-950/80 px-2 py-1 rounded border border-cyan-800">精密試產中</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==============================================
+       ABOUT SECTION
+  =============================================== -->
+  <section id="about" class="py-24 px-6 relative border-t border-white/5">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-5 reveal">
+          <div class="relative p-8 rounded-3xl glass-panel border border-white/10">
+            <div class="text-xs font-mono text-cyan-400 uppercase tracking-widest mb-3">ABOUT SCHT PRECISION</div>
+            <h2 class="text-3xl font-extrabold text-white tracking-tight leading-tight mb-4">
+              以務實、創新與進取精神<br>為客戶打造理想矽膠部件
+            </h2>
+            <p class="text-slate-300 text-sm leading-relaxed mb-6">
+              嵩創科技有限公司（嵩慶欣業）專門生產模壓矽膠、混煉膠等產品，以及液態矽膠（LSR）、五金配件和精密模具加工。
+            </p>
+            <p class="text-slate-400 text-sm leading-relaxed mb-6">
+              我們擁有超過十年的矽膠和五金加工經驗，導入高科技精密機台，並運用現代化與人性化的管理方式。在不斷創新的過程中穩步發展，提供企業各部門所需要的全方位技術支援。
+            </p>
+            <div class="grid grid-cols-2 gap-4 pt-4 border-t border-slate-800">
+              <div class="space-y-1">
+                <span class="text-xs text-slate-400">公司統一編號</span>
+                <p class="text-sm font-mono font-bold text-white">90460052</p>
+              </div>
+              <div class="space-y-1">
+                <span class="text-xs text-slate-400">廠址樞紐</span>
+                <p class="text-sm font-bold text-white">新北市新莊區化成路</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6 reveal">
+          <div class="glass-card p-6 rounded-2xl">
+            <div class="w-10 h-10 rounded-xl bg-blue-500/10 text-cyan-400 flex items-center justify-center mb-4">
+              <i data-lucide="microchip" class="w-5 h-5"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">先進模具與射出技術</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              整合高精密 CNC 模具加工與高彈性射出製程，有效控制公差與外觀縮水率，大幅提升合模密合度。
+            </p>
+          </div>
+
+          <div class="glass-card p-6 rounded-2xl">
+            <div class="w-10 h-10 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center mb-4">
+              <i data-lucide="check-circle-2" class="w-5 h-5"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">全方位材料選用建議</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              熟稔白金硫化、食品級 FDA、醫療級 USP Class VI 等配方，針對耐油、耐酸鹼、導電或透明度精準調膠。
+            </p>
+          </div>
+
+          <div class="glass-card p-6 rounded-2xl">
+            <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-4">
+              <i data-lucide="shield-check" class="w-5 h-5"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">降低企業管控成本</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              具備完善的工程除錯（DFM）與製程追蹤能力，減少來回修改模具所衍生的大量溝通與資金成本。
+            </p>
+          </div>
+
+          <div class="glass-card p-6 rounded-2xl">
+            <div class="w-10 h-10 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center mb-4">
+              <i data-lucide="sparkles" class="w-5 h-5"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">客製化表面處理工藝</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              提供噴塗手感油、雷雕透光、絲印移印、背膠貼合等後加工，兼顧機能防護與精品級外觀觸感。
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================================
+       BENTO GRID: 6 大製品工藝與應用領域
+  =============================================== -->
+  <section id="products" class="py-24 px-6 relative bg-slate-950/60 border-t border-white/5">
+    <div class="max-w-7xl mx-auto space-y-12">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto space-y-3 reveal">
+        <span class="text-xs font-mono text-cyan-400 uppercase tracking-widest">PRODUCT PORTFOLIO</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          高經驗值工藝・涵蓋六大產業應用
+        </h2>
+        <p class="text-slate-400 text-sm sm:text-base">
+          熟稔選材與嚴謹製程，為母嬰、電子、工業防護、交通及醫美行業提供規格化與客製模塑件。
+        </p>
+      </div>
+
+      <!-- Bento Grid (非對稱便當盒排版) -->
+      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5">
+        
+        <!-- Bento 1: 矽膠管類 (Span 2) -->
+        <div class="md:col-span-2 glass-card p-8 rounded-3xl flex flex-col justify-between reveal">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs font-mono text-cyan-400">01 / TUBING SYSTEM</span>
+              <span class="px-2.5 py-0.5 rounded-full bg-cyan-950 text-cyan-300 text-[11px] border border-cyan-800">工業與飲水設備專用</span>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-3">矽膠管（夾紗管・定型管・裸管）</h3>
+            <p class="text-slate-300 text-sm leading-relaxed mb-6">
+              具備優異的耐高低溫及耐老化特性。提供夾紗增強耐壓管、客製彎角定型管、飲水機矽膠管等，無塑化劑析出，符合安全輸送規範。
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-2 pt-4 border-t border-slate-800">
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300">定型彎管</span>
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300">強化夾紗管</span>
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300">飲水設備級</span>
+            <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300">高壓耐撕裂</span>
+          </div>
+        </div>
+
+        <!-- Bento 2: 母嬰製品 -->
+        <div class="glass-card p-8 rounded-3xl flex flex-col justify-between reveal">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs font-mono text-pink-400">02 / MATERNAL & BABY</span>
+              <i data-lucide="heart" class="w-4 h-4 text-pink-400"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">母嬰親膚製品</h3>
+            <p class="text-slate-400 text-xs leading-relaxed mb-4">
+              嚴選 100% 食品級安全矽膠。生產奶瓶刷、兒童訓練刀叉、嬰兒矽膠勺、咬咬樂、安撫奶嘴、圍兜與摺疊水杯。
+            </p>
+          </div>
+          <div class="text-[11px] text-pink-300 font-mono">BPA FREE ・ 耐高溫水煮蒸氣消毒</div>
+        </div>
+
+        <!-- Bento 3: 醫美健康製品 -->
+        <div class="glass-card p-8 rounded-3xl flex flex-col justify-between reveal">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs font-mono text-emerald-400">03 / MEDICAL & BEAUTY</span>
+              <i data-lucide="sparkle" class="w-4 h-4 text-emerald-400"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">醫美與生髮配件</h3>
+            <p class="text-slate-400 text-xs leading-relaxed mb-4">
+              生髮儀矽膠導柱、親膚美容面罩、氣墊梳子皮、隱形乳貼與防護指套，柔韌透氣，守護極致觸感。
+            </p>
+          </div>
+          <div class="text-[11px] text-emerald-300 font-mono">生物相容性檢驗 ・ 柔韌抗過敏</div>
+        </div>
+
+        <!-- Bento 4: 科技電子製品 (Span 2) -->
+        <div class="md:col-span-2 glass-card p-8 rounded-3xl flex flex-col justify-between reveal">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs font-mono text-cyan-400">04 / ELECTRONICS & TECH</span>
+              <span class="px-2.5 py-0.5 rounded-full bg-blue-950 text-blue-300 text-[11px] border border-blue-800">精密回彈結構</span>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-3">科技製品與按鍵護套</h3>
+            <p class="text-slate-300 text-sm leading-relaxed mb-6">
+              涵蓋矽膠導電按鍵、POS 機按鍵、VR 眼鏡面罩套、單眼相機鏡頭保護套、液態手機殼、耳塞耳帽、測量儀護套、手柄防滑套與整線扣件。
+            </p>
+          </div>
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-4 border-t border-slate-800 text-center">
+            <div class="bg-slate-900/80 p-2 rounded text-[11px] text-slate-300">導電黑粒熱壓</div>
+            <div class="bg-slate-900/80 p-2 rounded text-[11px] text-slate-300">手感雷射雕刻</div>
+            <div class="bg-slate-900/80 p-2 rounded text-[11px] text-slate-300">防塵防靜電噴塗</div>
+            <div class="bg-slate-900/80 p-2 rounded text-[11px] text-slate-300">百萬次按壓壽命</div>
+          </div>
+        </div>
+
+        <!-- Bento 5: 工業防水密封 -->
+        <div class="glass-card p-8 rounded-3xl flex flex-col justify-between reveal">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs font-mono text-amber-400">05 / INDUSTRIAL SEALING</span>
+              <i data-lucide="shield-alert" class="w-4 h-4 text-amber-400"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">工業密封條・油封</h3>
+            <p class="text-slate-400 text-xs leading-relaxed mb-4">
+              水泵密封圈、白色矽膠塞、方形防水圈、O型環、矽膠油封及玻纖塗層布。符合 IP68 等級防水防漏標準。
+            </p>
+          </div>
+          <div class="text-[11px] text-amber-300 font-mono">耐油性・耐臭氧・耐高低溫壓縮變形</div>
+        </div>
+
+        <!-- Bento 6: 交通與居家生活 -->
+        <div class="glass-card p-8 rounded-3xl flex flex-col justify-between reveal">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs font-mono text-indigo-400">06 / LIFESTYLE & MOBILITY</span>
+              <i data-lucide="compass" class="w-4 h-4 text-indigo-400"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">交通按鍵・居家生活</h3>
+            <p class="text-slate-400 text-xs leading-relaxed mb-4">
+              汽車鑰匙按鍵、電子錶帶、石墨烯雙色運動手環、耐高溫製冰格、矽膠油壺、阻門器及樂扣保鮮蓋。
+            </p>
+          </div>
+          <div class="text-[11px] text-indigo-300 font-mono">雙色射出共模 ・ 精密套件</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================================
+       7-STEP INTEGRATED PROCESS (一站式開發流程)
+  =============================================== -->
+  <section id="process" class="py-24 px-6 relative border-t border-white/5">
+    <div class="max-w-7xl mx-auto space-y-16">
+      
+      <div class="text-center max-w-2xl mx-auto space-y-3 reveal">
+        <span class="text-xs font-mono text-cyan-400 uppercase tracking-widest">ONE-STOP WORKFLOW</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          開發到生產・一站完成
+        </h2>
+        <p class="text-slate-400 text-sm">
+          從概念審圖到模具放電、打樣驗證至大批量產，我們為客戶控管每一個細節風險。
+        </p>
+      </div>
+
+      <!-- Process Steps Flow -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-7 gap-4 reveal">
+        
+        <!-- Step 1 -->
+        <div class="p-5 rounded-2xl glass-card flex flex-col justify-between border-t-2 border-t-cyan-400">
+          <div>
+            <span class="text-3xl font-black text-cyan-400/40 font-mono">01</span>
+            <h4 class="text-base font-bold text-white mt-2">評估開發</h4>
+            <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+              產品機能探討、硬度選配（Shore A 10°~80°）與材料配方定義。
+            </p>
+          </div>
+          <span class="text-[10px] text-slate-500 font-mono mt-4">STEP 01</span>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="p-5 rounded-2xl glass-card flex flex-col justify-between border-t-2 border-t-cyan-400/80">
+          <div>
+            <span class="text-3xl font-black text-cyan-400/40 font-mono">02</span>
+            <h4 class="text-base font-bold text-white mt-2">模具設計</h4>
+            <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+              3D 圖面優化、分模線定義、排氣槽佈局與模流收縮比計算。
+            </p>
+          </div>
+          <span class="text-[10px] text-slate-500 font-mono mt-4">STEP 02</span>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="p-5 rounded-2xl glass-card flex flex-col justify-between border-t-2 border-t-cyan-400/70">
+          <div>
+            <span class="text-3xl font-black text-cyan-400/40 font-mono">03</span>
+            <h4 class="text-base font-bold text-white mt-2">樣品打樣</h4>
+            <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+              快速試模打樣、實體首件手感確認、色膏配方調製對色。
+            </p>
+          </div>
+          <span class="text-[10px] text-slate-500 font-mono mt-4">STEP 03</span>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="p-5 rounded-2xl glass-card flex flex-col justify-between border-t-2 border-t-cyan-400/60">
+          <div>
+            <span class="text-3xl font-black text-cyan-400/40 font-mono">04</span>
+            <h4 class="text-base font-bold text-white mt-2">機能驗證</h4>
+            <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+              拉力測試、密封耐壓檢測、回彈疲勞壽命測試及環保合規性評估。
+            </p>
+          </div>
+          <span class="text-[10px] text-slate-500 font-mono mt-4">STEP 04</span>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="p-5 rounded-2xl glass-card flex flex-col justify-between border-t-2 border-t-cyan-400/50">
+          <div>
+            <span class="text-3xl font-black text-cyan-400/40 font-mono">05</span>
+            <h4 class="text-base font-bold text-white mt-2">小批量試產</h4>
+            <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+              確認生產節拍與模具穩定度，檢驗組裝密合度及作業良率。
+            </p>
+          </div>
+          <span class="text-[10px] text-slate-500 font-mono mt-4">STEP 05</span>
+        </div>
+
+        <!-- Step 6 -->
+        <div class="p-5 rounded-2xl glass-card flex flex-col justify-between border-t-2 border-t-cyan-400/40">
+          <div>
+            <span class="text-3xl font-black text-cyan-400/40 font-mono">06</span>
+            <h4 class="text-base font-bold text-white mt-2">工藝調校</h4>
+            <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+              硫化溫度、合模壓力與脫模參數最佳化，鎖定生產 SOP。
+            </p>
+          </div>
+          <span class="text-[10px] text-slate-500 font-mono mt-4">STEP 06</span>
+        </div>
+
+        <!-- Step 7 -->
+        <div class="p-5 rounded-2xl glass-card flex flex-col justify-between border-t-2 border-t-cyan-400">
+          <div>
+            <span class="text-3xl font-black text-cyan-400 font-mono">07</span>
+            <h4 class="text-base font-bold text-white mt-2">穩定批量量產</h4>
+            <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+              自動化模壓/LSR 注塑生產、二次元尺寸全檢與潔淨包裝出貨。
+            </p>
+          </div>
+          <span class="text-[10px] text-cyan-400 font-mono mt-4">STEP 07</span>
+        </div>
+
+      </div>
+
+      <!-- Feature Highlight Row -->
+      <div class="p-8 rounded-3xl glass-panel grid grid-cols-1 md:grid-cols-3 gap-6 text-center divide-y md:divide-y-0 md:divide-x divide-slate-800">
+        <div class="pt-4 md:pt-0">
+          <div class="text-cyan-400 font-bold text-lg mb-1">品質穩定</div>
+          <p class="text-xs text-slate-400">原廠膠料履歷追溯，批次硬度色澤一致</p>
+        </div>
+        <div class="pt-4 md:pt-0">
+          <div class="text-cyan-400 font-bold text-lg mb-1">技術支援</div>
+          <p class="text-xs text-slate-400">資深模具工程師對接，協同客戶開模打樣</p>
+        </div>
+        <div class="pt-4 md:pt-0">
+          <div class="text-cyan-400 font-bold text-lg mb-1">靈活彈性</div>
+          <p class="text-xs text-slate-400">支援少量多樣試作，亦具規模化大量產能</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==============================================
+       KNOWLEDGE & NEWS (原站最新消息)
+  =============================================== -->
+  <section class="py-20 px-6 border-t border-white/5 bg-slate-950/40">
+    <div class="max-w-7xl mx-auto space-y-10">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 reveal">
+        <div>
+          <span class="text-xs font-mono text-cyan-400 uppercase tracking-widest">KNOWLEDGE BASE</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1">矽膠知識庫與業界最新動態</h2>
+        </div>
+        <div class="text-xs text-slate-400">
+          持續分享精密矽膠製造技術與母嬰材料安全洞察
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 reveal">
+        <article class="p-6 rounded-2xl glass-card flex flex-col justify-between">
+          <div>
+            <div class="text-xs text-cyan-400 font-mono mb-2">Aug. 08</div>
+            <h3 class="text-lg font-bold text-white mb-2">認識矽膠：從物理結構到高溫耐受特質</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              探討矽膠（Silicone）無毒、高彈性、耐臭氧與寬溫域應用，如何取代傳統橡膠成為現代消費品首選。
+            </p>
+          </div>
+          <span class="inline-flex items-center gap-1 text-xs text-cyan-400 font-semibold mt-4">
+            閱讀專文 <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+          </span>
+        </article>
+
+        <article class="p-6 rounded-2xl glass-card flex flex-col justify-between">
+          <div>
+            <div class="text-xs text-cyan-400 font-mono mb-2">Jul. 30</div>
+            <h3 class="text-lg font-bold text-white mb-2">認識矽膠母嬰產品：給寶寶最安心的親膚接觸</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              解析食品級白金矽膠與工業橡膠的本質差異，為何在奶嘴、咬咬樂與兒童餐具具備絕對的安全優勢。
+            </p>
+          </div>
+          <span class="inline-flex items-center gap-1 text-xs text-cyan-400 font-semibold mt-4">
+            閱讀專文 <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+          </span>
+        </article>
+
+        <article class="p-6 rounded-2xl glass-card flex flex-col justify-between">
+          <div>
+            <div class="text-xs text-cyan-400 font-mono mb-2">May. 17</div>
+            <h3 class="text-lg font-bold text-white mb-2">開拓未來之路：矽膠工廠迎接科技革命的挑戰與機遇</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              面對穿戴設備、電動車防水密封與醫療生技的嚴苛需求，嵩創科技如何以先進模塑設備保持行業領先。
+            </p>
+          </div>
+          <span class="inline-flex items-center gap-1 text-xs text-cyan-400 font-semibold mt-4">
+            閱讀專文 <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+          </span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================================
+       QUICK RFQ QUOTE FORM (30秒線上詢價表單)
+  =============================================== -->
+  <section id="rfq" class="py-24 px-6 relative border-t border-white/5">
+    <div class="max-w-4xl mx-auto glass-panel p-8 sm:p-12 rounded-3xl border border-cyan-500/20 shadow-2xl relative overflow-hidden reveal">
+      
+      <!-- Glow ambient background -->
+      <div class="absolute -top-32 -right-32 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="text-center space-y-3 mb-10">
+        <span class="text-xs font-mono text-cyan-400 uppercase tracking-widest">QUICK INQUIRY</span>
+        <h2 class="text-3xl font-extrabold text-white">啟動您的矽膠零件開模／打樣專案</h2>
+        <p class="text-slate-400 text-sm max-w-xl mx-auto">
+          填寫規格需求，我們的模具技術工程師將於 24 小時內與您聯繫，提供專業評估與報價建議。
+        </p>
+      </div>
+
+      <form id="client-rfq-form" onsubmit="handleQuoteSubmit(event)" class="space-y-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+          <div class="space-y-1.5">
+            <label class="text-xs font-medium text-slate-300">您的姓名 / 職稱 *</label>
+            <input type="text" required placeholder="例如：陳經理 / 產品設計師" class="w-full bg-slate-900/80 border border-slate-700/80 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-400 transition">
+          </div>
+          <div class="space-y-1.5">
+            <label class="text-xs font-medium text-slate-300">公司名稱 *</label>
+            <input type="text" required placeholder="例如：欣創科技股份有限公司" class="w-full bg-slate-900/80 border border-slate-700/80 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-400 transition">
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+          <div class="space-y-1.5">
+            <label class="text-xs font-medium text-slate-300">聯絡電話 / 手機 *</label>
+            <input type="tel" required placeholder="0912-345-678 或 02-8522-xxxx" class="w-full bg-slate-900/80 border border-slate-700/80 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-400 transition">
+          </div>
+          <div class="space-y-1.5">
+            <label class="text-xs font-medium text-slate-300">電子信箱 (Email) *</label>
+            <input type="email" required placeholder="name@company.com" class="w-full bg-slate-900/80 border border-slate-700/80 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-400 transition">
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+          <div class="space-y-1.5">
+            <label class="text-xs font-medium text-slate-300">需求製品類別</label>
+            <select class="w-full bg-slate-900/80 border border-slate-700/80 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-400 transition">
+              <option value="tube">矽膠管（夾紗管／定型管／裸管）</option>
+              <option value="baby">母嬰與生活矽膠製品</option>
+              <option value="electronics">科技／按鍵／電子護套</option>
+              <option value="industrial">工業密封防水圈／油封</option>
+              <option value="medical">醫美／醫療親膚配件</option>
+              <option value="custom">其他客製模具與五金件</option>
+            </select>
+          </div>
+          <div class="space-y-1.5">
+            <label class="text-xs font-medium text-slate-300">預計評估階段</label>
+            <select class="w-full bg-slate-900/80 border border-slate-700/80 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-400 transition">
+              <option value="drawing">已有 2D/3D 圖面需評估報價</option>
+              <option value="sample">手邊有樣品需逆向開模</option>
+              <option value="concept">概念構想階段，需材質建議</option>
+              <option value="mass">既有產品尋求更優質代工量產</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="space-y-1.5">
+          <label class="text-xs font-medium text-slate-300">專案規格與需求備註</label>
+          <textarea rows="3" placeholder="請描述尺寸、硬度要求、耐溫等級、預估量產數量等..." class="w-full bg-slate-900/80 border border-slate-700/80 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-400 transition"></textarea>
+        </div>
+
+        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-400 to-sky-500 hover:from-cyan-300 hover:to-sky-400 text-slate-950 font-bold text-base transition shadow-xl shadow-cyan-500/20 flex items-center justify-center gap-2">
+          <i data-lucide="send" class="w-4 h-4"></i>
+          <span>送出諮詢需求單 (即時安排專員回覆)</span>
+        </button>
+
+        <p class="text-center text-[11px] text-slate-500">
+          ※ 嵩慶欣業尊重客戶智慧財產權，恪遵營業秘密與保密協定（NDA）。
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ==============================================
+       HIRE DESIGNER / WEB AGENCY CONTACT SECTION
+       (專門給嵩慶欣業決定製作新官網的信件直連表單)
+  =============================================== -->
+  <section id="hire-designer" class="py-20 px-6 bg-gradient-to-b from-slate-950 via-[#0A1020] to-[#05070E] border-t-2 border-cyan-500/40 relative">
+    <div class="max-w-4xl mx-auto">
+      
+      <div class="p-8 sm:p-10 rounded-3xl glass-panel border border-cyan-400/30 shadow-2xl relative">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950/80 border border-cyan-400/30 text-cyan-300 text-xs font-semibold mb-4">
+          <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+          <span>官網升級提案・設計總監直營對接</span>
+        </div>
+
+        <h2 class="text-2xl sm:text-3xl font-black text-white tracking-tight mb-2">
+          喜歡這個為嵩慶欣業（嵩創科技）全新打造的旗艦官網嗎？
+        </h2>
+        
+        <p class="text-slate-300 text-sm leading-relaxed mb-6">
+          您目前的舊版網站建於早期環境（甚至標註 IE9 不支援警語），已失去現代客戶在手機、平板與 Google 搜尋引擎上的信任感。<br>
+          本版型專門解決您的痛點：全面支援 <strong>HTTPS 安全協議、極速響應式手機版、Bento Grid 工藝展示、完整結構化 SEO</strong>，大幅提升品牌格局與海內外接單說服力。
+        </p>
+
+        <!-- 表單欄位 -->
+        <div class="space-y-4 mb-6">
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div>
+              <label class="block text-xs font-medium text-slate-400 mb-1">貴公司名稱</label>
+              <input type="text" id="mail-company" value="嵩慶欣業有限公司 (嵩創科技)" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-cyan-400">
+            </div>
+            <div>
+              <label class="block text-xs font-medium text-slate-400 mb-1">聯絡人稱呼</label>
+              <input type="text" id="mail-name" placeholder="例如：高經理 / 林副總" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-cyan-400">
+            </div>
+            <div>
+              <label class="block text-xs font-medium text-slate-400 mb-1">聯絡電話（建議填寫）</label>
+              <input type="tel" id="mail-phone" placeholder="0912-163-xxx 或 公司座機" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-cyan-400">
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-medium text-slate-400 mb-1">改版期望或預算說明（選填）</label>
+            <textarea id="mail-notes" rows="2" placeholder="我們對這個新版型很有興趣，希望能討論將舊網站內容完整遷移上線、多國語系以及預算報價。" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-cyan-400"></textarea>
+          </div>
+        </div>
+
+        <div class="p-4 rounded-xl bg-slate-900/60 border border-white/5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-lg bg-cyan-400/10 flex items-center justify-center text-cyan-400">
+              <i data-lucide="mail-check" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <div class="text-xs text-slate-400">設計師直通信箱</div>
+              <div class="text-sm font-mono font-bold text-white">allanlinallan@gmail.com</div>
+            </div>
+          </div>
+          <span class="text-xs text-emerald-400 bg-emerald-950/60 border border-emerald-800 px-2.5 py-1 rounded font-medium inline-flex items-center gap-1">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span>
+            通常於 4 小時內快速親自回覆
+          </span>
+        </div>
+
+        <!-- 雙操作發送按鈕 -->
+        <div class="flex flex-col sm:flex-row gap-3">
+          <button onclick="sendMailToAllan('gmail')" class="flex-1 py-3.5 px-4 rounded-xl bg-cyan-400 hover:bg-cyan-300 text-slate-950 font-bold text-sm transition flex items-center justify-center gap-2 shadow-lg shadow-cyan-500/20">
+            <i data-lucide="external-link" class="w-4 h-4"></i>
+            <span>用 Gmail 網頁版一鍵回信</span>
+          </button>
+          
+          <button onclick="sendMailToAllan('mailto')" class="flex-1 py-3.5 px-4 rounded-xl border border-slate-700 hover:border-slate-500 bg-slate-800/80 hover:bg-slate-800 text-white font-medium text-sm transition flex items-center justify-center gap-2">
+            <i data-lucide="mail" class="w-4 h-4 text-cyan-400"></i>
+            <span>使用本機預設信箱寄出</span>
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==============================================
+       FOOTER
+  =============================================== -->
+  <footer class="bg-[#030509] text-slate-400 text-xs pt-16 pb-28 md:pb-16 border-t border-white/5">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-10">
+      
+      <!-- Company Bio -->
+      <div class="md:col-span-5 space-y-4">
+        <div class="flex items-center gap-2">
+          <div class="w-7 h-7 rounded-lg bg-cyan-400 flex items-center justify-center text-black font-black text-sm">S</div>
+          <span class="text-white font-bold text-base">嵩慶欣業有限公司</span>
+          <span class="text-[10px] px-1.5 py-0.5 rounded bg-slate-800 text-cyan-300">嵩創科技</span>
+        </div>
+        <p class="text-xs text-slate-400 leading-relaxed max-w-md">
+          專業矽膠模塑加工廠！超過十年混煉膠、模壓矽膠、液態矽膠（LSR）及五金模具實務經驗。致力於以務實、創新的精神，協助產業打造高品質、可信賴的矽膠工藝製品。
+        </p>
+        <div class="text-[11px] text-slate-500 font-mono">
+          統一編號：90460052 ｜ 傳真：02-8522-1178
+        </div>
+      </div>
+
+      <!-- Quick Nav -->
+      <div class="md:col-span-3 space-y-3">
+        <h4 class="text-white font-semibold text-xs tracking-wider uppercase">製品分類索引</h4>
+        <ul class="space-y-2 text-[11px]">
+          <li><a href="#products" class="hover:text-cyan-400 transition">矽膠管（夾紗管／定型管／裸管）</a></li>
+          <li><a href="#products" class="hover:text-cyan-400 transition">母嬰製品（奶嘴／咬咬樂／訓練餐具）</a></li>
+          <li><a href="#products" class="hover:text-cyan-400 transition">科技製品（導電按鍵／VR護套／鏡頭套）</a></li>
+          <li><a href="#products" class="hover:text-cyan-400 transition">工業製品（防水密封圈／油封／玻纖布）</a></li>
+          <li><a href="#products" class="hover:text-cyan-400 transition">醫美製品（生髮儀／面罩／氣墊梳皮）</a></li>
+          <li><a href="#products" class="hover:text-cyan-400 transition">交通生活（車鑰匙按鍵／錶帶／製冰格）</a></li>
+        </ul>
+      </div>
+
+      <!-- Factory Contacts -->
+      <div class="md:col-span-4 space-y-3">
+        <h4 class="text-white font-semibold text-xs tracking-wider uppercase">廠區與聯絡專線</h4>
+        <div class="space-y-2 text-[11px]">
+          <div class="flex items-start gap-2">
+            <i data-lucide="map-pin" class="w-4 h-4 text-cyan-400 shrink-0 mt-0.5"></i>
+            <span>24253 新北市新莊區化成路 660 巷 12 號</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <i data-lucide="phone" class="w-4 h-4 text-cyan-400 shrink-0"></i>
+            <span>總機專線：02-8522-1177</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <i data-lucide="smartphone" class="w-4 h-4 text-cyan-400 shrink-0"></i>
+            <span>業務手機：0912-163-056 / 0912-163-103 / 0912-163-108</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <i data-lucide="mail" class="w-4 h-4 text-cyan-400 shrink-0"></i>
+            <span>原廠信箱：support@scht.com.tw</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <i data-lucide="message-circle" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+            <span>慣用聯絡管道：LINE 專屬客服</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="max-w-7xl mx-auto px-6 mt-12 pt-6 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500 gap-4">
+      <div>
+        © 2024 - 2025 嵩慶欣業有限公司 (嵩創科技有限公司) All Rights Reserved.
+      </div>
+      <div class="flex gap-4">
+        <a href="#" class="hover:text-slate-400">矽膠知識庫</a>
+        <a href="#" class="hover:text-slate-400">企業榮譽</a>
+        <a href="#" class="hover:text-slate-400">隱私權保護政策</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==============================================
+       MOBILE FIXED BOTTOM FLOATING CTA DOCK
+  =============================================== -->
+  <div class="fixed bottom-0 left-0 right-0 z-40 md:hidden bg-slate-950/90 backdrop-blur-lg border-t border-white/10 px-4 py-2.5 flex items-center justify-between gap-3 shadow-2xl">
+    <a href="tel:0285221177" class="flex-1 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-slate-200 text-xs font-semibold flex items-center justify-center gap-1.5 active:scale-95 transition">
+      <i data-lucide="phone" class="w-3.5 h-3.5 text-cyan-400"></i>
+      <span>致電工廠</span>
+    </a>
+
+    <a href="#hire-designer" class="flex-1 py-2.5 rounded-xl bg-gradient-to-r from-cyan-400 to-sky-500 text-slate-950 text-xs font-bold flex items-center justify-center gap-1.5 shadow-md shadow-cyan-500/20 active:scale-95 transition">
+      <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+      <span>聯絡改版</span>
+    </a>
+
+    <a href="#rfq" class="py-2.5 px-3 rounded-xl bg-slate-800 text-slate-300 text-xs font-medium flex items-center justify-center active:scale-95 transition">
+      <span>詢價</span>
+    </a>
+  </div>
+
+  <!-- ==============================================
+       JAVASCRIPT LOGIC
+  =============================================== -->
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // Scroll Reveal Animation via IntersectionObserver
+    document.addEventListener("DOMContentLoaded", function () {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("active");
+          }
+        });
+      }, {
+        threshold: 0.08,
+        rootMargin: "0px 0px -40px 0px"
+      });
+
+      document.querySelectorAll(".reveal").forEach((el) => {
+        observer.observe(el);
+      });
+    });
+
+    // Handle Client In-Page RFQ Quote Form
+    function handleQuoteSubmit(e) {
+      e.preventDefault();
+      alert("【概念預覽提示】感謝您填寫詢價資訊！此為新版官網視覺展示頁。若您是嵩慶欣業公司代表，歡迎點擊下方「聯絡網站設計團隊」一鍵洽談官網升級與上線！");
+    }
+
+    // Handle Designer Mail Sending Action (Gmail / Mailto)
+    function sendMailToAllan(type) {
+      const recipient = "allanlinallan@gmail.com";
+      const company = document.getElementById("mail-company").value.trim() || "嵩慶欣業有限公司";
+      const name = document.getElementById("mail-name").value.trim() || "貴公司負責主管";
+      const phone = document.getElementById("mail-phone").value.trim() || "未提供電話";
+      const notes = document.getElementById("mail-notes").value.trim() || "對新版概念網頁非常滿意，請與我們聯繫詳細改版合作細節與費用報價。";
+      const currentUrl = window.location.href;
+
+      const subject = `【網站改版意願】我有興趣請貴公司幫我做網站 - ${company}`;
+      
+      const body = `你好，我是 ${company} 的 ${name}。
+
+我們在預覽頁面看過了專為我們設計的新版官方網站概念架構（網址：${currentUrl}），非常有興趣委託貴團隊進行新版官網的正式製作與上線遷移。
+
+【聯絡人資訊】
+公司名稱：${company}
+聯絡人：${name}
+聯絡電話：${phone}
+
+【需求與備註】：
+${notes}
+
+請盡速回信或來電與我聯絡，謝謝！`;
+
+      const encodedSubject = encodeURIComponent(subject);
+      const encodedBody = encodeURIComponent(body);
+
+      if (type === 'gmail') {
+        const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${recipient}&su=${encodedSubject}&body=${encodedBody}`;
+        window.open(gmailUrl, '_blank');
+      } else {
+        const mailtoUrl = `mailto:${recipient}?subject=${encodedSubject}&body=${encodedBody}`;
+        window.location.href = mailtoUrl;
+      }
+    }
+  </script>
+</body>
+</html>
