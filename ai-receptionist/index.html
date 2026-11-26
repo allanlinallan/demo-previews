@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>24h LINE AI 預約客服系統｜互動模擬體驗（Reply API 免費無上限架構）</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: 'Noto Sans TC', sans-serif; }
+    .line-bg { background-color: #7494C0; }
+    .line-bubble-user { background-color: #8DE055; color: #111; border-radius: 16px 4px 16px 16px; }
+    .line-bubble-bot { background-color: #FFFFFF; color: #111; border-radius: 4px 16px 16px 16px; }
+    @keyframes flashNew {
+      0% { background-color: rgba(16, 185, 129, 0.35); }
+      100% { background-color: transparent; }
+    }
+    .flash-row { animation: flashNew 1.8s ease-out; }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen">
+
+  <!-- Top Value Banner -->
+  <div class="bg-gradient-to-r from-emerald-500 to-teal-500 text-slate-950 text-xs sm:text-sm font-bold py-2.5 px-4 text-center">
+    ⚡ 互動模擬體驗：走 LINE 免費 <code>Reply API</code>（被動回覆完全 0 元無上限）＋ Google 試算表後台（老闆改表格，AI 立刻生效）
+  </div>
+
+  <!-- Header + Industry Switcher -->
+  <header class="max-w-7xl mx-auto px-5 pt-8 pb-6 flex flex-col lg:flex-row lg:items-end justify-between gap-5">
+    <div>
+      <span class="inline-block px-3 py-1 rounded-full bg-emerald-500/15 border border-emerald-400/30 text-emerald-300 text-xs font-bold mb-2">
+        LIVE INTERACTIVE DEMO
+      </span>
+      <h1 class="text-2xl sm:text-4xl font-black text-white">24 小時 LINE AI 預約櫃檯模擬器</h1>
+      <p class="text-slate-400 text-sm mt-1.5">
+        左邊像客人一樣跟 LINE 對話，右邊看老闆的 Google 試算表即時連動（你還可以直接改右邊價錢，再問左邊測試！）
+      </p>
+    </div>
+
+    <!-- Industry Tabs -->
+    <div class="flex flex-wrap gap-2">
+      <button onclick="switchIndustry('dental')" id="tab-dental" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-emerald-500 text-slate-950 shadow">
+        🦷 牙醫診所
+      </button>
+      <button onclick="switchIndustry('salon')" id="tab-salon" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-slate-800 text-slate-300 hover:bg-slate-700">
+        💇‍♀️ 質感美髮
+      </button>
+      <button onclick="switchIndustry('auto')" id="tab-auto" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-slate-800 text-slate-300 hover:bg-slate-700">
+        🚗 汽車保養廠
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Split Simulator -->
+  <main class="max-w-7xl mx-auto px-5 pb-12 grid lg:grid-cols-12 gap-6 items-start">
+
+    <!-- LEFT: Authentic LINE Phone Simulator -->
+    <section class="lg:col-span-5 bg-slate-900 rounded-3xl border border-slate-800 p-3 shadow-2xl">
+      <div class="rounded-2xl overflow-hidden flex flex-col h-[620px] border border-slate-700">
+        <!-- LINE Header -->
+        <div class="bg-[#232D3F] text-white px-4 py-3 flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <div id="botAvatar" class="w-9 h-9 rounded-full bg-emerald-500 text-slate-950 font-black flex items-center justify-center text-base">🦷</div>
+            <div>
+              <div id="botName" class="font-bold text-sm leading-tight">星辰美學牙醫診所</div>
+              <div class="text-[11px] text-emerald-400 flex items-center gap-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                AI 24h 即時回覆中（Reply API）
+              </div>
+            </div>
+          </div>
+          <span class="text-[11px] px-2 py-0.5 rounded bg-white/10 text-slate-300">官方帳號</span>
+        </div>
+
+        <!-- LINE Chat Messages -->
+        <div id="chatLog" class="line-bg flex-1 overflow-y-auto p-4 space-y-3 text-sm"></div>
+
+        <!-- Quick Prompts -->
+        <div id="quickChips" class="bg-[#E9EEF5] px-3 py-2 flex flex-wrap gap-1.5 border-t border-slate-300"></div>
+
+        <!-- LINE Input Bar -->
+        <form onsubmit="handleUserSubmit(event)" class="bg-white p-2.5 flex items-center gap-2 border-t border-slate-200">
+          <input
+            id="userInput"
+            type="text"
+            placeholder="輸入訊息測試（例：洗牙多少錢？明天下午3點預約）"
+            class="flex-1 px-3.5 py-2 rounded-full bg-slate-100 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500"
+          />
+          <button type="submit" class="px-4 py-2 rounded-full bg-[#06C755] hover:bg-emerald-600 text-white font-bold text-sm transition">
+            傳送
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- RIGHT: Boss Dashboard (Live Cost Meter + Editable Sheet + Booking Log) -->
+    <section class="lg:col-span-7 space-y-5">
+
+      <!-- Live Cost Proof Cards -->
+      <div class="grid sm:grid-cols-3 gap-4">
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4">
+          <div class="text-xs text-slate-400">本次模擬 AI 已回覆</div>
+          <div class="text-2xl font-black text-white mt-1"><span id="statReplies">1</span> <span class="text-sm font-normal text-slate-400">則</span></div>
+          <div class="text-[11px] text-emerald-400 mt-1">走 LINE Reply API</div>
+        </div>
+        <div class="bg-slate-900 border border-emerald-500/40 rounded-2xl p-4">
+          <div class="text-xs text-slate-400">消耗 LINE 付費額度</div>
+          <div class="text-2xl font-black text-emerald-400 mt-1">NT$ 0</div>
+          <div class="text-[11px] text-slate-400 mt-1">被動回覆官方免費無上限</div>
+        </div>
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-4">
+          <div class="text-xs text-slate-400">店長新預約通知</div>
+          <div class="text-2xl font-black text-amber-400 mt-1"><span id="statAlerts">0</span> <span class="text-sm font-normal text-slate-400">筆</span></div>
+          <div class="text-[11px] text-slate-400 mt-1">走 Email / Telegram（0元）</div>
+        </div>
+      </div>
+
+      <!-- Editable Google Sheet Knowledge Base -->
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5">
+        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+          <div>
+            <h2 class="font-bold text-white text-base flex items-center gap-2">
+              📊 老闆後台：Google 試算表知識庫（可直接改數字測試！）
+            </h2>
+            <p class="text-xs text-slate-400">老闆改完格子，左邊 AI 下一秒回答立刻同步更新，不用找工程師改程式</p>
+          </div>
+          <span class="text-[11px] px-2.5 py-1 rounded-full bg-emerald-500/15 text-emerald-300 font-bold">即時同步中</span>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-3 text-xs">
+          <div>
+            <label class="block text-slate-400 mb-1">主力項目 1 名稱 / 價格</label>
+            <input id="kbPrice1" type="text" class="w-full px-3 py-2 rounded-lg bg-slate-950 border border-slate-700 text-emerald-300 font-medium focus:border-emerald-400 focus:outline-none" />
+          </div>
+          <div>
+            <label class="block text-slate-400 mb-1">主力項目 2 名稱 / 價格</label>
+            <input id="kbPrice2" type="text" class="w-full px-3 py-2 rounded-lg bg-slate-950 border border-slate-700 text-emerald-300 font-medium focus:border-emerald-400 focus:outline-none" />
+          </div>
+          <div>
+            <label class="block text-slate-400 mb-1">營業時間與公休日</label>
+            <input id="kbHours" type="text" class="w-full px-3 py-2 rounded-lg bg-slate-950 border border-slate-700 text-slate-200 focus:border-emerald-400 focus:outline-none" />
+          </div>
+          <div>
+            <label class="block text-slate-400 mb-1">地址與停車資訊</label>
+            <input id="kbAddr" type="text" class="w-full px-3 py-2 rounded-lg bg-slate-950 border border-slate-700 text-slate-200 focus:border-emerald-400 focus:outline-none" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Booking Table -->
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-5">
+        <div class="flex items-center justify-between mb-3">
+          <h2 class="font-bold text-white text-base">📅 自動寫入之預約名單（同步 Email / Telegram 通知店長）</h2>
+          <span id="toastBadge" class="hidden text-xs px-2.5 py-1 rounded-full bg-amber-500/20 text-amber-300 font-bold">
+            📧 已通知店長！
+          </span>
+        </div>
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-xs">
+            <thead class="text-slate-400 border-b border-slate-800">
+              <tr>
+                <th class="py-2 pr-3">時間</th>
+                <th class="py-2 pr-3">客戶資訊</th>
+                <th class="py-2 pr-3">預約內容</th>
+                <th class="py-2">狀態</th>
+              </tr>
+            </thead>
+            <tbody id="bookingRows" class="divide-y divide-slate-800/70 text-slate-200">
+              <tr>
+                <td class="py-2.5 pr-3 text-slate-500">範例</td>
+                <td class="py-2.5 pr-3">林小姐 0922-111-222</td>
+                <td class="py-2.5 pr-3">週五下午 15:00 預約諮詢</td>
+                <td class="py-2.5"><span class="px-2 py-0.5 rounded bg-emerald-500/15 text-emerald-300">已通知店長</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- CTA Box -->
+      <div class="bg-gradient-to-r from-slate-900 to-emerald-950/40 border border-emerald-500/30 rounded-2xl p-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+        <div>
+          <div class="font-bold text-white text-base">想幫貴店導入這套 24h LINE AI 預約櫃檯？</div>
+          <div class="text-xs text-slate-300 mt-1">提供首月免費試用（建置費 NT$6,000＋月租 NT$3,000，LINE 被動回覆完全免升級費）</div>
+        </div>
+        <a
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=allanlinallan@gmail.com&su=%E6%88%91%E6%83%B3%E4%BA%86%E8%A7%A324h%20LINE%20AI%E9%A0%90%E7%B4%84%E5%AE%A2%E6%9C%8D%E8%A9%A6%E7%94%A8&body=%E6%82%A8%E5%A5%BD%EF%BC%8C%E6%88%91%E5%B0%8D%2024h%20LINE%20AI%20%E9%A0%90%E7%B4%84%E5%AE%A2%E6%9C%8D%E6%9C%89%E8%88%88%E8%B6%A3%EF%BC%9A%0A%0A%E3%80%90%E5%BA%97%E5%90%8D%2F%E5%85%AC%E5%8F%B8%E3%80%91%EF%BC%9A%0A%E3%80%90%E8%81%AF%E7%B5%A1%E4%BA%BA%E3%80%91%EF%BC%9A%0A%E3%80%90%E8%81%AF%E7%B5%A1%E9%9B%BB%E8%A9%B1%E3%80%91%EF%BC%9A%0A%E3%80%90%E9%9C%80%E6%B1%82%E8%AA%AA%E6%98%8E%E3%80%91%EF%BC%9A"
+          target="_blank"
+          class="px-5 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black text-sm whitespace-nowrap transition shadow-lg"
+        >
+          ✉️ 預約免費試用
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const PRESETS = {
+      dental: {
+        avatar: '🦷',
+        name: '星辰美學牙醫診所',
+        price1: '健保洗牙：掛號費 NT$200（半年一次）',
+        price2: '冷光牙齒美白：NT$12,000 / 植牙評估免費',
+        hours: '週一至週六 09:30–21:00（週日公休）',
+        addr: '台中市西區公益路 188 號（特約停車場免費停 2 小時）',
+        welcome: '您好！歡迎來到「星辰美學牙醫診所」🦷\n我是 24 小時 AI 櫃檯小幫手，您可以直接問我價目表、營業時間，或是直接打「我要預約」喔！',
+        chips: ['請問洗牙跟美白多少錢？', '營業時間跟停車資訊？', '明天下午 3 點可以預約洗牙嗎？', '我要預約！王小明 0912-345-678 明天下午3點洗牙'],
+      },
+      salon: {
+        avatar: '💇‍♀️',
+        name: 'LUNA 質感美髮沙龍',
+        price1: '洗＋剪設計造型：NT$1,200（含頭皮舒壓）',
+        price2: '日系質感染髮：NT$2,800 起 / 縮毛矯正 NT$3,500 起',
+        hours: '週二至週日 11:00–20:00（週一公休）',
+        addr: '台北市大安區敦化南路一段 200 號 2F（捷運忠孝敦化站步行 3 分鐘）',
+        welcome: '哈囉！歡迎來到 LUNA 質感美髮沙龍 💇‍♀️\n半夜想約剪髮或問價目表都沒問題，隨時問我！',
+        chips: ['剪髮跟染髮多少錢？', '哪天公休？地址在哪？', '週六下午 2 點可以預約嗎？', '預約！陳美美 0933-888-777 週六14:00 剪+染'],
+      },
+      auto: {
+        avatar: '🚗',
+        name: '極速精密汽車保養廠',
+        price1: '全合成機油小保養：NT$2,800 起（含 28 項安全健檢）',
+        price2: '冷氣管路清洗＋冷媒定量充填：NT$1,800',
+        hours: '週一至週六 08:30–18:30（週日公休）',
+        addr: '桃園市中壢區中華路二段 366 號（附設冷氣休息室）',
+        welcome: '老闆您好！歡迎聯絡「極速精密汽車保養廠」🚗\n師傅修車不方便接電話時，由我 24 小時幫您報價與排進廠時間！',
+        chips: ['小保養跟冷氣清洗多少錢？', '營業時間跟地址？', '明天早上 10 點能進廠保養嗎？', '預約進廠！李先生 0988-555-666 明天10:00 小保養'],
+      },
+    };
+
+    let currentKey = 'dental';
+    let replyCount = 0;
+    let alertCount = 0;
+
+    function nowTime() {
+      const d = new Date();
+      return d.toTimeString().slice(0, 5);
+    }
+
+    function addBubble(who, text) {
+      const log = document.getElementById('chatLog');
+      const wrap = document.createElement('div');
+      wrap.className = who === 'user' ? 'flex justify-end items-end gap-1.5' : 'flex justify-start items-end gap-2';
+      if (who === 'user') {
+        wrap.innerHTML = `<span class="text-[10px] text-white/80">已讀<br>${nowTime()}</span><div class="line-bubble-user px-3.5 py-2.5 max-w-[78%] whitespace-pre-line shadow-sm">${escapeHtml(text)}</div>`;
+      } else {
+        replyCount++;
+        document.getElementById('statReplies').textContent = replyCount;
+        wrap.innerHTML = `<div class="w-7 h-7 rounded-full bg-white text-center leading-7 text-sm shrink-0 shadow">${PRESETS[currentKey].avatar}</div><div class="line-bubble-bot px-3.5 py-2.5 max-w-[78%] whitespace-pre-line shadow-sm">${escapeHtml(text)}</div><span class="text-[10px] text-white/80">${nowTime()}</span>`;
+      }
+      log.appendChild(wrap);
+      log.scrollTop = log.scrollHeight;
+    }
+
+    function escapeHtml(s) {
+      return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    }
+
+    function generateAiReply(msg) {
+      const p1 = document.getElementById('kbPrice1').value;
+      const p2 = document.getElementById('kbPrice2').value;
+      const hrs = document.getElementById('kbHours').value;
+      const addr = document.getElementById('kbAddr').value;
+      const low = msg.toLowerCase();
+
+      // Check if user provided phone number + booking intent
+      const hasPhone = /09\d{2}[- ]?\d{3}[- ]?\d{3}|0[2-9]-\d{7,8}/.test(msg);
+      if (hasPhone || (msg.includes('預約') && msg.length > 14 && /先生|小姐|王|陳|林|李|張/.test(msg))) {
+        addBookingRow(msg);
+        return `✅ 收到您的預約資訊了！\n\n已幫您登記：\n「${msg}」\n\n我已經即時寫入預約系統並同步通知店長確認（不消耗 LINE 推播額度），稍後若有時段微調將主動聯繫您，期待為您服務！`;
+      }
+
+      if (/(多少錢|價格|價目|費用|洗牙|美白|剪髮|染髮|保養|冷氣)/.test(low)) {
+        return `跟您報告最新收費標準（即時讀取 Google 試算表）：\n\n• ${p1}\n• ${p2}\n\n請問需要幫您直接安排預約時段嗎？只要回覆「姓名＋電話＋想約時間」就能 10 秒完成預約喔！`;
+      }
+
+      if (/(營業|時間|公休|幾點|地址|在哪|停車)/.test(low)) {
+        return `為您整理門市資訊：\n\n🕒 營業時間：${hrs}\n📍 地址交通：${addr}\n\n需要幫您預約時段的話，直接告訴我您方便的時間即可！`;
+      }
+
+      if (/(預約|可以約|排|進廠|空檔|明天|週)/.test(low)) {
+        return `沒問題！該時段目前還可以安排 👍\n\n請直接回覆以下資訊，我馬上幫您鎖定預約並通知店長：\n👉 您的稱呼 ＋ 聯絡電話 ＋ 預約項目\n（例如：王小明 0912-345-678 明天下午3點）`;
+      }
+
+      return `收到您的訊息！「${PRESETS[currentKey].name}」24 小時 AI 櫃檯為您服務 😊\n\n您可以直接問我：\n1. 價目表與服務項目\n2. 營業時間、地址與停車\n3. 直接留言「姓名＋電話＋時段」立即預約！`;
+    }
+
+    function addBookingRow(rawMsg) {
+      alertCount++;
+      document.getElementById('statAlerts').textContent = alertCount;
+      const tbody = document.getElementById('bookingRows');
+      const tr = document.createElement('tr');
+      tr.className = 'flash-row';
+      tr.innerHTML = `
+        <td class="py-2.5 pr-3 text-emerald-400 font-bold">${nowTime()}</td>
+        <td class="py-2.5 pr-3 font-medium">${escapeHtml(rawMsg.slice(0, 22))}</td>
+        <td class="py-2.5 pr-3 text-slate-300">${escapeHtml(rawMsg)}</td>
+        <td class="py-2.5"><span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-bold">✅ 已通知店長</span></td>
+      `;
+      tbody.prepend(tr);
+
+      const badge = document.getElementById('toastBadge');
+      badge.classList.remove('hidden');
+      setTimeout(() => badge.classList.add('hidden'), 3500);
+    }
+
+    function sendUserMessage(text) {
+      if (!text.trim()) return;
+      addBubble('user', text.trim());
+      setTimeout(() => {
+        addBubble('bot', generateAiReply(text.trim()));
+      }, 450);
+    }
+
+    function handleUserSubmit(e) {
+      e.preventDefault();
+      const inp = document.getElementById('userInput');
+      sendUserMessage(inp.value);
+      inp.value = '';
+    }
+
+    function switchIndustry(key) {
+      currentKey = key;
+      const p = PRESETS[key];
+      ['dental', 'salon', 'auto'].forEach((k) => {
+        const btn = document.getElementById('tab-' + k);
+        btn.className = k === key
+          ? 'px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-emerald-500 text-slate-950 shadow'
+          : 'px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-slate-800 text-slate-300 hover:bg-slate-700';
+      });
+      document.getElementById('botAvatar').textContent = p.avatar;
+      document.getElementById('botName').textContent = p.name;
+      document.getElementById('kbPrice1').value = p.price1;
+      document.getElementById('kbPrice2').value = p.price2;
+      document.getElementById('kbHours').value = p.hours;
+      document.getElementById('kbAddr').value = p.addr;
+
+      document.getElementById('chatLog').innerHTML = '';
+      replyCount = 0;
+      addBubble('bot', p.welcome);
+
+      const chips = document.getElementById('quickChips');
+      chips.innerHTML = '';
+      p.chips.forEach((c) => {
+        const b = document.createElement('button');
+        b.type = 'button';
+        b.className = 'text-[11px] px-2.5 py-1 rounded-full bg-white hover:bg-emerald-50 text-slate-700 border border-slate-300 transition';
+        b.textContent = c;
+        b.onclick = () => sendUserMessage(c);
+        chips.appendChild(b);
+      });
+    }
+
+    switchIndustry('dental');
+  </script>
+</body>
+</html>
