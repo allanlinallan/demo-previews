@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="zh-MY" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vofon 和丰贸易 | 吉隆坡餐饮杂货与食品原料批发供应商</title>
+  <meta name="description" content="和丰贸易有限公司（Vo Fon Trading Sdn Bhd）深耕吉隆坡与马来西亚餐饮批发市场，供应逾千种酱料、干货、粉类、冷冻冷藏、药材与南北海味，具备高效率配送体系与专业稳定货源。">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              navy: '#0F172A',
+              dark: '#0A0F1D',
+              surface: '#1E293B',
+              amber: '#F59E0B',
+              amberLight: '#FBBF24',
+              amberDark: '#D97706',
+              accent: '#38BDF8',
+              grayMuted: '#94A3B8'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', '"Noto Sans TC"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    /* Smooth custom reveal animations */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: opacity, transform;
+    }
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .bg-mesh {
+      background: radial-gradient(circle at 15% 15%, rgba(245, 158, 11, 0.12) 0%, transparent 45%),
+                  radial-gradient(circle at 85% 30%, rgba(56, 189, 248, 0.08) 0%, transparent 40%),
+                  radial-gradient(circle at 50% 80%, rgba(15, 23, 42, 0.8) 0%, transparent 70%);
+    }
+    .glass-card {
+      background: rgba(30, 41, 59, 0.7);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .glass-card-hover {
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .glass-card-hover:hover {
+      transform: translateY(-4px);
+      border-color: rgba(245, 158, 11, 0.4);
+      box-shadow: 0 20px 35px -10px rgba(15, 23, 42, 0.6), 0 0 20px -5px rgba(245, 158, 11, 0.15);
+    }
+    .text-gold-gradient {
+      background: linear-gradient(135deg, #FDE68A 0%, #F59E0B 50%, #D97706 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WholesaleStore",
+    "name": "Vo Fon Trading Sdn Bhd (和丰贸易有限公司)",
+    "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=85",
+    "@id": "https://vofon.com.my",
+    "url": "https://vofon.com.my",
+    "telephone": "+60166982922",
+    "email": "vofontradingsb@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "No.16, 16M, Jalan 6/4, Taman Komersial Pandan Indah",
+      "addressLocality": "Kuala Lumpur",
+      "postalCode": "55100",
+      "addressCountry": "MY"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 3.1345,
+      "longitude": 101.7548
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "08:00",
+        "closes": "17:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "08:00",
+        "closes": "13:00"
+      }
+    ],
+    "description": "吉隆坡与马来西亚专业杂货与餐饮食品原料供应商，供应超过千种餐饮酱料、干货、粉类、冷藏冷冻食材批发。",
+    "areaServed": {
+      "@type": "AdministrativeArea",
+      "name": "Kuala Lumpur, Malaysia"
+    }
+  }
+  </script>
+</head>
+<body class="bg-brand-dark text-slate-100 font-sans antialiased selection:bg-brand-amber selection:text-brand-dark">
+
+  <!-- 頂部精緻預覽橫幅 (設計師概念驗收列) -->
+  <aside class="sticky top-0 z-50 bg-brand-navy/95 backdrop-blur border-b border-brand-amber/30 text-xs sm:text-sm text-slate-200 px-4 py-2.5 transition shadow-lg">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center justify-center w-2 h-2 rounded-full bg-brand-amber animate-ping"></span>
+        <span class="font-medium">✨ 專為 <span class="text-brand-amber font-semibold">Vo Fon 和丰贸易</span> 客製之新版 RWD 官網概念預覽（升級 HTTPS / 手機版 / AI 搜尋架構）</span>
+      </div>
+      <a href="#hire-designer" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gradient-to-r from-brand-amber to-brand-amberDark text-brand-dark font-bold text-xs shadow hover:brightness-110 active:scale-95 transition">
+        <i data-lucide="mail" class="w-3.5 h-3.5"></i>
+        <span>喜歡此版型？點此聯絡製作</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- 主導覽列 -->
+  <header class="border-b border-white/5 bg-brand-navy/80 backdrop-blur-md sticky top-[41px] z-40 transition">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <!-- 品牌 Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-amber to-amber-600 flex items-center justify-center font-black text-brand-dark text-xl tracking-tighter shadow-md shadow-brand-amber/20 group-hover:scale-105 transition">
+          VF
+        </div>
+        <div class="flex flex-col">
+          <span class="font-bold text-lg tracking-wide text-white group-hover:text-brand-amberLight transition">和丰贸易有限公司</span>
+          <span class="text-[11px] uppercase tracking-wider text-brand-grayMuted">Vo Fon Trading Sdn Bhd</span>
+        </div>
+      </a>
+
+      <!-- 導覽連結 -->
+      <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+        <a href="#about" class="hover:text-brand-amber transition">关于和丰</a>
+        <a href="#categories" class="hover:text-brand-amber transition">产品分类库</a>
+        <a href="#bento" class="hover:text-brand-amber transition">核心优势</a>
+        <a href="#hot-products" class="hover:text-brand-amber transition">畅销粮油干货</a>
+        <a href="#inquiry" class="hover:text-brand-amber transition">在线订购咨询</a>
+      </nav>
+
+      <!-- 快捷聯絡按鈕 -->
+      <div class="hidden lg:flex items-center gap-4">
+        <div class="text-right">
+          <div class="text-[10px] text-slate-400 uppercase tracking-widest">服务热线 (吉隆坡)</div>
+          <div class="text-sm font-bold text-brand-amberLight tracking-wider">016-698 2922</div>
+        </div>
+        <a href="https://wa.me/60166982922?text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E8%AF%A2%E9%97%AE%E5%92%8C%E4%B8%B0%E8%B4%B8%E6%98%93%E7%9A%84%E9%A4%90%E9%A5%AE%E9%A3%9F%E5%93%81%E5%8E%9F%E6%96%99%E6%89%B9%E5%8F%91%E4%BE%9B%E5%BA%94" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl bg-emerald-600/90 hover:bg-emerald-500 text-white font-semibold text-xs inline-flex items-center gap-1.5 transition shadow-lg shadow-emerald-900/30">
+          <i data-lucide="message-circle" class="w-4 h-4"></i>
+          <span>WhatsApp 询价</span>
+        </a>
+      </div>
+
+      <!-- 行動裝置漢堡選單觸發鈕 -->
+      <button onclick="toggleMobileNav()" class="md:hidden p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 focus:outline-none" aria-label="選單">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+
+    <!-- 手機折疊選單 -->
+    <div id="mobile-menu" class="hidden md:hidden px-4 pt-2 pb-6 border-t border-slate-800 bg-brand-navy">
+      <div class="flex flex-col space-y-3 text-sm font-medium pt-2">
+        <a href="#about" onclick="toggleMobileNav()" class="py-2 text-slate-200 hover:text-brand-amber">关于和丰</a>
+        <a href="#categories" onclick="toggleMobileNav()" class="py-2 text-slate-200 hover:text-brand-amber">产品分类（18大类）</a>
+        <a href="#bento" onclick="toggleMobileNav()" class="py-2 text-slate-200 hover:text-brand-amber">核心优势与冷链</a>
+        <a href="#hot-products" onclick="toggleMobileNav()" class="py-2 text-slate-200 hover:text-brand-amber">畅销精选原料</a>
+        <a href="#inquiry" onclick="toggleMobileNav()" class="py-2 text-slate-200 hover:text-brand-amber">快速报价咨询</a>
+        <div class="pt-4 flex flex-col gap-2">
+          <a href="tel:0166982922" class="w-full text-center py-2.5 rounded-lg border border-brand-amber/40 text-brand-amber font-semibold text-sm">拨打中文专线：016-698 2922</a>
+          <a href="https://wa.me/60166982922" target="_blank" class="w-full text-center py-2.5 rounded-lg bg-emerald-600 text-white font-semibold text-sm flex items-center justify-center gap-2">
+            <i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp 即时洽询
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 電影級 Hero 區塊 -->
+  <section class="relative min-h-[90vh] flex items-center overflow-hidden bg-mesh py-20 lg:py-28">
+    <div class="absolute inset-0 bg-[radial-gradient(#ffffff0a_1px,transparent_1px)] [background-size:24px_24px] pointer-events-none"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <!-- 左側主標語與品牌價值 -->
+        <div class="lg:col-span-7 space-y-8 reveal">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-surface border border-brand-amber/30 text-brand-amber text-xs font-semibold tracking-wide shadow-sm">
+            <i data-lucide="shield-check" class="w-4 h-4"></i>
+            <span>吉隆坡与雪隆区 · 值得信赖的杂货与餐饮食品原料批发商</span>
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.15] text-white">
+            为餐饮业者解决寻料难题，<br>
+            <span class="text-gold-gradient">快捷配送 · 货源稳定公道</span>
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl">
+            和丰贸易有限公司（Vo Fon Trading Sdn Bhd）主要为全马餐营业者、连锁食肆、零售商及商业机构提供多元化高品质食品原料。从酱料配方、南北干货、米面粮油到冷冻海味，以诚信与快捷服务，让您腾出更多宝贵时间专注经营。
+          </p>
+
+          <!-- 動作按鈕 -->
+          <div class="flex flex-wrap items-center gap-4 pt-2">
+            <a href="#inquiry" class="px-7 py-3.5 rounded-xl bg-gradient-to-r from-brand-amber to-brand-amberDark text-brand-dark font-bold text-sm tracking-wide shadow-lg shadow-brand-amber/25 hover:brightness-110 active:scale-95 transition flex items-center gap-2">
+              <span>立即获取批发报价</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+            <a href="#categories" class="px-6 py-3.5 rounded-xl bg-slate-800/80 hover:bg-slate-700/80 border border-slate-700 text-slate-200 font-semibold text-sm transition flex items-center gap-2">
+              <i data-lucide="layout-grid" class="w-4 h-4"></i>
+              <span>浏览 18 大类食品分类</span>
+            </a>
+          </div>
+
+          <!-- 關鍵信任數字 (Trust Badges) -->
+          <div class="grid grid-cols-3 gap-4 pt-6 border-t border-slate-800/80">
+            <div>
+              <div class="text-2xl sm:text-3xl font-extrabold text-brand-amber">1,000+</div>
+              <div class="text-xs sm:text-sm text-slate-400 mt-0.5">餐饮批发品类</div>
+            </div>
+            <div>
+              <div class="text-2xl sm:text-3xl font-extrabold text-white">KL 快速</div>
+              <div class="text-xs sm:text-sm text-slate-400 mt-0.5">自营专业配送车队</div>
+            </div>
+            <div>
+              <div class="text-2xl sm:text-3xl font-extrabold text-brand-accent">100%</div>
+              <div class="text-xs sm:text-sm text-slate-400 mt-0.5">诚信专业公道实惠</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 右側高質感企業主視覺與浮動信任卡片 -->
+        <div class="lg:col-span-5 relative reveal">
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            <!-- 發光底暈 -->
+            <div class="absolute -inset-1.5 bg-gradient-to-tr from-brand-amber/30 to-brand-accent/20 rounded-2xl blur-xl opacity-60"></div>
+            
+            <!-- 現代企業主視覺圖 -->
+            <div class="relative rounded-2xl overflow-hidden border border-slate-700/80 shadow-2xl bg-slate-900 aspect-[4/5] sm:aspect-square lg:aspect-[4/5]">
+              <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=85" 
+                   alt="Vo Fon 和丰贸易现代供应链与商业总部" 
+                   class="w-full h-full object-cover object-center filter brightness-[0.88] contrast-[1.05] hover:scale-105 transition duration-700">
+              <div class="absolute inset-0 bg-gradient-to-t from-brand-navy via-brand-navy/30 to-transparent"></div>
+              
+              <!-- 覆疊資訊卡片 -->
+              <div class="absolute bottom-5 inset-x-5 p-4 rounded-xl glass-card border border-white/10">
+                <div class="flex items-center justify-between mb-1.5">
+                  <span class="text-xs font-semibold text-brand-amber uppercase tracking-wider">吉隆坡班登英达实体展厅</span>
+                  <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium bg-emerald-500/20 text-emerald-300">
+                    欢迎实地看样
+                  </span>
+                </div>
+                <p class="text-xs text-slate-300 line-clamp-2">
+                  No.16, 16M, Jalan 6/4, Taman Komersial Pandan Indah 55100, Kuala Lumpur Malaysia.
+                </p>
+              </div>
+            </div>
+
+            <!-- 浮動亮點標籤 1 -->
+            <div class="absolute -top-4 -left-4 p-3.5 rounded-xl glass-card border border-brand-amber/30 shadow-xl flex items-center gap-3 hidden sm:flex">
+              <div class="w-10 h-10 rounded-lg bg-brand-amber/20 flex items-center justify-center text-brand-amber">
+                <i data-lucide="truck" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <div class="text-xs font-bold text-white">高效准时达</div>
+                <div class="text-[11px] text-slate-400">稳定供应无缝对接后厨</div>
+              </div>
+            </div>
+
+            <!-- 浮動亮點標籤 2 -->
+            <div class="absolute -bottom-4 -right-4 p-3.5 rounded-xl glass-card border border-sky-400/30 shadow-xl flex items-center gap-3 hidden sm:flex">
+              <div class="w-10 h-10 rounded-lg bg-sky-500/20 flex items-center justify-center text-sky-400">
+                <i data-lucide="check-check" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <div class="text-xs font-bold text-white">食品合规批发</div>
+                <div class="text-[11px] text-slate-400">一手货源批价直达</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 關於我們：企業宗旨與定位 -->
+  <section id="about" class="py-20 bg-brand-navy/60 border-y border-white/5 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto text-center space-y-4 reveal">
+        <h2 class="text-xs font-bold uppercase tracking-widest text-brand-amber">ABOUT VO FON TRADING</h2>
+        <h3 class="text-3xl sm:text-4xl font-extrabold text-white">以诚信与专业，成为全马商家的坚实后盾</h3>
+        <p class="text-slate-300 text-base leading-relaxed">
+          在马来西亚寻找可靠的杂货供应商时，选择一家稳定、专业并具备完善供应链的公司至关重要。位于吉隆坡的 Vofon 致力于为餐饮业者、零售商以及各类商业客户提供优质的杂货与食品原料供应服务。
+        </p>
+      </div>
+
+      <!-- 核心宗旨引言橫幅 -->
+      <div class="mt-12 p-8 rounded-2xl glass-card border border-brand-amber/30 text-center max-w-4xl mx-auto reveal">
+        <div class="w-12 h-12 rounded-full bg-brand-amber/10 text-brand-amber flex items-center justify-center mx-auto mb-4">
+          <i data-lucide="quote" class="w-6 h-6"></i>
+        </div>
+        <h4 class="text-lg sm:text-xl font-bold text-slate-100 tracking-wide mb-2">和丰的宗旨</h4>
+        <p class="text-base sm:text-lg text-brand-amberLight font-medium max-w-2xl mx-auto">
+          「为客户解决找寻食品上的问题，供应所需的食品与材料。快速的送货服务，以便让客户拥有更多的时间与空间。」
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 現代 Bento Grid：核心優勢與全方位供應鏈架構 -->
+  <section id="bento" class="py-24 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+        <span class="text-xs font-bold uppercase tracking-widest text-brand-amber">CORE COMPETENCIES</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">四大维度构建餐饮供应链护城河</h2>
+        <p class="text-slate-400 text-sm mt-3">整合货源、温控仓储、准时履约与定制采购，协助马国餐饮老板掌控成本与品质</p>
+      </div>
+
+      <!-- Bento Grid 排版 -->
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+        
+        <!-- 卡片 1 (寬度 8)：多元品类一站配齐 -->
+        <div class="md:col-span-8 rounded-3xl glass-card p-8 sm:p-10 relative overflow-hidden glass-card-hover reveal">
+          <div class="absolute -right-8 -bottom-8 w-64 h-64 bg-brand-amber/10 rounded-full blur-3xl pointer-events-none"></div>
+          <div class="relative z-10 flex flex-col h-full justify-between space-y-6">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-amber-500/20 text-brand-amber flex items-center justify-center mb-6">
+                <i data-lucide="boxes" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-2xl font-bold text-white mb-3">18 大核心分类 · 逾千种食品原料一揽子供应</h3>
+              <p class="text-slate-300 text-sm leading-relaxed max-w-xl">
+                无论是中央厨房调味酱料、烘焙煎炸粉类、滋补药材、高级海味南北货，或是冷冻冷藏海鲜，和丰建立起详尽的料件数据库，免除业者奔波多家采购的时间损耗，实现一单打包、集中配送。
+              </p>
+            </div>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 border-t border-slate-700/50">
+              <div class="bg-slate-800/60 p-3 rounded-xl border border-slate-700/60 text-center">
+                <span class="text-brand-amber font-bold text-lg">55+</span>
+                <span class="block text-[11px] text-slate-400">餐饮专用酱料</span>
+              </div>
+              <div class="bg-slate-800/60 p-3 rounded-xl border border-slate-700/60 text-center">
+                <span class="text-brand-amber font-bold text-lg">117+</span>
+                <span class="block text-[11px] text-slate-400">专业粉类淀粉</span>
+              </div>
+              <div class="bg-slate-800/60 p-3 rounded-xl border border-slate-700/60 text-center">
+                <span class="text-brand-amber font-bold text-lg">47+</span>
+                <span class="block text-[11px] text-slate-400">优质南北干货</span>
+              </div>
+              <div class="bg-slate-800/60 p-3 rounded-xl border border-slate-700/60 text-center">
+                <span class="text-brand-amber font-bold text-lg">34+</span>
+                <span class="block text-[11px] text-slate-400">冷冻冷藏食材</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 卡片 2 (寬度 4)：快捷配送與高效率履約 -->
+        <div class="md:col-span-4 rounded-3xl glass-card p-8 relative overflow-hidden glass-card-hover reveal">
+          <div class="relative z-10 flex flex-col h-full justify-between space-y-6">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-sky-500/20 text-brand-accent flex items-center justify-center mb-6">
+                <i data-lucide="zap" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-xl font-bold text-white mb-2">雪隆极速送达服务</h3>
+              <p class="text-slate-300 text-sm leading-relaxed">
+                针对餐饮业日常紧凑的备料周期，和丰拥有成熟的物流调度机制。准时交付，确保后厨出菜不断档，是连锁餐厅与档口最稳健的靠山。
+              </p>
+            </div>
+            <div class="bg-slate-800/80 p-4 rounded-2xl border border-sky-500/20">
+              <div class="flex items-center gap-3 text-xs text-slate-300">
+                <i data-lucide="clock" class="w-4 h-4 text-brand-accent flex-shrink-0"></i>
+                <span>星期一至五两段式出车服务</span>
+              </div>
+              <div class="text-[11px] text-slate-400 mt-1 pl-7">8:00am - 12:00pm | 1:00pm - 5:00pm</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 卡片 3 (寬度 4)：公道价格与透明批发制 -->
+        <div class="md:col-span-4 rounded-3xl glass-card p-8 relative overflow-hidden glass-card-hover reveal">
+          <div class="relative z-10 flex flex-col h-full justify-between space-y-6">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center mb-6">
+                <i data-lucide="badge-dollar-sign" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-xl font-bold text-white mb-2">公道实惠 · 一手大宗底价</h3>
+              <p class="text-slate-300 text-sm leading-relaxed">
+                凭借多年产地直采与大宗仓储采购实力，平抑市场物价波动，为长期合作的餐饮伙伴提供极具竞争力的箱装/批发优惠。
+              </p>
+            </div>
+            <div class="flex items-center gap-2 text-xs font-semibold text-emerald-400 bg-emerald-500/10 py-2 px-3 rounded-lg border border-emerald-500/20">
+              <i data-lucide="check" class="w-4 h-4"></i>
+              <span>支持企业月结与批量订购专属协议</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 卡片 4 (寬度 8)：双语服务与吉隆坡实体展厅 -->
+        <div class="md:col-span-8 rounded-3xl glass-card p-8 sm:p-10 relative overflow-hidden glass-card-hover reveal">
+          <div class="relative z-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+            <div class="space-y-3">
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-surface border border-slate-700 text-xs text-slate-300">
+                <i data-lucide="map-pin" class="w-3.5 h-3.5 text-brand-amber"></i>
+                <span>Taman Komersial Pandan Indah, KL</span>
+              </div>
+              <h3 class="text-2xl font-bold text-white">实体展厅随时看货 · 中英双语贴心沟通</h3>
+              <p class="text-slate-300 text-sm leading-relaxed max-w-lg">
+                无论您偏好中文还是英文洽谈，我们都有专职销售专员提供即时解答。欢迎亲临吉隆坡展厅现场检验食材品质与规格包装。
+              </p>
+            </div>
+            <div class="flex-shrink-0 flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
+              <a href="https://maps.google.com/?q=Vo+Fon+Trading+Sdn+Bhd+Pandan+Indah" target="_blank" rel="noopener noreferrer" class="px-5 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-medium text-xs text-center border border-slate-700 inline-flex items-center justify-center gap-2">
+                <i data-lucide="navigation" class="w-4 h-4"></i>
+                <span>Google Maps 路线导航</span>
+              </a>
+              <a href="https://wa.me/60166982922" target="_blank" class="px-5 py-3 rounded-xl bg-brand-amber text-brand-dark font-bold text-xs text-center inline-flex items-center justify-center gap-2 hover:bg-brand-amberLight transition">
+                <i data-lucide="message-square" class="w-4 h-4"></i>
+                <span>联系中文专员 (016-6982922)</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 18 大完整產品分類庫 (原站真實數據整理) -->
+  <section id="categories" class="py-20 bg-brand-surface/40 border-y border-white/5 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6 reveal">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-brand-amber">PRODUCT CATEGORIES</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-1">完整食材品类分类库</h2>
+          <p class="text-slate-400 text-sm mt-2">点击各类别可即刻针对特定规格进行大批量询价</p>
+        </div>
+        <div class="text-xs text-slate-400 bg-brand-navy px-4 py-2 rounded-lg border border-slate-700 self-start md:self-auto">
+          📦 和丰仓储现货常备 · 规格齐全
+        </div>
+      </div>
+
+      <!-- 18 類別格狀展示 -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 reveal">
+        
+        <!-- 1 粉類 -->
+        <div class="glass-card p-4 rounded-2xl glass-card-hover group border border-slate-800">
+          <div class="text-brand-amber font-mono text-xs mb-1">117 项</div>
+          <h4 class="font-bold text-slate-100 group-hover:text-brand-amber transition">粉类</h4>
+          <p class="text-[11px] text-slate-400 mt-1">面粉、生粉、各类专用调制淀粉</p>
+        </div>
+
+        <!-- 2 醬料 -->
+        <div class="glass-card p-4 rounded-2xl glass-card-hover group border border-slate-800">
+          <div class="text-brand-amber font-mono text-xs mb-1">55 项</div>
+          <h4 class="font-bold text-slate-100 group-hover:text-brand-amber transition">酱料类</h4>
+          <p class="text-[11px] text-slate-400 mt-1">餐饮特调、生抽老抽、蚝油风味汁</p>
+        </div>
+
+        <!-- 3 糖/米/油/鹽 -->
+        <div class="glass-card p-4 rounded-2xl glass-card-hover group border border-slate-800">
+          <div class="text-brand-amber font-mono text-xs mb-1">51 项</div>
+          <h4 class="font-bold text-slate-100 group-hover:text-brand-amber transition">糖 / 米 / 油 / 盐</h4>
+          <p class="text-[11px] text-slate-400 mt-1">大宗食用油、精白米、基础调味原物料</p>
+        </div>
+
+        <!-- 4 VF 精選產品 -->
+        <div class="glass-card p-4 rounded-2xl glass-card-hover group border border-brand-amber/30 bg-brand-amber/5">
+          <div class="text-brand-amberLight font-mono text-xs mb-1">49 项</div>
+          <h4 class="font-bold text-brand-amber group-hover:text-brand-amberLight transition">VF 专属产品</h4>
+          <p class="text-[11px] text-slate-300 mt-1">和丰严选定制包装与重点品质产品</p>
+        </div>
+
+        <!-- 5 乾貨 -->
+        <div class="glass-card p-4 rounded-2xl glass-card-hover group border border-slate-800">
+          <div class="text-brand-amber font-mono text-xs mb-1">47 项</div>
+          <h4 class="font-bold text-slate-100 group-hover:text-brand-amber transition">干货</h4>
+          <p class="text-[11px] text-slate-400 mt-1">木耳、香菇、红枣与后厨常备干料</p>
+        </div>
+
+        <!-- 6 罐頭批發商 -->
+        <div class="glass-card p-4 rounded-2xl glass-card-hover group border border-slate-800">
+          <div class="text-brand-amber font-mono text-xs mb-1">42 项</div>
+          <h4 class="font-bold text-slate-100 group-hover:text-brand-amber transition">罐头批发</h4>
+          <p class="text-[11px] text-slate-400 mt-1">水果、肉类、蘑菇蔬菜与商用大罐装</p>
+        </div>
+
+        <!-- 7 乳製品/飲料/水吧 -->
+        <div class="glass-card p-4 rounded-2xl glass-card-hover group border border-slate-800">
+          <div class="text-brand-amber font-mono text-xs mb-1">39 项</div>
+          <h4 class="font-bold text-slate-100 group-hover:text-brand-amber transition">乳制品/饮料/水吧</h4>
+          <p class="text-[11px] text-slate-400 mt-1">淡奶、炼奶、茶饮底料与水吧耗材</p>
+        </div>
+
+        <!-- 8 海味批發商 -->
+        <div class="glass-card p-4 rounded-2xl glass-card-hover group border border-slate-800">
+          <div class="text-brand-amber font-mono text-xs mb-1">37 项</div>
+          <h4 class="font-bold text-slate-100 group-hover:text-brand-amber transition">海味批发</h4>
+          <p class="text-[11px] text-slate-400 mt-1">江鱼仔、虾米、高档干鲍海参等</p>
+        </div>
+
+        <!-- 9 冷凍/冷藏食品批發商 KL -->
+        <div class="glass-card p-4 rounded-2xl glass-card-hover group border border-slate-800">
+          <div class="text-brand-amber font-mono text-xs mb-1">34 项</div>
+          <h4 class="font-bold text-slate-100 group-hover:text-brand-amber transition">冷冻/冷藏食品</h4>
+          <p class="text-[11px] text-slate-400 mt-1">专业温控冷链、各类肉丸点心半成品</p>
+        </div>
+
+        <!-- 10 瓶裝 -->
+        <div class="glass-card p-4 rounded-2xl glass-card-hover group border border-slate-800">
+          <div class="text-brand-amber font-mono text-xs mb-1">33 项</div>
+          <h4 class="font-bold text-slate-100 group-hover:text-brand-amber transition">瓶装类</h4>
+          <p class="text-[11px] text-slate-400 mt-1">精装调味酱、辣椒酱与专用食用醋</p>
+        </div>
+
+        <!-- 11 面類 -->
+        <div class="glass-card p-4 rounded-2xl glass-card-hover group border border-slate-800">
+          <div class="text-brand-amber font-mono text-xs mb-1">27 项</div>
+          <h4 class="font-bold text-slate-100 group-hover:text-brand-amber transition">面类</h4>
+          <p class="text-[11px] text-slate-400 mt-1">米粉、伊面、快熟面、手工干燥拉面</p>
+        </div>
+
+        <!-- 12 海鮮 -->
+        <div class="glass-card p-4 rounded-2xl glass-card-hover group border border-slate-800">
+          <div class="text-brand-amber font-mono text-xs mb-1">26 项</div>
+          <h4 class="font-bold text-slate-100 group-hover:text-brand-amber transition">海鲜</h4>
+          <p class="text-[11px] text-slate-400 mt-1">冷冻鱼片、大虾仁、餐馆常用海产品</p>
+        </div>
+
+        <!-- 13 藥材供應商 KL -->
+        <div class="glass-card p-4 rounded-2xl glass-card-hover group border border-slate-800">
+          <div class="text-brand-amber font-mono text-xs mb-1">24 项</div>
+          <h4 class="font-bold text-slate-100 group-hover:text-brand-amber transition">药材供应商</h4>
+          <p class="text-[11px] text-slate-400 mt-1">当归、枸杞、党参及汤料煲汤中药配料</p>
+        </div>
+
+        <!-- 14 醃菜類 -->
+        <div class="glass-card p-4 rounded-2xl glass-card-hover group border border-slate-800">
+          <div class="text-brand-amber font-mono text-xs mb-1">23 项</div>
+          <h4 class="font-bold text-slate-100 group-hover:text-brand-amber transition">腌菜类</h4>
+          <p class="text-[11px] text-slate-400 mt-1">梅菜、榨菜、酸菜等开胃及烹饪原辅料</p>
+        </div>
+
+        <!-- 15 酒類 -->
+        <div class="glass-card p-4 rounded-2xl glass-card-hover group border border-slate-800">
+          <div class="text-brand-amber font-mono text-xs mb-1">12 项</div>
+          <h4 class="font-bold text-slate-100 group-hover:text-brand-amber transition">烹饪酒类</h4>
+          <p class="text-[11px] text-slate-400 mt-1">花雕酒、绍兴酒、料酒等厨房去腥增香酒</p>
+        </div>
+
+        <!-- 16 豆類 -->
+        <div class="glass-card p-4 rounded-2xl glass-card-hover group border border-slate-800">
+          <div class="text-brand-amber font-mono text-xs mb-1">6 项</div>
+          <h4 class="font-bold text-slate-100 group-hover:text-brand-amber transition">豆类</h4>
+          <p class="text-[11px] text-slate-400 mt-1">红豆、绿豆、黄豆与各类五谷杂粮杂豆</p>
+        </div>
+
+        <!-- 17 香料 -->
+        <div class="glass-card p-4 rounded-2xl glass-card-hover group border border-slate-800">
+          <div class="text-brand-amber font-mono text-xs mb-1">6 项</div>
+          <h4 class="font-bold text-slate-100 group-hover:text-brand-amber transition">香料</h4>
+          <p class="text-[11px] text-slate-400 mt-1">八角、桂皮、石谷仔与东南亚独特香辛</p>
+        </div>
+
+        <!-- 18 其他 -->
+        <div class="glass-card p-4 rounded-2xl glass-card-hover group border border-slate-800">
+          <div class="text-brand-amber font-mono text-xs mb-1">17 项</div>
+          <h4 class="font-bold text-slate-100 group-hover:text-brand-amber transition">其他厨房杂件</h4>
+          <p class="text-[11px] text-slate-400 mt-1">食品包材与餐厅耗材一站式配搭采购</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 原站熱門產品專區 (真實產品規格呈現) -->
+  <section id="hot-products" class="py-24 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-4 reveal">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-brand-amber">FEATURED ESSENTIALS</span>
+          <h2 class="text-3xl font-extrabold text-white mt-1">热门常备批发粮谷原材</h2>
+          <p class="text-slate-400 text-sm mt-1">原箱大宗出货，严格把关干燥度、饱满度与食品级包装规格</p>
+        </div>
+        <a href="#inquiry" class="inline-flex items-center gap-2 text-sm font-semibold text-brand-amber hover:text-brand-amberLight transition">
+          <span>索取本月最新行情报价表</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 reveal">
+        
+        <!-- 產品 1 -->
+        <div class="rounded-2xl glass-card p-6 border border-slate-800 glass-card-hover flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+              <span class="px-2 py-0.5 rounded bg-slate-800 text-brand-amber font-medium">南北干货</span>
+              <span class="font-mono">500GM*12PACK*CTN</span>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">风律板栗仁 CHESTNUT</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              烘焙、甜点、中式煲汤常用优质风律板栗，质地细致粉糯，一箱 12 包标准餐饮批发包装。
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-700/60 flex items-center justify-between">
+            <span class="text-xs text-emerald-400 font-semibold flex items-center gap-1">
+              <i data-lucide="check-circle" class="w-3.5 h-3.5"></i> 现货仓储充足
+            </span>
+            <button onclick="fillProductInquiry('风律板栗仁 CHESTNUT (500GM*12PACK*CTN)')" class="text-xs bg-slate-800 hover:bg-brand-amber hover:text-brand-dark px-3 py-1.5 rounded-lg text-slate-200 transition font-semibold">
+              快速询价
+            </button>
+          </div>
+        </div>
+
+        <!-- 產品 2 -->
+        <div class="rounded-2xl glass-card p-6 border border-slate-800 glass-card-hover flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+              <span class="px-2 py-0.5 rounded bg-slate-800 text-brand-amber font-medium">精选豆类</span>
+              <span class="font-mono">1KG*12PACK*CTN</span>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">特级红豆 RED BEAN</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              红豆沙、糖水铺、南洋甜品专用水润饱满红豆，颗粒均称煮透起沙，餐厅回购率极高。
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-700/60 flex items-center justify-between">
+            <span class="text-xs text-emerald-400 font-semibold flex items-center gap-1">
+              <i data-lucide="check-circle" class="w-3.5 h-3.5"></i> 餐厅首选原料
+            </span>
+            <button onclick="fillProductInquiry('特级红豆 RED BEAN (1KG*12PACK*CTN)')" class="text-xs bg-slate-800 hover:bg-brand-amber hover:text-brand-dark px-3 py-1.5 rounded-lg text-slate-200 transition font-semibold">
+              快速询价
+            </button>
+          </div>
+        </div>
+
+        <!-- 產品 3 -->
+        <div class="rounded-2xl glass-card p-6 border border-slate-800 glass-card-hover flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+              <span class="px-2 py-0.5 rounded bg-slate-800 text-brand-amber font-medium">南洋香料</span>
+              <span class="font-mono">500GM*12PACK*CTN</span>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">石谷仔 CANDLENUT</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              马来与娘惹咖喱、参巴酱必备天然增稠增香坚果，质地新鲜无油耗味，专业主厨指名。
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-700/60 flex items-center justify-between">
+            <span class="text-xs text-emerald-400 font-semibold flex items-center gap-1">
+              <i data-lucide="check-circle" class="w-3.5 h-3.5"></i> 香料现货稳定
+            </span>
+            <button onclick="fillProductInquiry('石谷仔 CANDLENUT (500GM*12PACK*CTN)')" class="text-xs bg-slate-800 hover:bg-brand-amber hover:text-brand-dark px-3 py-1.5 rounded-lg text-slate-200 transition font-semibold">
+              快速询价
+            </button>
+          </div>
+        </div>
+
+        <!-- 產品 4 -->
+        <div class="rounded-2xl glass-card p-6 border border-brand-amber/30 bg-slate-900/40 glass-card-hover flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+              <span class="px-2 py-0.5 rounded bg-brand-amber/20 text-brand-amber font-bold">VF 严选品牌</span>
+              <span class="font-mono">1KG PACK</span>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">(VF) 南瓜仔仁 SEED PUMPKIN</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              和丰自有高标准品管，无杂质、颗粒完整翠绿，适合中西式烘焙与健康轻食餐饮使用。
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-700/60 flex items-center justify-between">
+            <span class="text-xs text-brand-amber font-semibold flex items-center gap-1">
+              <i data-lucide="star" class="w-3.5 h-3.5"></i> VF 重点推荐
+            </span>
+            <button onclick="fillProductInquiry('(VF) 南瓜仔仁 SEED PUMPKIN 1KG')" class="text-xs bg-brand-amber text-brand-dark px-3 py-1.5 rounded-lg transition font-bold hover:brightness-110">
+              快速询价
+            </button>
+          </div>
+        </div>
+
+        <!-- 產品 5 -->
+        <div class="rounded-2xl glass-card p-6 border border-slate-800 glass-card-hover flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+              <span class="px-2 py-0.5 rounded bg-slate-800 text-brand-amber font-medium">精选豆类</span>
+              <span class="font-mono">1KG*12PACK*CTN</span>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">精选绿豆 MUNG BEAN</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              易熟易煮烂，无空壳与霉豆，餐饮档口与食品加工厂大宗采购长青料品，原厂纸箱安全防潮。
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-700/60 flex items-center justify-between">
+            <span class="text-xs text-emerald-400 font-semibold flex items-center gap-1">
+              <i data-lucide="check-circle" class="w-3.5 h-3.5"></i> 常态大宗出货
+            </span>
+            <button onclick="fillProductInquiry('精选绿豆 MUNG BEAN (1KG*12PACK*CTN)')" class="text-xs bg-slate-800 hover:bg-brand-amber hover:text-brand-dark px-3 py-1.5 rounded-lg text-slate-200 transition font-semibold">
+              快速询价
+            </button>
+          </div>
+        </div>
+
+        <!-- 產品 6 -->
+        <div class="rounded-2xl glass-card p-6 border border-slate-800 glass-card-hover flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+              <span class="px-2 py-0.5 rounded bg-slate-800 text-brand-amber font-medium">南北干货</span>
+              <span class="font-mono">大宗散装 / KG</span>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">特级松子仁 PINE NUT KERNEL</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              高品质中国原产松子仁，油润香脆，西餐青酱、高级中菜提香增脆必选坚果食材。
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-700/60 flex items-center justify-between">
+            <span class="text-xs text-emerald-400 font-semibold flex items-center gap-1">
+              <i data-lucide="check-circle" class="w-3.5 h-3.5"></i> 高端餐饮专供
+            </span>
+            <button onclick="fillProductInquiry('特级松子仁 PINE NUT KERNEL CHINA/KG')" class="text-xs bg-slate-800 hover:bg-brand-amber hover:text-brand-dark px-3 py-1.5 rounded-lg text-slate-200 transition font-semibold">
+              快速询价
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 30 秒線上快速詢價表單 -->
+  <section id="inquiry" class="py-20 bg-brand-surface/70 border-t border-white/5 relative">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-10 reveal">
+        <span class="text-xs font-bold uppercase tracking-widest text-brand-amber">QUICK ESTIMATE</span>
+        <h2 class="text-3xl font-extrabold text-white mt-1">30 秒餐饮批发快速配货询价</h2>
+        <p class="text-slate-300 text-sm mt-2">告诉和丰您的餐厅需求与所需品项，我们将安排专员为您提供详细报价单</p>
+      </div>
+
+      <div class="glass-card p-6 sm:p-10 rounded-3xl border border-slate-700 shadow-2xl reveal">
+        <form id="quote-form" onsubmit="handleQuoteSubmit(event)" class="space-y-6">
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 mb-2">贵店／企业名称 *</label>
+              <input type="text" id="quote-company" required placeholder="例如：Pandan 咖啡馆 / 珍味轩酒家" class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-brand-amber transition">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 mb-2">联络人姓名 *</label>
+              <input type="text" id="quote-name" required placeholder="例如：陈经理 / Mr. Lee" class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-brand-amber transition">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 mb-2">WhatsApp / 手机电话 *</label>
+              <input type="tel" id="quote-phone" required placeholder="例如：016-xxxxxxx" class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-brand-amber transition">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 mb-2">所在地区／配送地点 *</label>
+              <input type="text" id="quote-location" required placeholder="例如：Kuala Lumpur / Cheras / Petaling Jaya" class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-brand-amber transition">
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 mb-2">预估主要采购类别（可多选）</label>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-xs">
+              <label class="flex items-center gap-2 p-2.5 rounded-lg bg-slate-900/60 border border-slate-800 cursor-pointer hover:border-slate-600 transition">
+                <input type="checkbox" name="cat" value="酱料/食用油" class="rounded text-brand-amber focus:ring-0">
+                <span>酱料与食用油</span>
+              </label>
+              <label class="flex items-center gap-2 p-2.5 rounded-lg bg-slate-900/60 border border-slate-800 cursor-pointer hover:border-slate-600 transition">
+                <input type="checkbox" name="cat" value="面粉/淀粉类" class="rounded text-brand-amber focus:ring-0">
+                <span>各类粉类淀粉</span>
+              </label>
+              <label class="flex items-center gap-2 p-2.5 rounded-lg bg-slate-900/60 border border-slate-800 cursor-pointer hover:border-slate-600 transition">
+                <input type="checkbox" name="cat" value="干货海味" class="rounded text-brand-amber focus:ring-0">
+                <span>南北干货海味</span>
+              </label>
+              <label class="flex items-center gap-2 p-2.5 rounded-lg bg-slate-900/60 border border-slate-800 cursor-pointer hover:border-slate-600 transition">
+                <input type="checkbox" name="cat" value="冷冻冷藏" class="rounded text-brand-amber focus:ring-0">
+                <span>冷冻/冷藏食材</span>
+              </label>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 mb-2">具体采购品项或需求说明</label>
+            <textarea id="quote-notes" rows="3" placeholder="请填入所需规格、数量箱数（如：风律板栗仁 5 箱、特级红豆 10 箱），我们将即刻核算优惠价..." class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-brand-amber transition"></textarea>
+          </div>
+
+          <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-brand-amber to-brand-amberDark text-brand-dark font-extrabold text-sm tracking-wide shadow-lg shadow-brand-amber/20 hover:brightness-110 active:scale-95 transition flex items-center justify-center gap-2">
+            <i data-lucide="send" class="w-4 h-4"></i>
+            <span>提交询价清单（即刻安排专员回电）</span>
+          </button>
+          
+          <div class="text-center text-[11px] text-slate-400">
+            和丰贸易保护商业机密与合作报价 · 我们绝不外泄您的餐厅采购信息
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 營業資訊與門市地圖指引 -->
+  <section class="py-16 bg-brand-navy border-t border-slate-800 text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="space-y-3">
+          <div class="flex items-center gap-2 text-brand-amber font-bold">
+            <i data-lucide="map-pin" class="w-4 h-4"></i>
+            <span>展示厅与仓储总站</span>
+          </div>
+          <p class="text-slate-300 text-xs leading-relaxed">
+            Vo Fon Trading Sdn Bhd<br>
+            No.16, 16M, Jalan 6/4, Taman Komersial Pandan Indah 55100, Kuala Lumpur, Malaysia.
+          </p>
+          <a href="https://maps.google.com/?q=Vo+Fon+Trading+Sdn+Bhd+Pandan+Indah" target="_blank" class="inline-flex items-center gap-1.5 text-xs text-brand-amber hover:underline pt-1">
+            <span>在 Google 地图上开启导航</span>
+            <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+          </a>
+        </div>
+
+        <div class="space-y-3">
+          <div class="flex items-center gap-2 text-brand-amber font-bold">
+            <i data-lucide="phone-call" class="w-4 h-4"></i>
+            <span>电话与双语专线</span>
+          </div>
+          <ul class="text-xs text-slate-300 space-y-1.5">
+            <li><span class="text-slate-400">华语沟通专线：</span> <a href="tel:0166982922" class="font-semibold text-white hover:text-brand-amber">016-698 2922</a> (CN)</li>
+            <li><span class="text-slate-400">English Inquiries:</span> <a href="tel:0169238907" class="font-semibold text-white hover:text-brand-amber">016-923 8907</a> (EN)</li>
+            <li><span class="text-slate-400">总机：</span> 09-545 86231</li>
+            <li><span class="text-slate-400">官方电邮：</span> <a href="mailto:vofontradingsb@gmail.com" class="text-brand-accent hover:underline">vofontradingsb@gmail.com</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <div class="flex items-center gap-2 text-brand-amber font-bold">
+            <i data-lucide="clock" class="w-4 h-4"></i>
+            <span>营业出货时间</span>
+          </div>
+          <ul class="text-xs text-slate-300 space-y-1">
+            <li class="flex justify-between py-1 border-b border-slate-800">
+              <span class="text-slate-400">星期一 至 星期五</span>
+              <span>8:00am - 12:00pm<br>1:00pm - 5:00pm</span>
+            </li>
+            <li class="flex justify-between py-1 border-b border-slate-800">
+              <span class="text-slate-400">星期六</span>
+              <span>8:00am - 1:00pm</span>
+            </li>
+            <li class="flex justify-between py-1 text-slate-400">
+              <span>星期日及公共假期</span>
+              <span class="text-rose-400 font-semibold">休息闭店</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- 聯繫網站設計團隊回信表單 (id="hire-designer") -->
+  <!-- ========================================== -->
+  <section id="hire-designer" class="py-20 bg-gradient-to-b from-brand-navy to-black border-t-2 border-brand-amber/40 relative">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="glass-card rounded-3xl p-8 sm:p-12 border border-brand-amber/30 shadow-2xl relative overflow-hidden">
+        <div class="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 bg-brand-amber/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="space-y-4 text-center max-w-2xl mx-auto mb-8">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-brand-amber/20 text-brand-amber text-xs font-bold">
+            <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+            DIGITAL REDESIGN CONCEPT
+          </span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-white">喜歡這份為【Vo Fon 和丰贸易】量身打造的新官網嗎？</h2>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            我們專注為星馬華人企業打造符合現代美學（Awwwards / Apple 風格）、具備極速加載與 SEO 結構化資料的高轉化數位門面。若您希望落實上線此版型或擴充更多功能，歡迎直接聯繫設計總監。
+          </p>
+          <div class="text-xs font-mono text-slate-400 pt-1">
+            聯絡信箱：<a href="mailto:allanlinallan@gmail.com" class="text-brand-amber font-semibold hover:underline">allanlinallan@gmail.com</a>
+          </div>
+        </div>
+
+        <form id="hire-form" onsubmit="event.preventDefault();" class="space-y-5">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 mb-1.5">企業名稱</label>
+              <input type="text" id="hire-company" value="Vo Fon Trading Sdn Bhd (和丰贸易)" class="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-sm focus:outline-none focus:border-brand-amber">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 mb-1.5">聯絡人稱謂</label>
+              <input type="text" id="hire-contact" placeholder="例如：负责人 / 林先生" class="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-sm focus:outline-none focus:border-brand-amber">
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 mb-1.5">聯絡電話 / WhatsApp（建議填寫）</label>
+            <input type="tel" id="hire-phone" placeholder="例如：+60 16-698 2922" class="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-sm focus:outline-none focus:border-brand-amber">
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 mb-1.5">改版需求與預算說明</label>
+            <textarea id="hire-message" rows="3" class="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-sm focus:outline-none focus:border-brand-amber">我想諮詢這份為 Vo Fon 和丰贸易設計的官網新版製作上線流程、報價與時程（包含多語系與食材目錄系統整合）。</textarea>
+          </div>
+
+          <!-- 兩個自帶參數按鈕 -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+            <button type="button" onclick="sendViaGmail()" class="w-full py-3.5 px-4 rounded-xl bg-brand-amber text-brand-dark font-extrabold text-xs tracking-wide hover:bg-brand-amberLight active:scale-95 transition flex items-center justify-center gap-2 shadow-lg shadow-brand-amber/20">
+              <i data-lucide="mail" class="w-4 h-4"></i>
+              <span>用 Gmail 網頁版一鍵回信</span>
+            </button>
+            <button type="button" onclick="sendViaMailto()" class="w-full py-3.5 px-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-white border border-slate-600 font-bold text-xs tracking-wide active:scale-95 transition flex items-center justify-center gap-2">
+              <i data-lucide="send" class="w-4 h-4"></i>
+              <span>使用預設信箱寄出</span>
+            </button>
+          </div>
+          
+          <div class="text-center text-[11px] text-slate-500">
+            點擊按鈕將自動組合公司、聯絡人、電話與本預覽網址開啟郵件軟體，省時免手動複製。
+          </div>
+        </form>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 頁腳 Footer -->
+  <footer class="bg-black py-10 border-t border-slate-900 text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>
+        2024 Copyright © Vo Fon Trading Sdn Bhd. 保留所有权利。吉隆坡杂货供应商。
+      </div>
+      <div class="flex items-center gap-6">
+        <a href="#about" class="hover:text-slate-300">关于和丰</a>
+        <a href="#categories" class="hover:text-slate-300">产品类别</a>
+        <a href="https://vofon.com.my" target="_blank" class="hover:text-slate-300">原版旧站存档</a>
+        <a href="#hire-designer" class="text-brand-amber hover:underline">設計團隊聯絡</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 手機版底部固定毛玻璃 CTA 列 (Mobile Sticky Bottom Bar) -->
+  <div class="sm:hidden fixed bottom-0 inset-x-0 z-40 bg-brand-navy/90 backdrop-blur-lg border-t border-slate-800 px-4 py-3 flex items-center justify-between gap-3 shadow-2xl">
+    <a href="tel:0166982922" class="flex-1 py-2.5 rounded-xl bg-slate-800 border border-slate-700 text-center text-xs font-bold text-white flex items-center justify-center gap-1.5 active:bg-slate-700">
+      <i data-lucide="phone" class="w-3.5 h-3.5 text-brand-amber"></i>
+      <span>致电专线</span>
+    </a>
+    <a href="https://wa.me/60166982922?text=%E4%BD%A0%E5%A5%BD%EF%BC%8CVofon%E5%92%8C%E4%B8%B0%EF%BC%8C%E6%88%91%E6%83%B3%E8%AF%A2%E9%97%AE%E9%A4%90%E9%A5%AE%E6%89%B9%E5%8F%91%E4%BB%B7%E6%A0%BC" target="_blank" class="flex-1 py-2.5 rounded-xl bg-emerald-600 text-center text-xs font-bold text-white flex items-center justify-center gap-1.5 shadow-lg shadow-emerald-950 active:bg-emerald-500">
+      <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+      <span>WhatsApp 询价</span>
+    </a>
+    <a href="#hire-designer" class="p-2.5 rounded-xl bg-brand-amber text-brand-dark flex items-center justify-center" title="聯絡設計團隊">
+      <i data-lucide="sparkles" class="w-4 h-4"></i>
+    </a>
+  </div>
+
+  <!-- JavaScript 控制器 -->
+  <script>
+    // 初始化 Lucide 圖示
+    lucide.createIcons();
+
+    // 手機選單切換
+    function toggleMobileNav() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
+
+    // 填寫熱門產品到詢價框
+    function fillProductInquiry(productName) {
+      const notes = document.getElementById('quote-notes');
+      notes.value = `我想了解【${productName}】目前的批发箱价与起订量：\n` + (notes.value || '');
+      document.getElementById('inquiry').scrollIntoView({ behavior: 'smooth' });
+      notes.focus();
+    }
+
+    // 30 秒詢價表單提示
+    function handleQuoteSubmit(e) {
+      e.preventDefault();
+      const company = document.getElementById('quote-company').value;
+      const name = document.getElementById('quote-name').value;
+      alert(`【概念預覽提示】\n感謝 ${company} 的 ${name} 先生/女士！\n\n此為 Vofon 和丰贸易全新官網的前端概念展示版。若您是和丰团队，希望正式整合線上訂單與 CRM 後台，請滑至頁尾「聯繫網站設計團隊回信表單」直接聯繫我們！`);
+    }
+
+    // 組合信件參數 helper
+    function getEmailData() {
+      const company = document.getElementById('hire-company').value || 'Vo Fon Trading Sdn Bhd';
+      const contact = document.getElementById('hire-contact').value || '未提供聯絡人';
+      const phone = document.getElementById('hire-phone').value || '未提供電話';
+      const userMsg = document.getElementById('hire-message').value || '';
+      const currentUrl = window.location.href;
+
+      const subject = `我有興趣請貴公司幫我做網站（預覽案主：${company}）`;
+      const body = `網站設計團隊您好：\n\n我參考了您為【${company}】打造的新版官方網站概念預覽頁。\n\n【我的聯絡資訊】\n公司名稱：${company}\n聯絡人：${contact}\n聯絡電話/WhatsApp：${phone}\n\n【需求與預算說明】\n${userMsg}\n\n【參考預覽網址】\n${currentUrl}\n\n期待您的回覆與報價時程，謝謝！`;
+
+      return { subject, body };
+    }
+
+    // 用 Gmail 網頁版開啟
+    function sendViaGmail() {
+      const targetEmail = 'allanlinallan@gmail.com';
+      const { subject, body } = getEmailData();
+      const url = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(targetEmail)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.open(url, '_blank');
+    }
+
+    // 用 mailto 系統預設客戶端開啟
+    function sendViaMailto() {
+      const targetEmail = 'allanlinallan@gmail.com';
+      const { subject, body } = getEmailData();
+      const mailtoUrl = `mailto:${targetEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.location.href = mailtoUrl;
+    }
+
+    // 滾動動態 Intersection Observer
+    document.addEventListener('DOMContentLoaded', () => {
+      const reveals = document.querySelectorAll('.reveal');
+      const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+            obs.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      });
+
+      reveals.forEach(el => observer.observe(el));
+    });
+  </script>
+</body>
+</html>

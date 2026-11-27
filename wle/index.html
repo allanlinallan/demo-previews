@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>永利工程(香港)有限公司 | 頂級商業空間・食肆・辦公室裝修工程顧問</title>
+  <meta name="description" content="永利工程(香港)有限公司自2003年創立，深耕香港二十餘載。專精商舖裝修、食肆裝修、寫字樓辦公室裝修、家居空間及訂造傢俬，提供全方位室內設計、建築項目管理與施工承辦。">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              black: '#121214',
+              charcoal: '#18181B',
+              surface: '#202024',
+              muted: '#2A2A30',
+              beige: '#D6C7B2',
+              champagne: '#E8DEC8',
+              accent: '#C5B299',
+              gold: '#C5A059'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', '"Noto Sans TC"', 'sans-serif'],
+            serif: ['Georgia', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* 雜誌質感與平滑光影 */
+    body {
+      background-color: #121214;
+      color: #E4E4E7;
+      font-family: 'Plus Jakarta Sans', 'Noto Sans TC', sans-serif;
+      overflow-x: hidden;
+    }
+    .glass-card {
+      background: rgba(24, 24, 27, 0.75);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(214, 199, 178, 0.12);
+    }
+    .glass-card-hover {
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .glass-card-hover:hover {
+      border-color: rgba(214, 199, 178, 0.35);
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.7);
+    }
+    .text-champagne-gradient {
+      background: linear-gradient(135deg, #FFF9F0 0%, #D6C7B2 50%, #9F8B70 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .text-glow {
+      text-shadow: 0 0 24px rgba(214, 199, 178, 0.25);
+    }
+    .mesh-bg {
+      background: radial-gradient(circle at 10% 20%, rgba(214, 199, 178, 0.08) 0%, transparent 40%),
+                  radial-gradient(circle at 85% 60%, rgba(197, 160, 89, 0.06) 0%, transparent 45%),
+                  radial-gradient(circle at 50% 90%, rgba(32, 32, 36, 0.8) 0%, transparent 60%);
+    }
+    /* Scroll Reveal */
+    .reveal {
+      opacity: 0;
+      transform: translateY(32px);
+      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: opacity, transform;
+    }
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+
+  <!-- Structured Data JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "永利工程(香港)有限公司",
+    "alternateName": "W.L Engineering (H.K) Ltd.",
+    "url": "https://wle.com.hk",
+    "logo": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=400&q=80",
+    "description": "永利工程於2003年成立，深耕香港20餘年，專業承辦商鋪裝修、食肆裝修、辦公室裝修、寫字樓翻新、家居空間及訂製傢俬。",
+    "telephone": "+852 3116 4216",
+    "faxNumber": "+852 3695 1428",
+    "email": "info@wle.com.hk",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "景福街108-110號超達工業大廈15樓C及D室",
+      "addressLocality": "新蒲崗",
+      "addressRegion": "九龍",
+      "addressCountry": "HK"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "09:00",
+      "closes": "18:00"
+    },
+    "foundingDate": "2003",
+    "areaServed": "Hong Kong"
+  }
+  </script>
+</head>
+<body class="selection:bg-brand-beige selection:text-brand-black">
+
+  <!-- 頂部精緻預覽橫幅 (Concept Preview Banner) -->
+  <div class="relative z-50 bg-gradient-to-r from-brand-charcoal via-stone-900 to-brand-charcoal border-b border-brand-beige/20 text-brand-champagne px-4 py-2.5 text-xs md:text-sm shadow-2xl">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2.5">
+      <div class="flex items-center gap-2 text-center sm:text-left">
+        <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-brand-beige/20 text-brand-beige text-xs">✨</span>
+        <span class="font-light tracking-wide text-stone-300">
+          專為 <strong class="text-white font-medium">永利工程(香港)有限公司</strong> 客製之新版 RWD 官網概念預覽（架構升級：手機體驗 / 極速效能 / 現代美學）
+        </span>
+      </div>
+      <a href="#hire-designer" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-brand-beige text-brand-black font-semibold text-xs hover:bg-white transition-all shadow-md active:scale-95">
+        <span>✉️ 喜歡此設計？點此聯絡網站製作團隊</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- 導覽列 Navigation -->
+  <header class="sticky top-0 z-40 bg-brand-black/80 backdrop-blur-xl border-b border-white/5 transition-all">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 border border-brand-beige/40 rounded-sm flex items-center justify-center bg-brand-charcoal">
+          <span class="text-brand-beige font-serif font-bold text-xl tracking-tighter">WL</span>
+        </div>
+        <div>
+          <span class="text-base font-semibold tracking-wider text-white block">永利工程(香港)有限公司</span>
+          <span class="text-[10px] tracking-widest text-brand-beige/70 uppercase block">W.L Engineering (H.K) Ltd. · Est. 2003</span>
+        </div>
+      </div>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm text-stone-300 font-light">
+        <a href="#about" class="hover:text-brand-beige transition-colors">公司傳承</a>
+        <a href="#services" class="hover:text-brand-beige transition-colors">工程範疇</a>
+        <a href="#bento" class="hover:text-brand-beige transition-colors">專業優勢</a>
+        <a href="#process" class="hover:text-brand-beige transition-colors">服務流程</a>
+        <a href="#contact" class="hover:text-brand-beige transition-colors">專案詢價</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="https://wa.me/?text=你好，我希望諮詢永利工程的室內裝修與項目管理服務" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 text-xs uppercase tracking-wider rounded border border-brand-beige/40 text-brand-beige hover:bg-brand-beige hover:text-brand-black transition-all">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+          <span>WhatsApp 諮詢</span>
+        </a>
+        <a href="#quote" class="px-5 py-2.5 rounded bg-brand-beige text-brand-black text-xs font-semibold hover:bg-brand-champagne transition-all shadow-lg shadow-brand-beige/10">
+          即刻報價
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative min-h-[92vh] flex items-center justify-center mesh-bg px-6 py-20 border-b border-white/5">
+    <!-- Subtle architectural grid lines overlay -->
+    <div class="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:4rem_4rem] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+      
+      <div class="lg:col-span-7 space-y-8">
+        <div class="inline-flex items-center gap-3 px-3.5 py-1.5 rounded-full border border-brand-beige/30 bg-brand-charcoal/80 text-xs text-brand-beige tracking-wider">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          <span>香港建造業二十年沉澱 · 牌照規範工程</span>
+        </div>
+
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-light tracking-tight text-white leading-[1.15]">
+          融匯工藝與空間哲學<br>
+          <span class="text-champagne-gradient font-medium text-glow">賦予商業與居所卓越價值</span>
+        </h1>
+
+        <p class="text-base sm:text-lg text-stone-400 font-light max-w-xl leading-relaxed">
+          永利工程(香港)有限公司創立於 2003 年。專門承接大型商舖、特色食肆、現代寫字樓、家居空間及高規格傢俬訂造，以嚴謹項目管理與匠人級工藝，兌現每個空間的極致想像。
+        </p>
+
+        <div class="flex flex-wrap gap-4 pt-2">
+          <a href="#services" class="px-8 py-3.5 bg-brand-beige text-brand-black text-sm font-semibold rounded hover:bg-white transition-all shadow-xl shadow-brand-beige/15 inline-flex items-center gap-2">
+            <span>探索工程範疇</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+          <a href="#about" class="px-8 py-3.5 glass-card text-stone-200 text-sm font-normal rounded hover:border-brand-beige/50 transition-all">
+            了解工程承辦底蘊
+          </a>
+        </div>
+
+        <!-- Trust Badges -->
+        <div class="grid grid-cols-3 gap-6 pt-6 border-t border-white/10 text-stone-400 max-w-lg">
+          <div>
+            <div class="text-2xl sm:text-3xl font-light text-white font-serif">2003<span class="text-brand-beige text-lg font-sans">+</span></div>
+            <div class="text-xs tracking-wider text-stone-400 uppercase mt-1">香港創立年份</div>
+          </div>
+          <div>
+            <div class="text-2xl sm:text-3xl font-light text-white font-serif">1,000<span class="text-brand-beige text-lg font-sans">+</span></div>
+            <div class="text-xs tracking-wider text-stone-400 uppercase mt-1">完成商住專案</div>
+          </div>
+          <div>
+            <div class="text-2xl sm:text-3xl font-light text-white font-serif">100<span class="text-brand-beige text-lg font-sans">%</span></div>
+            <div class="text-xs tracking-wider text-stone-400 uppercase mt-1">嚴格工期監控</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:col-span-5 relative">
+        <div class="relative mx-auto max-w-md lg:max-w-none">
+          <!-- Ambient Glow Behind Image -->
+          <div class="absolute -inset-2 bg-gradient-to-r from-brand-beige/20 to-brand-gold/10 rounded-2xl blur-2xl opacity-60"></div>
+          
+          <div class="relative rounded-xl overflow-hidden border border-brand-beige/20 shadow-2xl bg-brand-charcoal">
+            <img 
+              src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=85" 
+              alt="永利工程頂級空間室內設計與裝修施工實景" 
+              class="w-full h-[480px] object-cover hover:scale-105 transition-transform duration-700 ease-out"
+              loading="eager"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-brand-black via-transparent to-transparent opacity-80"></div>
+            
+            <div class="absolute bottom-6 left-6 right-6 p-4 rounded bg-brand-black/85 backdrop-blur-md border border-white/10">
+              <div class="flex items-center justify-between">
+                <div>
+                  <div class="text-xs uppercase text-brand-beige tracking-wider">旗艦級空間工程</div>
+                  <div class="text-sm font-medium text-white mt-0.5">全案設計 · 消防牌照 · 機電一體化</div>
+                </div>
+                <span class="px-2.5 py-1 text-[11px] rounded bg-brand-beige/20 text-brand-champagne font-mono">HK Engineering</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mini Floating Metric -->
+          <div class="absolute -bottom-5 -left-5 glass-card p-4 rounded-lg hidden sm:block border-brand-beige/30 shadow-2xl">
+            <div class="flex items-center gap-3">
+              <div class="w-9 h-9 rounded-full bg-brand-beige/20 flex items-center justify-center text-brand-beige">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+              </div>
+              <div>
+                <p class="text-xs text-stone-400">政府合約與非牟利機構</p>
+                <p class="text-sm font-semibold text-white">指定慈善機構合作承建商</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Bento Grid 核心優勢與服務範疇 -->
+  <section id="services" class="py-24 px-6 relative bg-brand-black">
+    <div class="max-w-7xl mx-auto space-y-16">
+      
+      <div class="text-center max-w-2xl mx-auto space-y-3 reveal">
+        <span class="text-xs uppercase tracking-widest text-brand-beige block font-mono">CORE DISCIPLINES</span>
+        <h2 class="text-3xl sm:text-4xl font-light text-white">全方位工程承辦與空間設計</h2>
+        <p class="text-sm sm:text-base text-stone-400">永利工程以二十餘年香港本地工藝積累，提供從概念藍圖、牌照申請到精工落地的完整產業鏈服務。</p>
+      </div>
+
+      <!-- Bento Grid (3-Row Asymmetric Layout) -->
+      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        
+        <!-- Bento 1: 商舖與零售空間 (Large Span) -->
+        <div class="md:col-span-2 lg:col-span-2 glass-card rounded-2xl p-8 glass-card-hover flex flex-col justify-between relative overflow-hidden group reveal">
+          <div class="absolute -right-12 -top-12 w-48 h-48 bg-brand-beige/5 rounded-full blur-3xl group-hover:bg-brand-beige/10 transition-all"></div>
+          <div class="space-y-4 relative z-10">
+            <div class="w-12 h-12 rounded bg-brand-muted flex items-center justify-center text-brand-beige">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+            </div>
+            <span class="text-xs uppercase tracking-widest text-brand-beige font-mono">Retail & Commercial</span>
+            <h3 class="text-2xl font-medium text-white">商舖裝修與品牌商業空間</h3>
+            <p class="text-stone-400 text-sm leading-relaxed">
+              因應香港快節奏商場及臨街旺舖營運標準，精準掌握商場管業處（Fit-out Guide）規約、夜間施工協調與頂級櫥窗陳列，確保品牌如期開門營業。
+            </p>
+          </div>
+          <div class="pt-8 border-t border-white/5 mt-8 flex items-center justify-between text-xs text-brand-beige/80">
+            <span>商場規約對接 · 機電冷氣 · 櫥窗工程</span>
+            <span class="text-brand-champagne font-mono">01 / COMMERCIAL</span>
+          </div>
+        </div>
+
+        <!-- Bento 2: 食肆餐飲工程 (Tall) -->
+        <div class="md:col-span-1 lg:col-span-2 glass-card rounded-2xl p-8 glass-card-hover flex flex-col justify-between relative overflow-hidden group reveal">
+          <div class="space-y-4">
+            <div class="w-12 h-12 rounded bg-brand-muted flex items-center justify-center text-brand-beige">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/></svg>
+            </div>
+            <span class="text-xs uppercase tracking-widest text-brand-beige font-mono">F&B Hospitality</span>
+            <h3 class="text-2xl font-medium text-white">食肆裝修與餐飲牌照工程</h3>
+            <p class="text-stone-400 text-sm leading-relaxed">
+              精通香港食環署（FEHD）牌照標準、消防隔火系統、廚房大型通風抽氣排煙風喉、生發隔油池與污水機電合規佈署。
+            </p>
+          </div>
+          <div class="pt-8 border-t border-white/5 mt-8 flex items-center justify-between text-xs text-brand-beige/80">
+            <span>出牌顧問 · 廚房排煙 · 消防驗收</span>
+            <span class="text-brand-champagne font-mono">02 / RESTAURANT</span>
+          </div>
+        </div>
+
+        <!-- Bento 3: 寫字樓與辦公室 -->
+        <div class="glass-card rounded-2xl p-6 glass-card-hover flex flex-col justify-between reveal">
+          <div class="space-y-3">
+            <div class="w-10 h-10 rounded bg-brand-muted flex items-center justify-center text-brand-beige">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            </div>
+            <h4 class="text-lg font-medium text-white">寫字樓與辦公室裝修</h4>
+            <p class="text-stone-400 text-xs leading-relaxed">甲級寫字樓分區隔音牆、高架地台、伺服器機房弱電工程及符合人體工學之智能辦公空間規劃。</p>
+          </div>
+          <div class="pt-4 border-t border-white/5 mt-4 text-[11px] text-brand-beige/70 font-mono">甲級商廈 · 隔音系統</div>
+        </div>
+
+        <!-- Bento 4: 家居空間與豪宅 -->
+        <div class="glass-card rounded-2xl p-6 glass-card-hover flex flex-col justify-between reveal">
+          <div class="space-y-3">
+            <div class="w-10 h-10 rounded bg-brand-muted flex items-center justify-center text-brand-beige">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+            </div>
+            <h4 class="text-lg font-medium text-white">家居尊尚裝修設計</h4>
+            <p class="text-stone-400 text-xs leading-relaxed">全屋水電全面翻新、泥水貼磚、防水保養，融合現代簡約或輕奢風尚，打造溫潤耐久的起居容器。</p>
+          </div>
+          <div class="pt-4 border-t border-white/5 mt-4 text-[11px] text-brand-beige/70 font-mono">高端住宅 · 水電防漏</div>
+        </div>
+
+        <!-- Bento 5: 傢俬訂做與木工工坊 -->
+        <div class="glass-card rounded-2xl p-6 glass-card-hover flex flex-col justify-between reveal">
+          <div class="space-y-3">
+            <div class="w-10 h-10 rounded bg-brand-muted flex items-center justify-center text-brand-beige">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"/></svg>
+            </div>
+            <h4 class="text-lg font-medium text-white">專屬傢俬度身訂造</h4>
+            <p class="text-stone-400 text-xs leading-relaxed">自設或嚴選高等級無甲醛板材，油壓五金、隱形暗門、收納系統專屬量身裁切，絲絲入扣。</p>
+          </div>
+          <div class="pt-4 border-t border-white/5 mt-4 text-[11px] text-brand-beige/70 font-mono">E0級環保板材 · 精密接縫</div>
+        </div>
+
+        <!-- Bento 6: 慈善機構與公共工程 -->
+        <div class="glass-card rounded-2xl p-6 glass-card-hover flex flex-col justify-between reveal">
+          <div class="space-y-3">
+            <div class="w-10 h-10 rounded bg-brand-muted flex items-center justify-center text-brand-beige">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+            </div>
+            <h4 class="text-lg font-medium text-white">慈善機構及社區設施</h4>
+            <p class="text-stone-400 text-xs leading-relaxed">多年榮獲香港非牟利慈善組織及社區中心委託，無障礙設施、通爽安全通風、經費審計合規嚴謹。</p>
+          </div>
+          <div class="pt-4 border-t border-white/5 mt-4 text-[11px] text-brand-beige/70 font-mono">NGO 公益投標 · 無障礙設計</div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 公司簡介與工程承諾 About Section -->
+  <section id="about" class="py-20 px-6 bg-brand-charcoal/60 border-y border-white/5 relative">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      
+      <div class="lg:col-span-5 space-y-6 reveal">
+        <span class="text-xs uppercase tracking-widest text-brand-beige font-mono">ABOUT W.L ENGINEERING</span>
+        <h2 class="text-3xl sm:text-4xl font-light text-white leading-tight">
+          自 2003 年起，<br>
+          在香港每一寸珍貴空間中踐行承諾。
+        </h2>
+        <div class="w-12 h-0.5 bg-brand-beige"></div>
+        <p class="text-stone-300 text-sm leading-relaxed">
+          永利工程(香港)有限公司立足新蒲崗，廿年來親歷香港建築與室內空間的演進。我們明白空間裝修絕非單純裝飾，而是牽涉工期合規、租金壓力、消防安全以及未來數年運作順暢度的綜合工程學。
+        </p>
+        <p class="text-stone-400 text-sm leading-relaxed">
+          我們堅持「專業室內設計、一絲不苟之項目管理、直接工程承辦」三位一體，免除多重轉判抽成，直接以透明報價與工藝品質對接委託人。
+        </p>
+        <div class="pt-2 flex items-center gap-6 text-xs text-stone-300">
+          <div class="flex items-center gap-2">
+            <span class="text-brand-beige font-bold">✓</span> 實體工廈據點
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-brand-beige font-bold">✓</span> 專業團隊全程跟進
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-brand-beige font-bold">✓</span> 完善保養條款
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6 reveal">
+        <div class="glass-card p-6 rounded-xl border border-white/5 space-y-3">
+          <div class="text-brand-beige text-2xl font-serif">01.</div>
+          <h4 class="text-white font-medium text-base">一站式全案管理</h4>
+          <p class="text-xs text-stone-400 leading-relaxed">從度尺、平面圖繪製、3D效果圖、出牌顧問到進場打拆泥水、水電木工及完工清潔，專人單一窗口對接。</p>
+        </div>
+
+        <div class="glass-card p-6 rounded-xl border border-white/5 space-y-3">
+          <div class="text-brand-beige text-2xl font-serif">02.</div>
+          <h4 class="text-white font-medium text-base">嚴守香港消防及工務規範</h4>
+          <p class="text-xs text-stone-400 leading-relaxed">深諳大廈公契、消防通風標準及勞工處安全條例，備齊合資格保險與工程登記，免除業主法規隱憂。</p>
+        </div>
+
+        <div class="glass-card p-6 rounded-xl border border-white/5 space-y-3">
+          <div class="text-brand-beige text-2xl font-serif">03.</div>
+          <h4 class="text-white font-medium text-base">清晰透明工程量清單</h4>
+          <p class="text-xs text-stone-400 leading-relaxed">實報實銷，材料型號、施工工序條列分明，拒絕巧立名目的中途追加，確保預算切實可控。</p>
+        </div>
+
+        <div class="glass-card p-6 rounded-xl border border-white/5 space-y-3">
+          <div class="text-brand-beige text-2xl font-serif">04.</div>
+          <h4 class="text-white font-medium text-base">自營技術工班把關</h4>
+          <p class="text-xs text-stone-400 leading-relaxed">核心水喉、電燈、泥水及傢俬裝嵌師傅具備多年本地牌照與豐富經驗，以細膩收口鑄造頂尖質感。</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 服務流程 Service Process -->
+  <section id="process" class="py-24 px-6 bg-brand-black">
+    <div class="max-w-7xl mx-auto space-y-16">
+      
+      <div class="text-center max-w-xl mx-auto space-y-3 reveal">
+        <span class="text-xs uppercase tracking-widest text-brand-beige font-mono">STANDARDIZED WORKFLOW</span>
+        <h2 class="text-3xl font-light text-white">清晰嚴謹的服務流程</h2>
+        <p class="text-sm text-stone-400">標準化 5 大進階歷程，讓每一筆裝修預算皆化為可靠的空間價值。</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-5 gap-4 relative">
+        
+        <div class="glass-card p-6 rounded-xl relative reveal">
+          <div class="text-xs text-brand-beige font-mono mb-2">PHASE 01</div>
+          <h4 class="text-white font-medium text-base mb-2">現場度尺與諮詢</h4>
+          <p class="text-stone-400 text-xs leading-relaxed">初步掌握業主空間意圖、業態要求、現場管線現況與預算範疇。</p>
+        </div>
+
+        <div class="glass-card p-6 rounded-xl relative reveal">
+          <div class="text-xs text-brand-beige font-mono mb-2">PHASE 02</div>
+          <h4 class="text-white font-medium text-base mb-2">方案規劃與透明報價</h4>
+          <p class="text-stone-400 text-xs leading-relaxed">出具平面佈局圖、物料選樣建議及詳盡分項工程報價清單。</p>
+        </div>
+
+        <div class="glass-card p-6 rounded-xl relative reveal">
+          <div class="text-xs text-brand-beige font-mono mb-2">PHASE 03</div>
+          <h4 class="text-white font-medium text-base mb-2">正式簽署與圖紙深化</h4>
+          <p class="text-stone-400 text-xs leading-relaxed">確立工期排程、物料規格定案、申請商場/物業進場施工許可。</p>
+        </div>
+
+        <div class="glass-card p-6 rounded-xl relative reveal">
+          <div class="text-xs text-brand-beige font-mono mb-2">PHASE 04</div>
+          <h4 class="text-white font-medium text-base mb-2">精工施作與階段查驗</h4>
+          <p class="text-stone-400 text-xs leading-relaxed">拆除、水電隱蔽工程、泥水、木作油漆分階段監工及客戶驗收。</p>
+        </div>
+
+        <div class="glass-card p-6 rounded-xl relative reveal">
+          <div class="text-xs text-brand-beige font-mono mb-2">PHASE 05</div>
+          <h4 class="text-white font-medium text-base mb-2">完工驗收與工程保養</h4>
+          <p class="text-stone-400 text-xs leading-relaxed">全面細緻清潔、交吉啟用，提供完工證明文件與專業工程售後保固。</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 30秒線上快速詢價表單 Interactive Quote Section -->
+  <section id="quote" class="py-20 px-6 bg-brand-surface/40 border-t border-white/5 relative">
+    <div class="max-w-4xl mx-auto glass-card p-8 sm:p-12 rounded-2xl border border-brand-beige/20 shadow-2xl reveal">
+      
+      <div class="text-center space-y-2 mb-10">
+        <span class="text-xs uppercase tracking-widest text-brand-beige font-mono">FAST ESTIMATE</span>
+        <h3 class="text-2xl sm:text-3xl font-light text-white">空間工程 30 秒快速估價需求單</h3>
+        <p class="text-stone-400 text-xs sm:text-sm">填妥以下要點，永利工程資深項目主任將於 24 小時內與您聯繫並安排度尺交流。</p>
+      </div>
+
+      <form id="project-estimate-form" onsubmit="handleQuickQuote(event)" class="space-y-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div>
+            <label class="block text-xs uppercase tracking-wider text-stone-300 mb-2">工程類型 *</label>
+            <select required class="w-full bg-brand-black border border-white/10 rounded px-4 py-3 text-sm text-stone-200 focus:outline-none focus:border-brand-beige transition-colors">
+              <option value="商舖裝修 / 零售店面">商舖裝修 / 零售店面</option>
+              <option value="食肆裝修 / 餐飲空間出牌">食肆裝修 / 餐飲空間出牌</option>
+              <option value="辦公室 / 寫字樓工程">辦公室 / 寫字樓工程</option>
+              <option value="家居裝修 / 住宅全屋翻新">家居裝修 / 住宅全屋翻新</option>
+              <option value="訂造傢俬 / 木工工程">訂造傢俬 / 木工工程</option>
+              <option value="慈善機構 / 社區設施">慈善機構 / 社區設施</option>
+              <option value="其他工程項目">其他工程項目</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-xs uppercase tracking-wider text-stone-300 mb-2">實用面積 (平方呎 Approx. sq.ft) *</label>
+            <input type="text" placeholder="例如：800 呎" required class="w-full bg-brand-black border border-white/10 rounded px-4 py-3 text-sm text-stone-200 placeholder-stone-600 focus:outline-none focus:border-brand-beige transition-colors">
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div>
+            <label class="block text-xs uppercase tracking-wider text-stone-300 mb-2">聯絡人姓名 *</label>
+            <input type="text" placeholder="陳先生 / 黎小姐" required class="w-full bg-brand-black border border-white/10 rounded px-4 py-3 text-sm text-stone-200 placeholder-stone-600 focus:outline-none focus:border-brand-beige transition-colors">
+          </div>
+
+          <div>
+            <label class="block text-xs uppercase tracking-wider text-stone-300 mb-2">聯絡電話 (WhatsApp 優先) *</label>
+            <input type="tel" placeholder="+852 9000 0000" required class="w-full bg-brand-black border border-white/10 rounded px-4 py-3 text-sm text-stone-200 placeholder-stone-600 focus:outline-none focus:border-brand-beige transition-colors">
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs uppercase tracking-wider text-stone-300 mb-2">工程地點與現況說明</label>
+          <textarea rows="3" placeholder="例如：新蒲崗工廈單位擬改為辦公室兼陳列室、預計下個月交吉進場..." class="w-full bg-brand-black border border-white/10 rounded px-4 py-3 text-sm text-stone-200 placeholder-stone-600 focus:outline-none focus:border-brand-beige transition-colors"></textarea>
+        </div>
+
+        <div class="pt-2 text-center">
+          <button type="submit" class="w-full sm:w-auto px-10 py-3.5 bg-brand-beige text-brand-black font-semibold text-sm rounded hover:bg-white transition-all shadow-xl shadow-brand-beige/20">
+            送出估價需求 · 安排免費度尺諮詢
+          </button>
+          <p class="text-[11px] text-stone-500 mt-3">所有資料僅作為永利工程聯繫與工程估價用途，嚴格保密。</p>
+        </div>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- 聯繫資訊區塊 Contact Information Grid -->
+  <section id="contact" class="py-16 px-6 bg-brand-black border-t border-white/5">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <div class="glass-card p-6 rounded-xl flex items-start gap-4">
+        <div class="w-10 h-10 rounded bg-brand-surface flex items-center justify-center text-brand-beige shrink-0">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+        </div>
+        <div>
+          <div class="text-xs uppercase text-stone-400 font-mono">OFFICE ADDRESS</div>
+          <h4 class="text-white text-sm font-medium mt-1">香港辦公室據點</h4>
+          <p class="text-stone-400 text-xs mt-1 leading-relaxed">
+            九龍新蒲崗景福街 108-110 號<br>
+            超達工業大廈 15 樓 C 及 D 室
+          </p>
+        </div>
+      </div>
+
+      <div class="glass-card p-6 rounded-xl flex items-start gap-4">
+        <div class="w-10 h-10 rounded bg-brand-surface flex items-center justify-center text-brand-beige shrink-0">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+        </div>
+        <div>
+          <div class="text-xs uppercase text-stone-400 font-mono">TELEPHONE & FAX</div>
+          <h4 class="text-white text-sm font-medium mt-1">電話與傳真專線</h4>
+          <p class="text-stone-400 text-xs mt-1 leading-relaxed">
+            電話: <a href="tel:+85231164216" class="hover:text-brand-beige">3116 4216</a><br>
+            傳真: 3695 1428
+          </p>
+        </div>
+      </div>
+
+      <div class="glass-card p-6 rounded-xl flex items-start gap-4">
+        <div class="w-10 h-10 rounded bg-brand-surface flex items-center justify-center text-brand-beige shrink-0">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        </div>
+        <div>
+          <div class="text-xs uppercase text-stone-400 font-mono">EMAIL INQUIRY</div>
+          <h4 class="text-white text-sm font-medium mt-1">電子郵件信箱</h4>
+          <p class="text-stone-400 text-xs mt-1 leading-relaxed">
+            <a href="mailto:info@wle.com.hk" class="text-brand-beige hover:underline">info@wle.com.hk</a><br>
+            全週專人覆核回覆
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 聯繫網站設計團隊回信表單 (id="hire-designer") -->
+  <section id="hire-designer" class="py-24 px-6 bg-gradient-to-b from-brand-charcoal via-stone-900 to-brand-black border-t-2 border-brand-beige/40 relative">
+    <div class="max-w-4xl mx-auto">
+      
+      <!-- 標題區域 -->
+      <div class="text-center space-y-4 mb-12">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-beige/10 border border-brand-beige/30 text-brand-beige text-xs">
+          <span>👑 頂級數位建構團隊</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-light text-white">
+          喜歡為 <span class="text-champagne-gradient font-medium">永利工程(香港)有限公司</span> 規劃的新形象嗎？
+        </h2>
+        <p class="text-stone-400 text-sm max-w-2xl mx-auto leading-relaxed">
+          本頁面為高規格客製概念預覽，具備極致 RWD 手機版自適應、秒開效能、當代極簡炭黑雜誌排版與完善 SEO 架構。若您認可此視覺水平，歡迎立即與設計團隊回覆確認製作細節！
+        </p>
+        <div class="text-xs text-stone-400 font-mono pt-1">
+          直聯信箱：<a href="mailto:allanlinallan@gmail.com" class="text-brand-beige font-semibold underline underline-offset-4">allanlinallan@gmail.com</a>
+        </div>
+      </div>
+
+      <!-- 回信表單卡片 -->
+      <div class="glass-card rounded-2xl p-8 sm:p-10 border border-brand-beige/30 shadow-2xl relative overflow-hidden">
+        
+        <form id="contact-designer-form" class="space-y-6">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-xs uppercase tracking-wider text-brand-champagne mb-2">公司名稱</label>
+              <input 
+                type="text" 
+                id="designer-company" 
+                value="永利工程(香港)有限公司" 
+                class="w-full bg-brand-black/90 border border-white/20 rounded px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-beige transition-colors"
+                required
+              >
+            </div>
+
+            <div>
+              <label class="block text-xs uppercase tracking-wider text-brand-champagne mb-2">聯絡人姓名 *</label>
+              <input 
+                type="text" 
+                id="designer-name" 
+                placeholder="例如：負責人 / 項目經理" 
+                class="w-full bg-brand-black/90 border border-white/20 rounded px-4 py-3 text-sm text-white placeholder-stone-600 focus:outline-none focus:border-brand-beige transition-colors"
+                required
+              >
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-xs uppercase tracking-wider text-brand-champagne mb-2">聯絡電話（建議填寫）</label>
+              <input 
+                type="tel" 
+                id="designer-phone" 
+                placeholder="例如：+852 3116 4216 / WhatsApp" 
+                class="w-full bg-brand-black/90 border border-white/20 rounded px-4 py-3 text-sm text-white placeholder-stone-600 focus:outline-none focus:border-brand-beige transition-colors"
+              >
+            </div>
+
+            <div>
+              <label class="block text-xs uppercase tracking-wider text-brand-champagne mb-2">預計升級上線時程</label>
+              <select id="designer-timeline" class="w-full bg-brand-black/90 border border-white/20 rounded px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-beige transition-colors">
+                <option value="急切需要（2週內）">急切需要（2 週內）</option>
+                <option value="近期規劃（1個月內）" selected>近期規劃（1 個月內）</option>
+                <option value="初步了解報價與工期">初步了解報價與工期</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs uppercase tracking-wider text-brand-champagne mb-2">需求說明或微調建議</label>
+            <textarea 
+              id="designer-notes" 
+              rows="3" 
+              placeholder="例如：希望增加歷年食肆及商舖裝修相簿、加入多國語系切換、或整合線上 WhatsApp 即時洽談客製外掛..." 
+              class="w-full bg-brand-black/90 border border-white/20 rounded px-4 py-3 text-sm text-white placeholder-stone-600 focus:outline-none focus:border-brand-beige transition-colors"
+            ></textarea>
+          </div>
+
+          <!-- 兩個一鍵回信按鈕 -->
+          <div class="pt-4 flex flex-col sm:flex-row gap-4 justify-center items-stretch sm:items-center">
+            
+            <!-- 按鈕一：Gmail 網頁版一鍵回信 -->
+            <button 
+              type="button" 
+              onclick="sendViaGmail()" 
+              class="flex-1 py-3.5 px-6 rounded bg-brand-beige text-brand-black font-semibold text-sm hover:bg-white transition-all shadow-xl shadow-brand-beige/20 inline-flex items-center justify-center gap-2 group"
+            >
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+              <span>用 Gmail 網頁版一鍵回信</span>
+            </button>
+
+            <!-- 按鈕二：使用預設信箱寄出 -->
+            <button 
+              type="button" 
+              onclick="sendViaMailto()" 
+              class="flex-1 py-3.5 px-6 rounded glass-card border border-brand-beige/50 text-white font-medium text-sm hover:bg-white/10 transition-all inline-flex items-center justify-center gap-2"
+            >
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              <span>使用本機預設信箱寄出</span>
+            </button>
+
+          </div>
+
+          <div class="text-center text-[11px] text-stone-400">
+            點擊後將自動為您帶入公司名稱、聯絡人資訊與當前預覽網址，省時便捷。
+          </div>
+        </form>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black border-t border-white/5 py-12 px-6 pb-28 sm:pb-12 text-stone-500 text-xs">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+      
+      <div class="flex items-center gap-3">
+        <div class="w-7 h-7 border border-brand-beige/30 rounded flex items-center justify-center text-brand-beige font-serif font-bold text-xs">WL</div>
+        <span>永利工程(香港)有限公司 · W.L Engineering (H.K) Ltd.</span>
+      </div>
+
+      <div class="text-center md:text-right space-y-1">
+        <p>© 2003 - 2025 永利工程(香港)有限公司 版權所有 · 保留一切權利。</p>
+        <p class="text-[11px] text-stone-600">香港商舖、食肆、寫字樓、辦公室、住宅裝修工程承辦及傢俬訂做。</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- 手機版底部固定毛玻璃 CTA 列 (Mobile Sticky Bar) -->
+  <div class="fixed sm:hidden bottom-0 left-0 right-0 z-50 bg-brand-black/90 backdrop-blur-xl border-t border-brand-beige/20 px-4 py-3 flex items-center justify-between gap-3 shadow-2xl">
+    <a href="tel:+85231164216" class="flex-1 py-2.5 rounded bg-brand-charcoal border border-white/10 text-white text-xs font-medium text-center flex items-center justify-center gap-1.5 active:bg-brand-muted">
+      <svg class="w-3.5 h-3.5 text-brand-beige" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+      <span>致電諮詢</span>
+    </a>
+
+    <a href="#quote" class="flex-1 py-2.5 rounded bg-brand-beige text-brand-black text-xs font-semibold text-center flex items-center justify-center gap-1.5 shadow-md active:bg-brand-champagne">
+      <span>線上估價</span>
+    </a>
+
+    <a href="#hire-designer" class="flex-1 py-2.5 rounded bg-stone-100 text-stone-900 text-xs font-semibold text-center flex items-center justify-center gap-1 shadow-md">
+      <span>聯絡網頁設計</span>
+    </a>
+  </div>
+
+  <!-- JavaScript 互動與信件組裝邏輯 -->
+  <script>
+    // 滾動漸顯觀察器 (IntersectionObserver)
+    document.addEventListener("DOMContentLoaded", function () {
+      const reveals = document.querySelectorAll(".reveal");
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("active");
+          }
+        });
+      }, {
+        threshold: 0.1,
+        rootMargin: "0px 0px -40px 0px"
+      });
+
+      reveals.forEach((el) => observer.observe(el));
+    });
+
+    // 空間估價展示提示
+    function handleQuickQuote(e) {
+      e.preventDefault();
+      alert("感謝您的詢價！此頁面為新版設計概念預覽，您的輸入已成功驗證。若欲正式客製專屬企業官網，請至下方「聯繫網站設計團隊」一鍵寄信！");
+    }
+
+    // 聯絡設計團隊信件組裝共用函式
+    function composeDesignerEmailData() {
+      const company = document.getElementById('designer-company').value.trim() || '永利工程(香港)有限公司';
+      const name = document.getElementById('designer-name').value.trim() || '未填寫姓名';
+      const phone = document.getElementById('designer-phone').value.trim() || '未填寫電話';
+      const timeline = document.getElementById('designer-timeline').value;
+      const notes = document.getElementById('designer-notes').value.trim() || '無額外備註';
+      const currentUrl = window.location.href;
+
+      const subject = encodeURIComponent("我有興趣請貴公司幫我做網站 - " + company);
+      
+      const bodyContent = 
+`你好，
+
+我對貴公司為【${company}】規劃的新版官網概念預覽非常有興趣，希望能進一步洽談製作與報價細節：
+
+【聯絡資料】
+・公司名稱：${company}
+・聯絡人：${name}
+・聯絡電話：${phone}
+・預計時程：${timeline}
+
+【需求與微調說明】
+${notes}
+
+【預覽頁面參考網址】
+${currentUrl}
+
+請盡速與我聯繫，謝謝！`;
+
+      return {
+        recipient: 'allanlinallan@gmail.com',
+        subject: subject,
+        body: encodeURIComponent(bodyContent)
+      };
+    }
+
+    // 透過 Gmail 網頁版開啟
+    function sendViaGmail() {
+      const data = composeDesignerEmailData();
+      const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${data.recipient}&su=${data.subject}&body=${data.body}`;
+      window.open(gmailUrl, '_blank');
+    }
+
+    // 透過 mailto 預設信箱發送
+    function sendViaMailto() {
+      const data = composeDesignerEmailData();
+      const mailtoUrl = `mailto:${data.recipient}?subject=${data.subject}&body=${data.body}`;
+      window.location.href = mailtoUrl;
+    }
+  </script>
+
+</body>
+</html>
