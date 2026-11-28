@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>晉瑋精密工業 JW MOLD | 醫療器材級塑膠・矽膠射出模具開發製造廠</title>
+  <meta name="description" content="晉瑋精密工業成立於民國93年，專精於精密塑膠與矽膠射出模具設計製造、450T以下射出成型加工。核心跨足醫療器材用具、自動酒精消毒器、外銷日本CASIO與義大利精密模具，具備無塵純淨級製程水準。">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="晉瑋精密工業 JW MOLD | 醫療級塑膠與矽膠射出模具製造">
+  <meta property="og:description" content="深耕台灣20年，精密塑膠/矽膠射出模具開模與射出成型，嚴格把關醫療與高精密部件標準。">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              white: '#FAFBFD',
+              surface: '#FFFFFF',
+              subtle: '#F0F5F4',
+              teal: '#0F766E',
+              tealLight: '#14B8A6',
+              tealDark: '#0D5F58',
+              tealSoft: '#CCFBF1',
+              slate: '#334155',
+              muted: '#64748B',
+              border: '#E2E8F0',
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', '"Noto Sans TC"', 'sans-serif'],
+          },
+          boxShadow: {
+            'clean': '0 10px 30px -10px rgba(15, 118, 110, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.02)',
+            'clean-lg': '0 20px 40px -15px rgba(15, 118, 110, 0.12), 0 0 1px 1px rgba(15, 118, 110, 0.05)',
+            'float': '0 25px 50px -12px rgba(15, 118, 110, 0.15)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #FAFBFD;
+      color: #334155;
+      font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+      -webkit-font-smoothing: antialiased;
+    }
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: opacity, transform;
+    }
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .mesh-gradient {
+      background: radial-gradient(at 0% 0%, rgba(20, 184, 166, 0.12) 0px, transparent 50%),
+                  radial-gradient(at 100% 0%, rgba(15, 118, 110, 0.08) 0px, transparent 50%),
+                  radial-gradient(at 50% 100%, rgba(204, 251, 241, 0.4) 0px, transparent 50%);
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(226, 232, 240, 0.8);
+    }
+    .glass-nav {
+      background: rgba(250, 251, 253, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+    }
+  </style>
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "晉瑋精密工業 JW MOLD",
+    "image": "https://images.unsplash.com/photo-1582719471384-894fbb16e074?auto=format&fit=crop&w=1000&q=85",
+    "telephone": "+886-4-25239186",
+    "faxNumber": "+886-4-25159853",
+    "email": "jw.mold@msa.hinet.net",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "國豐路一段153號",
+      "addressLocality": "神岡區",
+      "addressRegion": "台中市",
+      "postalCode": "429",
+      "addressCountry": "TW"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "08:00",
+      "closes": "17:00"
+    },
+    "description": "民國93年成立，專業各類熱處理塑膠/矽膠射出模具設計製造、450T以下射出成型加工、醫療器材與相關用具之塑膠矽膠模具。"
+  }
+  </script>
+</head>
+<body class="selection:bg-brand-teal selection:text-white">
+
+  <!-- Concept Banner -->
+  <aside class="bg-gradient-to-r from-brand-teal to-brand-tealDark text-white py-2.5 px-4 text-xs md:text-sm font-medium sticky top-0 z-50 shadow-md">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-white/20 text-[10px]">✨</span>
+        <span>專為<strong>晉瑋精密工業</strong>客製之新版 RWD 官網概念預覽（升級醫療級純淨視覺 / 450T成型數據化 / AI 語意搜尋架構）</span>
+      </div>
+      <a href="#hire-designer" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white text-brand-teal font-semibold hover:bg-brand-tealSoft transition-colors shadow-sm text-xs">
+        <span>✉️ 喜歡此版型？點此聯絡製作</span>
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+      </a>
+    </div>
+  </aside>
+
+  <!-- Sticky Header Navigation -->
+  <header class="glass-nav sticky top-[41px] z-40 transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-brand-teal flex items-center justify-center text-white font-extrabold text-xl shadow-md tracking-tighter">
+          JW
+        </div>
+        <div>
+          <span class="text-xl font-bold tracking-tight text-slate-900 block leading-tight">晉瑋精密工業</span>
+          <span class="text-[11px] text-brand-teal font-semibold tracking-widest uppercase block">JW MOLD PRECISION INDUSTRIAL</span>
+        </div>
+      </div>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+        <a href="#about" class="hover:text-brand-teal transition-colors">關於晉瑋</a>
+        <a href="#capabilities" class="hover:text-brand-teal transition-colors">製程與設備</a>
+        <a href="#products" class="hover:text-brand-teal transition-colors">核心模具實績</a>
+        <a href="#export" class="hover:text-brand-teal transition-colors">外銷國際品質</a>
+        <a href="#quote" class="hover:text-brand-teal transition-colors">快速技術諮詢</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="tel:0425239186" class="hidden sm:inline-flex items-center gap-1.5 text-xs text-slate-600 font-medium px-3 py-2 rounded-lg hover:bg-slate-100 transition-colors">
+          <svg class="w-4 h-4 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          04-25239186
+        </a>
+        <a href="#quote" class="inline-flex items-center justify-center px-4 py-2 rounded-xl bg-brand-teal text-white text-sm font-semibold hover:bg-brand-tealDark shadow-clean transition-all">
+          立即開模評估
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="mesh-gradient relative overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-32 border-b border-brand-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Hero Content -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-tealSoft/80 border border-brand-teal/20 text-brand-teal text-xs font-semibold">
+            <span class="w-2 h-2 rounded-full bg-brand-teal animate-pulse"></span>
+            民國93年創立・20載純淨醫療級精密模具工藝
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.15]">
+            醫療與高階機構件的<br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-teal to-brand-tealLight">精密塑膠・矽膠射出模具</span>
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl font-normal">
+            晉瑋精密工業專注於各類熱處理模具設計製造與 450T 以下精密射出成型。跨足醫療器材用具、自動酒精消毒器、日本 CASIO 模具與義大利外銷機構件，以無塵衛生的純淨製程，落實從圖面開發到成品量產的極致精確度。
+          </p>
+
+          <div class="flex flex-wrap items-center gap-4 pt-2">
+            <a href="#quote" class="px-6 py-3.5 rounded-xl bg-brand-teal text-white font-semibold text-sm hover:bg-brand-tealDark shadow-clean hover:shadow-clean-lg transition-all flex items-center gap-2">
+              <span>提供 2D/3D 圖檔免費審查報價</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </a>
+            <a href="#capabilities" class="px-6 py-3.5 rounded-xl bg-white text-slate-700 font-semibold text-sm border border-slate-200 hover:bg-slate-50 transition-colors flex items-center gap-2">
+              <span>檢視廠內 450T 射出設備</span>
+            </a>
+          </div>
+
+          <!-- Trust Badges -->
+          <div class="pt-6 border-t border-slate-200/80 grid grid-cols-3 gap-6">
+            <div>
+              <div class="text-2xl sm:text-3xl font-extrabold text-brand-teal font-sans">450T</div>
+              <div class="text-xs text-slate-500 font-medium mt-0.5">射出成型機設備能量</div>
+            </div>
+            <div>
+              <div class="text-2xl sm:text-3xl font-extrabold text-slate-900 font-sans">20+ 年</div>
+              <div class="text-xs text-slate-500 font-medium mt-0.5">專業熱處理開模實力</div>
+            </div>
+            <div>
+              <div class="text-2xl sm:text-3xl font-extrabold text-brand-teal font-sans">日/義</div>
+              <div class="text-xs text-slate-500 font-medium mt-0.5">CASIO與歐盟外銷合格</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Hero Visual Card -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            <div class="absolute -top-6 -left-6 w-72 h-72 bg-brand-tealSoft rounded-full filter blur-3xl opacity-60 pointer-events-none"></div>
+            
+            <div class="glass-card rounded-3xl p-3 shadow-float overflow-hidden relative">
+              <div class="relative rounded-2xl overflow-hidden aspect-[4/3] bg-slate-100">
+                <img 
+                  src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?auto=format&fit=crop&w=1000&q=85" 
+                  alt="晉瑋精密工業潔淨醫療級塑膠與矽膠射出模具製程環境" 
+                  class="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700"
+                  loading="eager"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent"></div>
+                <div class="absolute bottom-4 left-4 right-4 text-white">
+                  <span class="inline-block px-2.5 py-0.5 rounded bg-brand-teal text-[11px] font-semibold uppercase tracking-wider mb-1">Clean Production</span>
+                  <p class="text-xs text-white/90 font-medium">嚴格把關醫療衛生與食品接觸級塑膠・矽膠公差水準</p>
+                </div>
+              </div>
+
+              <!-- Floating Micro Card -->
+              <div class="mt-3 p-4 bg-white/90 rounded-2xl border border-slate-150 flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                  <div class="w-9 h-9 rounded-xl bg-teal-50 text-brand-teal flex items-center justify-center font-bold">
+                    ✓
+                  </div>
+                  <div>
+                    <h4 class="text-xs font-bold text-slate-900">醫療器材與用具射出</h4>
+                    <p class="text-[11px] text-slate-500">消毒器 / 矽膠零件 / 衛浴無菌飾品</p>
+                  </div>
+                </div>
+                <span class="text-xs font-semibold text-brand-teal">品質滿意保證</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Bento Grid: Core Capabilities & Specializations -->
+  <section id="capabilities" class="py-24 bg-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="max-w-2xl text-center mx-auto mb-16 reveal">
+        <span class="text-xs font-bold text-brand-teal tracking-widest uppercase">ENGINEERING & CAPABILITIES</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">多元化精密開模與全製程射出能量</h2>
+        <p class="text-slate-500 text-sm sm:text-base mt-3">承襲民國93年深厚模具工藝，融合熱處理技術與 450T 級設備，滿足國內外嚴苛規範。</p>
+      </div>
+
+      <!-- Bento Grid Container -->
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+
+        <!-- Bento 1: Medical & Sanitary Specialty (Large) -->
+        <div class="md:col-span-8 glass-card rounded-3xl p-8 hover:shadow-clean-lg transition-all border border-slate-200 reveal flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-3 py-1 rounded-full bg-brand-tealSoft text-brand-teal text-xs font-bold">醫療器材與衛生用具</span>
+              <span class="text-xs text-slate-400 font-mono">SPEC-01</span>
+            </div>
+            <h3 class="text-2xl font-bold text-slate-900">醫療與防疫專用塑膠・矽膠模具</h3>
+            <p class="text-slate-600 text-sm mt-3 leading-relaxed">
+              因應精密醫療與衛生接觸等級要求，晉瑋具備成熟的模具精密咬花、熱處理抗腐蝕流道配置技術。曾成功開發生產<strong>「自動酒精消毒器」</strong>、醫療器材配件及高耐久矽膠密封件，維持低應力與極佳尺寸穩定度。
+            </p>
+          </div>
+          <div class="mt-8 pt-6 border-t border-slate-150 grid grid-cols-2 sm:grid-cols-3 gap-4 text-xs text-slate-600">
+            <div class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-brand-teal"></span>
+              醫療級矽膠射出模具
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-brand-teal"></span>
+              自動酒精消毒器機構件
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-brand-teal"></span>
+              衛浴無菌收納飾品成品
+            </div>
+          </div>
+        </div>
+
+        <!-- Bento 2: 450T Machines (Tall) -->
+        <div class="md:col-span-4 bg-gradient-to-br from-brand-subtle to-white rounded-3xl p-8 border border-slate-200 hover:shadow-clean-lg transition-all reveal flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-brand-teal text-white flex items-center justify-center font-bold text-lg mb-6 shadow-sm">
+              450T
+            </div>
+            <h3 class="text-xl font-bold text-slate-900">450T 以下全系列射出機</h3>
+            <p class="text-slate-600 text-xs mt-3 leading-relaxed">
+              廠內配置數台 450T 以下高性能射出成型機台，具備高精準控溫、快速試模與量產一條龍能力，確保薄件、厚件均勻充填不縮水。
+            </p>
+          </div>
+          <div class="mt-6 p-4 rounded-2xl bg-white border border-slate-150">
+            <span class="text-[11px] text-slate-400 block font-mono">PROCESS CONTROL</span>
+            <span class="text-sm font-bold text-brand-teal">熱處理鋼料＋精密試模確樣</span>
+          </div>
+        </div>
+
+        <!-- Bento 3: International Export Track Record -->
+        <div class="md:col-span-5 bg-white rounded-3xl p-8 border border-slate-200 hover:shadow-clean-lg transition-all reveal">
+          <div class="flex items-center justify-between mb-4">
+            <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-xs font-bold">國際外銷實績</span>
+            <span class="text-xs text-slate-400 font-mono">GLOBAL</span>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900">外銷日本 CASIO 與義大利精機模具</h3>
+          <p class="text-slate-600 text-xs mt-3 leading-relaxed">
+            晉瑋模具精度符合國際指標：長年外銷義大利精密模具（型號 18057、18056、18030、18028、18027 系列）及外銷日本 CASIO 雙色機構件模具，深獲跨國客戶信任。
+          </p>
+          <div class="mt-6 flex flex-wrap gap-2 text-[11px] font-mono">
+            <span class="px-2.5 py-1 bg-slate-100 rounded-md text-slate-700">IT-18057</span>
+            <span class="px-2.5 py-1 bg-slate-100 rounded-md text-slate-700">IT-18056</span>
+            <span class="px-2.5 py-1 bg-slate-100 rounded-md text-slate-700">IT-18030</span>
+            <span class="px-2.5 py-1 bg-slate-100 rounded-md text-slate-700">CASIO Dual-Color</span>
+          </div>
+        </div>
+
+        <!-- Bento 4: Diversified Components -->
+        <div class="md:col-span-7 glass-card rounded-3xl p-8 border border-slate-200 hover:shadow-clean-lg transition-all reveal flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-3 py-1 rounded-full bg-teal-50 text-brand-teal text-xs font-bold">廣泛應用領域</span>
+              <span class="text-xs text-slate-400 font-mono">INDUSTRY SPEC</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900">汽機車機電・自行車配件・文創自研產品</h3>
+            <p class="text-slate-600 text-xs mt-2 leading-relaxed">
+              橫跨電動車車蓋模具、汽缸底座模座、摩托車車燈、自行車零配件、針車配件、墨水匣、電器用品、濾心配件以及精密交通錐模具；更具備 BB槍標靶、二葉與三葉指尖陀螺等精緻自研能力。
+            </p>
+          </div>
+          <div class="mt-6 grid grid-cols-2 sm:grid-cols-4 gap-2 text-center text-xs">
+            <div class="p-2.5 rounded-xl bg-brand-subtle font-medium text-slate-700">電動車外蓋</div>
+            <div class="p-2.5 rounded-xl bg-brand-subtle font-medium text-slate-700">車用水箱濾芯</div>
+            <div class="p-2.5 rounded-xl bg-brand-subtle font-medium text-slate-700">雙色水壺架</div>
+            <div class="p-2.5 rounded-xl bg-brand-subtle font-medium text-slate-700">指尖陀螺系列</div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Products & Portfolio Real Data Showcase -->
+  <section id="products" class="py-24 bg-brand-subtle border-y border-brand-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 reveal">
+        <div>
+          <span class="text-xs font-bold text-brand-teal tracking-widest uppercase">PORTFOLIO & PRODUCTS</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">晉瑋核心模具與成品分類</h2>
+        </div>
+        <p class="text-slate-500 text-sm max-w-md mt-4 md:mt-0">
+          全系列產品由晉瑋團隊自行開發與客製代工，具備高同心度、高耐磨損與精準公差控制。
+        </p>
+      </div>
+
+      <!-- Category Grid Cards -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Item 1: 醫療與防疫成品 -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200/80 hover:shadow-clean-lg transition-all reveal group">
+          <div class="w-12 h-12 rounded-xl bg-brand-tealSoft text-brand-teal flex items-center justify-center font-bold mb-5 group-hover:bg-brand-teal group-hover:text-white transition-colors">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 group-hover:text-brand-teal transition-colors">醫療衛生・自動酒精消毒器</h3>
+          <p class="text-xs text-slate-500 mt-2 leading-relaxed">
+            衛浴收納飾品成品、自動酒精感應消毒器本體、無毒矽膠墊圈與醫療級零組件。無毒材質、平整分模線、合模精密度極高。
+          </p>
+          <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-brand-teal">
+            <span>醫療衛生製品</span>
+            <span>成型機加工</span>
+          </div>
+        </div>
+
+        <!-- Item 2: 外銷義大利精密模具 -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200/80 hover:shadow-clean-lg transition-all reveal group">
+          <div class="w-12 h-12 rounded-xl bg-brand-tealSoft text-brand-teal flex items-center justify-center font-bold mb-5 group-hover:bg-brand-teal group-hover:text-white transition-colors">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 group-hover:text-brand-teal transition-colors">外銷義大利模具 (18057-18027)</h3>
+          <p class="text-xs text-slate-500 mt-2 leading-relaxed">
+            外銷義大利 18057、18056、18030、18028、18027 全系列模具。嚴格遵循歐標熱處理規格與高壽命耐磨鋼材標準。
+          </p>
+          <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-brand-teal">
+            <span>歐規熱處理模具</span>
+            <span>國際驗收</span>
+          </div>
+        </div>
+
+        <!-- Item 3: 外銷日本 CASIO -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200/80 hover:shadow-clean-lg transition-all reveal group">
+          <div class="w-12 h-12 rounded-xl bg-brand-tealSoft text-brand-teal flex items-center justify-center font-bold mb-5 group-hover:bg-brand-teal group-hover:text-white transition-colors">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 group-hover:text-brand-teal transition-colors">外銷日本 CASIO 精密模具</h3>
+          <p class="text-xs text-slate-500 mt-2 leading-relaxed">
+            日本 CASIO 模具製造及成品試模、雙色射出水壺架，體現雙色成型結合處零溢膠、零斷差的卓越模具加工實力。
+          </p>
+          <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-brand-teal">
+            <span>雙色模具成型</span>
+            <span>日系高規審核</span>
+          </div>
+        </div>
+
+        <!-- Item 4: 汽機車與電器配件 -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200/80 hover:shadow-clean-lg transition-all reveal group">
+          <div class="w-12 h-12 rounded-xl bg-brand-tealSoft text-brand-teal flex items-center justify-center font-bold mb-5 group-hover:bg-brand-teal group-hover:text-white transition-colors">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 group-hover:text-brand-teal transition-colors">汽機車機電・電動車車蓋</h3>
+          <p class="text-xs text-slate-500 mt-2 leading-relaxed">
+            電動車車蓋模具、汽缸底座模座、車用水箱、摩托車車燈燈殼光學級模具、濾心配件、針車精密耐磨零組件及印表機墨水匣成品。
+          </p>
+          <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-brand-teal">
+            <span>結構抗衝擊</span>
+            <span>大中型模具</span>
+          </div>
+        </div>
+
+        <!-- Item 5: 自行車零配件與交通錐模具 -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200/80 hover:shadow-clean-lg transition-all reveal group">
+          <div class="w-12 h-12 rounded-xl bg-brand-tealSoft text-brand-teal flex items-center justify-center font-bold mb-5 group-hover:bg-brand-teal group-hover:text-white transition-colors">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 group-hover:text-brand-teal transition-colors">自行車零配件・公共工程交通錐模具</h3>
+          <p class="text-xs text-slate-500 mt-2 leading-relaxed">
+            自行車輕量化高剛性零配件模具、耐候型安全交通錐專用深腔模具，快速脫模設計，耐衝擊耐紫外線成型料適配。
+          </p>
+          <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-brand-teal">
+            <span>高剛性成型</span>
+            <span>深腔脫模專利</span>
+          </div>
+        </div>
+
+        <!-- Item 6: 自行研發精密產品 -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200/80 hover:shadow-clean-lg transition-all reveal group">
+          <div class="w-12 h-12 rounded-xl bg-brand-tealSoft text-brand-teal flex items-center justify-center font-bold mb-5 group-hover:bg-brand-teal group-hover:text-white transition-colors">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 group-hover:text-brand-teal transition-colors">自研產品・指尖陀螺與BB槍標靶</h3>
+          <p class="text-xs text-slate-500 mt-2 leading-relaxed">
+            晉瑋自行開發之經典指尖陀螺（二葉系列、三葉系列、三葉綠）、高精度動態平衡配重，以及BB槍抗碎裂射擊自動復歸標靶。
+          </p>
+          <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-brand-teal">
+            <span>極致動態平衡</span>
+            <span>品牌自研量產</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- About JW MOLD Profile Section -->
+  <section id="about" class="py-24 bg-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-6 space-y-6 reveal">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-bold font-mono">
+            ESTABLISHED IN 2004 (民國93年)
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 leading-tight">
+            以台中精密機械重鎮為基底<br>
+            打造行銷歐日的高精密射出模具
+          </h2>
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+            晉瑋精密工業成立於民國93年，座落於台中神岡區國豐路一段。主要從事項目為<strong>專業各類熱處理塑膠／矽膠射出模具設計製造及各種射出成型</strong>。
+          </p>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            廠內備有成型機 450T 以下數台，專門承製醫療器材與相關用具之塑膠與矽膠模具。我們秉持嚴謹求實、無塵衛生之加工準則，從產品 3D 結構評估、模流分析、模具加工到試模成型，全方位確保每套模具長效運轉無虞。
+          </p>
+
+          <div class="grid grid-cols-2 gap-4 pt-4">
+            <div class="p-4 rounded-xl bg-brand-white border border-slate-200">
+              <span class="text-xs text-brand-teal font-bold block mb-1">廠房所在地理優勢</span>
+              <p class="text-xs text-slate-600">台中神岡豐原模具重鎮，熱處理、精密放電、研磨協力網絡完備。</p>
+            </div>
+            <div class="p-4 rounded-xl bg-brand-white border border-slate-200">
+              <span class="text-xs text-brand-teal font-bold block mb-1">國定假日照常服務</span>
+              <p class="text-xs text-slate-600">週一至週五 08:00 ~ 17:00（國定及例假日照常營業），即時因應緊急試模需求。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6 reveal">
+          <div class="bg-gradient-to-tr from-brand-subtle to-teal-50/50 p-8 rounded-3xl border border-brand-teal/20 space-y-6">
+            <h3 class="text-xl font-bold text-slate-900">晉瑋精密的核心製造守則</h3>
+            
+            <div class="space-y-4">
+              <div class="flex items-start gap-4">
+                <div class="w-8 h-8 rounded-lg bg-brand-teal text-white flex-shrink-0 flex items-center justify-center font-bold text-xs">
+                  01
+                </div>
+                <div>
+                  <h4 class="text-sm font-bold text-slate-900">熱處理抗腐蝕鋼料把關</h4>
+                  <p class="text-xs text-slate-500 mt-1">針對醫療級矽膠與工程塑膠之化學腐蝕特性，選用高硬度耐磨鋼料，維持模具十萬模次以上精準度。</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="w-8 h-8 rounded-lg bg-brand-teal text-white flex-shrink-0 flex items-center justify-center font-bold text-xs">
+                  02
+                </div>
+                <div>
+                  <h4 class="text-sm font-bold text-slate-900">450T 級精密成型參數實時監控</h4>
+                  <p class="text-xs text-slate-500 mt-1">控制射出壓力、保壓曲線與模溫冷卻迴路，杜絕縮水、包風與毛邊，符合醫療外觀審查標準。</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="w-8 h-8 rounded-lg bg-brand-teal text-white flex-shrink-0 flex items-center justify-center font-bold text-xs">
+                  03
+                </div>
+                <div>
+                  <h4 class="text-sm font-bold text-slate-900">自研到代工的全方位整合</h4>
+                  <p class="text-xs text-slate-500 mt-1">自研指尖陀螺動態平衡之成功經驗，轉化為協助客戶解決棘手偏心、雙色結合、深腔拔模的實戰工程力。</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-4 border-t border-brand-teal/15 flex items-center justify-between text-xs text-slate-600">
+              <span>慣用洽詢管道：<strong>LINE / 電話直撥</strong></span>
+              <a href="tel:0425239186" class="text-brand-teal font-bold hover:underline">04-25239186</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 30-Second Quick RFQ Form -->
+  <section id="quote" class="py-24 bg-brand-white relative border-t border-brand-border">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-12 reveal">
+        <span class="text-xs font-bold text-brand-teal tracking-widest uppercase">30 SECONDS RAPID INQUIRY</span>
+        <h2 class="text-3xl font-extrabold text-slate-900 mt-2">模具開發與射出成型・30秒快速估價</h2>
+        <p class="text-slate-500 text-xs sm:text-sm mt-2">請填妥您的模具規格或圖面需求，工程團隊將於 4 小時工作日內與您聯絡審圖</p>
+      </div>
+
+      <div class="glass-card rounded-3xl p-8 sm:p-10 shadow-clean-lg border border-slate-200 reveal">
+        <form onsubmit="handleQuoteSubmit(event)" class="space-y-6">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">貴公司名稱 / 單位</label>
+              <input type="text" required placeholder="例如：晉瑋醫療設備研發部" class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-teal/50 focus:border-brand-teal transition-all bg-white">
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">聯絡人姓名</label>
+              <input type="text" required placeholder="例如：林總監 / 王工程師" class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-teal/50 focus:border-brand-teal transition-all bg-white">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">聯絡電話 / 行動電話</label>
+              <input type="tel" required placeholder="例如：0912-345-678 或 04-25239186" class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-teal/50 focus:border-brand-teal transition-all bg-white">
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">電子郵件 Email</label>
+              <input type="email" required placeholder="例如：service@company.com" class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-teal/50 focus:border-brand-teal transition-all bg-white">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">需求類型</label>
+              <select class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-teal/50 focus:border-brand-teal transition-all bg-white">
+                <option>醫療器材 / 矽膠模具製造</option>
+                <option>450T以下射出代工成型</option>
+                <option>外銷精密模具開模（義/日標準）</option>
+                <option>自動消毒器 / 衛浴機構件</option>
+                <option>雙色模具或特種模具開發</option>
+                <option>其他塑膠機構產品客製</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">是否有 2D/3D 圖檔</label>
+              <select class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-teal/50 focus:border-brand-teal transition-all bg-white">
+                <option>已有 3D 圖檔 (STP / IGS / X_T)</option>
+                <option>僅有 2D 尺寸圖 (DWG / PDF)</option>
+                <option>僅有樣品，需逆向逆求開模</option>
+                <option>概念階段，需產品設計與諮詢</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">詳細規格或產品說明</label>
+            <textarea rows="3" placeholder="請填寫預計材料（如 PC, ABS, 醫療級矽膠）、穴數、預估產量或特殊耐溫要求..." class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-teal/50 focus:border-brand-teal transition-all bg-white"></textarea>
+          </div>
+
+          <button type="submit" class="w-full py-4 rounded-xl bg-brand-teal text-white font-bold text-sm hover:bg-brand-tealDark shadow-clean hover:shadow-clean-lg transition-all flex items-center justify-center gap-2">
+            <span>提交 30 秒評估需求</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7"/></svg>
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- DESIGNER CONTACT SECTION (MANDATORY REQUIREMENT) -->
+  <section id="hire-designer" class="py-20 bg-slate-900 text-white relative border-t-2 border-brand-teal">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center space-y-4 mb-10">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-teal/20 border border-brand-teal/40 text-brand-tealLight text-xs font-semibold">
+          🚀 專業精品級 RWD 官網升級提案
+        </div>
+        <h2 class="text-3xl font-extrabold tracking-tight">喜歡這份為「晉瑋精密」量身打造的現代化官網嗎？</h2>
+        <p class="text-slate-300 text-sm max-w-xl mx-auto">
+          若貴公司對此概念設計感興趣，或希望正式上線、升級繁中/英文多語系外銷架構、整合 LINE 官方帳號與 SEO 搜尋引擎優化，歡迎立即回信與網站設計團隊聯繫！
+        </p>
+        <div class="text-xs text-slate-400 font-mono">
+          設計團隊聯絡窗口：<a href="mailto:allanlinallan@gmail.com" class="text-brand-tealLight underline">allanlinallan@gmail.com</a>
+        </div>
+      </div>
+
+      <!-- Form for Hiring Designer -->
+      <div class="bg-slate-800/80 backdrop-blur-md rounded-3xl p-6 sm:p-8 border border-slate-700 shadow-2xl">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-5">
+          <div>
+            <label class="block text-xs font-medium text-slate-300 mb-1.5">公司名稱</label>
+            <input type="text" id="designerCompany" value="晉瑋精密工業" class="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-sm focus:outline-none focus:border-brand-tealLight focus:ring-1 focus:ring-brand-tealLight">
+          </div>
+          <div>
+            <label class="block text-xs font-medium text-slate-300 mb-1.5">聯絡人稱呼</label>
+            <input type="text" id="designerName" placeholder="例如：晉瑋管理部 / 負責人" class="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-sm focus:outline-none focus:border-brand-tealLight focus:ring-1 focus:ring-brand-tealLight">
+          </div>
+        </div>
+
+        <div class="mb-5">
+          <label class="block text-xs font-medium text-slate-300 mb-1.5">聯絡電話（建議填寫）</label>
+          <input type="tel" id="designerPhone" value="04-25239186" class="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-sm focus:outline-none focus:border-brand-tealLight focus:ring-1 focus:ring-brand-tealLight">
+        </div>
+
+        <div class="mb-6">
+          <label class="block text-xs font-medium text-slate-300 mb-1.5">需求說明與期望功能</label>
+          <textarea id="designerNotes" rows="3" class="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-sm focus:outline-none focus:border-brand-tealLight focus:ring-1 focus:ring-brand-tealLight">我想洽詢為晉瑋精密工業正式上線此新版 RWD 官方網站，包含手機版適配、外銷多語系與模具產品相片展示後台。</textarea>
+        </div>
+
+        <!-- Two Action Buttons -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <button type="button" onclick="sendViaGmail()" class="w-full py-3.5 px-4 rounded-xl bg-red-600 hover:bg-red-700 text-white font-semibold text-sm transition-all flex items-center justify-center gap-2 shadow-md hover:shadow-lg">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M24 5.457v13.909c0 .904-.732 1.634-1.636 1.634h-3.819V11.73L12 16.64l-6.545-4.91v9.27H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L12 9.498l8.073-6.005C21.69 2.28 24 3.434 24 5.457z"/></svg>
+            <span>用 Gmail 網頁版一鍵回信</span>
+          </button>
+
+          <button type="button" onclick="sendViaMailto()" class="w-full py-3.5 px-4 rounded-xl bg-brand-teal hover:bg-brand-tealDark text-white font-semibold text-sm transition-all flex items-center justify-center gap-2 shadow-md hover:shadow-lg">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            <span>使用預設信箱軟體寄出</span>
+          </button>
+        </div>
+
+        <p class="text-[11px] text-slate-400 text-center mt-4">
+          點擊按鈕將自動組合信件標題與內文，寄送至 <span class="text-white font-mono">allanlinallan@gmail.com</span>，保障溝通效率。
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 text-slate-400 py-16 text-xs border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12">
+        
+        <div class="md:col-span-5 space-y-3">
+          <div class="flex items-center gap-2">
+            <div class="w-7 h-7 rounded-lg bg-brand-teal text-white flex items-center justify-center font-bold text-sm">JW</div>
+            <span class="text-white font-bold text-base">晉瑋精密工業 JW MOLD</span>
+          </div>
+          <p class="text-slate-400 leading-relaxed max-w-sm">
+            專業各類熱處理塑膠／矽膠射出模具設計製造、450T以下射出成型加工。醫療器材與相關用具模具、外銷日本 CASIO、義大利 18057 系列模具。
+          </p>
+          <div class="text-[11px] text-slate-500">民國93年成立・台灣台中模具加工製造專業廠</div>
+        </div>
+
+        <div class="md:col-span-4 space-y-2">
+          <div class="text-white font-semibold text-sm mb-3">廠址與聯繫窗口</div>
+          <p class="flex items-start gap-2">
+            <svg class="w-4 h-4 text-brand-teal flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            <span>台中市神岡區國豐路一段153號</span>
+          </p>
+          <p class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-brand-teal flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+            <span>電話：04-25239186 / 傳真：04-25159853</span>
+          </p>
+          <p class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-brand-teal flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            <span>電子信箱：jw.mold@msa.hinet.net</span>
+          </p>
+        </div>
+
+        <div class="md:col-span-3 space-y-2">
+          <div class="text-white font-semibold text-sm mb-3">營業運作時間</div>
+          <p>週一至週五：08:00 ~ 17:00</p>
+          <p class="text-brand-tealLight font-medium">★ 國定及例假日照常營業</p>
+          <p class="text-[11px] text-slate-500 pt-1">慣用聯絡管道：LINE / 電話即時諮詢</p>
+        </div>
+
+      </div>
+
+      <div class="pt-8 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-500">
+        <div>
+          © 2004 - 2025 晉瑋精密工業 JW MOLD. All Copyrights Reserved.
+        </div>
+        <div class="flex gap-4">
+          <span>豐原模具</span>
+          <span>神岡模具</span>
+          <span>醫療器材矽膠射出</span>
+          <span>450T射出成型</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Fixed Bottom CTA Bar (Glassmorphic) -->
+  <div class="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/90 backdrop-blur-md border-t border-slate-200 px-4 py-3 flex items-center justify-between gap-3 shadow-lg">
+    <a href="tel:0425239186" class="flex-1 py-2.5 px-3 rounded-xl bg-slate-100 text-slate-800 text-xs font-bold text-center border border-slate-200 flex items-center justify-center gap-1.5">
+      <svg class="w-3.5 h-3.5 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+      撥打電話
+    </a>
+    <a href="#quote" class="flex-1 py-2.5 px-3 rounded-xl bg-brand-teal text-white text-xs font-bold text-center shadow-clean flex items-center justify-center gap-1.5">
+      <span>開模詢價</span>
+      <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+    </a>
+  </div>
+
+  <!-- Smooth Scroll Reveal Script & Email Builders -->
+  <script>
+    // Reveal animation with IntersectionObserver
+    document.addEventListener("DOMContentLoaded", () => {
+      const reveals = document.querySelectorAll(".reveal");
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("active");
+          }
+        });
+      }, {
+        threshold: 0.1,
+        rootMargin: "0px 0px -40px 0px"
+      });
+
+      reveals.forEach(el => observer.observe(el));
+    });
+
+    // Mock Quote Submit
+    function handleQuoteSubmit(e) {
+      e.preventDefault();
+      alert("【預覽概念模式】感謝您的測試！本概念頁由精品網頁設計總監打造。若為晉瑋精密官方團隊，歡迎滑動至頁尾直接一鍵聯繫設計團隊上線正式版！");
+    }
+
+    // Build Email Body for Designer
+    function generateMailData() {
+      const company = document.getElementById("designerCompany").value || "晉瑋精密工業";
+      const name = document.getElementById("designerName").value || "負責同仁";
+      const phone = document.getElementById("designerPhone").value || "未提供";
+      const notes = document.getElementById("designerNotes").value || "洽詢官網重製專案";
+      const currentUrl = window.location.href;
+
+      const subject = `我有興趣請貴公司幫我做網站 - ${company}`;
+      const body = `網站設計團隊您好：\n\n我是 ${company} 的 ${name}。\n我們看過了為本公司量身規劃的概念預覽網頁（網址：${currentUrl}），希望進一步洽詢新版官網的製作報價、時程與細節。\n\n【聯絡人】：${name}\n【電話】：${phone}\n【需求簡述】：\n${notes}\n\n期待您的回信與提案說明，謝謝！`;
+
+      return { subject, body };
+    }
+
+    // Gmail Web Client Sender
+    function sendViaGmail() {
+      const { subject, body } = generateMailData();
+      const targetEmail = "allanlinallan@gmail.com";
+      const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(targetEmail)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.open(gmailUrl, "_blank");
+    }
+
+    // Native Mailto Sender
+    function sendViaMailto() {
+      const { subject, body } = generateMailData();
+      const targetEmail = "allanlinallan@gmail.com";
+      const mailtoUrl = `mailto:${targetEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.location.href = mailtoUrl;
+    }
+  </script>
+</body>
+</html>
